@@ -1,0 +1,966 @@
+#pragma
+#include
+#define
+#if
+#ifdef
+#ifndef
+#else
+#elif
+#endif
+#error
+#line
+#undef
+#import
+once
+comment
+defined
+
+FILE
+errno_t
+wchar_t
+__asm
+__stdcall
+__try
+__cdecl
+__finally
+__except
+__int64
+__declspec
+and
+and_eq
+asm
+auto
+bitand
+bitor
+bitset
+bool
+break
+case
+catch
+char
+class
+compl
+const
+const_cast
+continue
+default
+delete
+do
+double
+dynamic_cast
+else
+enum
+explicit
+export
+extern
+false
+float
+for
+dllexport
+dllimport
+friend
+goto
+if
+inline
+int
+long
+mutable
+namespace
+new
+not
+not_eq
+operator
+or
+or_eq
+private
+protected
+public
+register
+reinterpret_cast
+return
+short
+signed
+sizeof
+static
+static_cast
+struct
+switch
+template
+this
+throw
+true
+try
+typedef
+typeid
+typename
+union
+unsigned
+using
+
+
+abs(int n)
+accept(SOCKET,struct sockaddr*,int*)
+access(const char* szFileName, int nAccessMode)
+acos(double x)
+asctime(const struct tm* tmsp)
+asin(double x)
+assert
+atan(double x)
+atan2(double y, double x)
+atexit(void(*pfuncExitProcessing)(void))
+atof(const char* szNumber)
+atoi(const char* szNumber)
+atol(const char* szNumber)
+bind(SOCKET,const struct sockaddr*,int)
+bsearch(const void* pKey, const void* pBase, size_t cntObjects, size_t sizeObject, _pfunccmp_t pfuncCmp)
+btowc(int)
+cabs(struct _complex x)
+calloc(size_t sizeObjCnt, size_t sizeObject)
+ceil(double x)
+chdir(const char* szPath)
+chsize(int nHandle, long lnNewSize)
+clearerr(FILE* fileClearErrors)
+clock_t clock()
+clock_t
+close(int nHandle)
+closedir(DIR* dir)
+closesocket(SOCKET)
+connect(SOCKET,const struct sockaddr*,int)
+cos(double x)
+cosh(double x)
+creat(const char* szFileName, int nAccessMode)
+ctime(const time_t* tp)
+difftime(time_t t2, time_t t1)
+div_t div(int nNumerator, int nDenominator)
+div_t
+dup(int nHandle)
+dup2(int nOldHandle, int nNewHandle)
+ecvt(double dValue, int nDig, int* pnDec, int* pnSign)
+eof(int nHandle)
+errno
+error_status_t
+execl(const char* szPath, const char* szArgv0, ...)
+execle(const char* szPath, const char* szArgv0, ...)
+execlp(const char* szPath, const char* szArgv0, ...)
+execlpe(const char* szPath, const char* szArgv0, ...)
+execv(const char* szPath, char* const* szaArgv)
+execve(const char* szPath, char* const* szaArgv, char* const* szaEnv)
+execvp(const char* szPath, char* const* szaArgv)
+execvpe(const char* szPath, char* const* szaArgv, char* const* szaEnv)
+exp(double x)
+fabs(double x)
+fclose(FILE* fileClose)
+fcvt(double dValue, int nDig, int* pnDec, int* pnSign)
+fd_set
+fdopen(int nHandle, const char* szMode)
+feof(FILE* fileIsAtEnd)
+ferror(FILE* fileIsError)
+fflush(FILE* fileFlush)
+fgetc(FILE* fileRead)
+fgetchar()
+fgetpos(FILE* fileGetPosition, fpos_t* pfpos)
+fgets(char* caBuffer, int nBufferSize, FILE* fileRead)
+fgetwc(FILE* fileRead)
+fgetwchar(void)
+filelength(int nHandle)
+fileno(FILE* fileGetHandle)
+fileno(FILE* fileGetHandle)
+float_array_from_ndr(PRPC_MESSAGE,unsigned long,unsigned long,void*)
+float_from_ndr(PRPC_MESSAGE,void*)
+floor(double x)
+fmod(double x, double y)
+fopen(const char* szFileName, const char* szMode)
+fpos_t
+fprintf(FILE* filePrintTo, const char* szFormat, ...)
+fputc(int c, FILE* fileWrite)
+fputchar(int c)
+fputs(const char* szOutput, FILE* fileWrite)
+fputwc(wchar_t wc, FILE* fileWrite)
+fputwchar(wint_t c)
+fread(void* pBuffer, size_t sizeObject, size_t sizeObjCount, FILE* fileRead)
+free(void* pObject)
+freopen(const char* szNewFileName, const char* szNewMode, FILE* fileChangeAssociation)
+frexp(double x, int* exp)
+fscanf(FILE* fileReadFrom, const char* szFormat, ...)
+fseek(FILE* fileSetPosition, long lnOffset, int nOrigin)
+fsetpos(FILE* fileSetPosition, fpos_t* pfpos)
+ftell(FILE* fileGetPosition)
+fwprintf(FILE* filePrintTo, const wchar_t* wsFormat, ...)
+fwrite(const void* pObjArray, size_t sizeObject, size_t sizeObjCount, FILE* fileWrite)
+fwscanf(FILE* fileReadFrom, const wchar_t* wsFormat, ...)
+gcvt(double dValue, int nDec, char* caBuf)
+getc(FILE* fileRead)
+getch()
+getchar()
+getche()
+getcwd(char* caBuffer, int nBufferSize)
+getenv(const char* szVarName)
+gethostbyaddr(const char*,int,int)
+gethostbyname(const char*)
+gethostname(char*,int)
+getpeername(SOCKET,struct sockaddr*,int*)
+getpid()
+getprotobyname(const char*)
+getprotobynumber(int)
+gets(char* caBuffer) /* Unsafe: how does gets know how long the
+getservbyname(const char*,const char*)
+getservbyport(int,const char*)
+getsockname(SOCKET,struct sockaddr*,int*)
+getsockopt(SOCKET,int,int,char*,int*)
+getw(FILE*)
+handle_t
+hmemcpy
+hostent
+htonl(u_long)
+htons(u_long)
+htons(u_short)
+in_addr
+inet_addr(const char*)
+inet_ntoa(struct in_addr)
+isalnum(int c)
+isalpha(int c)
+isascii(int c)
+isatty(int nHandle)
+iscntrl(int c)
+iscsym(int c)
+iscsymf(int c)
+isdigit(int c)
+isgraph(int c)
+isleadbyte(int c)
+islower(int c)
+isprint(int c)
+ispunct(int c)
+isspace(int c)
+isupper(int c)
+iswalnum(wint_t wc)
+iswalpha(wint_t wc)
+iswascii(wint_t wc)
+iswcntrl(wint_t wc)
+iswctype(wint_t wc, wctype_t wctypeFlags)
+iswdigit(wint_t wc)
+iswgraph(wint_t wc)
+iswlower(wint_t wc)
+iswprint(wint_t wc)
+iswpunct(wint_t wc)
+iswspace(wint_t wc)
+iswupper(wint_t wc)
+iswxdigit(wint_t wc)
+isxdigit(int c)
+itoa(int nValue, char* sz, int nRadix)
+ioctlsocket(SOCKET,long,u_long *)
+ldiv(long lNumerator, long lDenominator)
+ldiv_t
+listen(SOCKET,int)
+localeconv()
+localtime(const time_t* tm)
+log(double x)
+log10(double x)
+longjmp(jmp_buf, int)
+lseek(int nHandle, long lnOffset, int nOrigin)
+lstrcat(LPSTR,LPCSTR)
+lstrcmp(LPCSTR,LPCSTR)
+lstrcmpi(LPCSTR,LPCSTR)
+lstrcpy(LPSTR,LPCSTR)
+lstrcpyn(LPSTR,LPCSTR,int)
+lstrlen(LPCSTR)
+ltoa(long lnValue, char* sz, int nRadix)
+malloc(size_t sizeObject)
+max
+mblen(const char* mbs, size_t sizeString)
+mbrlen(const char *, size_t, mbstate_t *)
+mbrtowc(wchar_t *, const char *, size_t, mbstate_t *)
+mbsrtowcs(wchar_t *, const char **, size_t, mbstate_t *)
+mbstate_t
+mbstowcs(wchar_t* wcaDest, const char* mbsConvert, size_t size)
+mbtowc(wchar_t* wcDest, const char* mbConvert, size_t size)
+memccpy(void* pCopyTo, const void* pSource, int cTerminator, size_t sizeMaxCopy)
+memchr(const void* p, int cSearchFor, size_t sizeSearch)
+memcmp(const void* p1, const void* p2, size_t sizeSearch)
+memcpy(void* pCopyTo, const void* pSource, size_t sizeSource)
+memicmp(const void* p1, const void* p2, size_t sizeSearch)
+memmove(void* pMoveTo, const void* pSource, size_t sizeSource)
+memset(void* p, int cFill, size_t sizeRepeatCount)
+min
+modf(double x, double* ip)
+ntohl(u_long)
+ntohs(u_long)
+ntohs(u_short)
+offsetof
+open(const char* szFileName, int nFlags, ...)
+opendir(const char* szPath)
+pascal
+pclose(FILE* pipeClose)
+ptrdiff_t
+putc(int c, FILE* fileWrite)
+putch(int cPut)
+putchar(int c)
+putenv(const char* szNameEqValue)
+puts(const char* szOutput)
+putw(int, FILE*)
+perror(const char* szErrorMessage)
+popen(const char* szPipeName, const char* szMode)
+pow(double x, double y)
+j0(double x)
+j1(double x)
+kbhit()
+labs(long n)
+ldexp(double x, int n)
+printf(const char* szFormat, ...)
+signal(int sig, _p_sig_fn_t handler)
+sin(double x)
+sinh(double x)
+size_t
+mkdir(const char* szPath)
+mktemp(char* szTemplate)
+mktime(struct tm* tmsp)
+qsort(const void* pBase, size_t cntObjects, size_t sizeObject, _pfunccmp_t pfuncCmp)
+raise(int sig)
+rand()
+read(int nHandle, void* caBuffer, unsigned int nToRead)
+readdir(DIR* dir)
+realloc(void* pObject, size_t sizeNew)
+recv(SOCKET,char*,int,int)
+recvfrom(SOCKET,char*,int,int,struct sockaddr*,int*)
+remove(const char* szFileName)
+rename(const char* szOldFileName, const char* szNewFileName)
+rewind(FILE* fileRewind)
+rewinddir(DIR* dir)
+rmdir(const char* szPath)
+s_addr
+s_host
+scanf(const char* szFormat, ...)
+searchenv(const char* szFileName, const char* szVar, char* szFullPathBuf)
+seekdir(DIR* dir, long lPos)
+select(int nfds,fd_set*,fd_set*,fd_set*,const struct timeval*)
+send(SOCKET,const char*,int,int)
+sendto(SOCKET,const char*,int,int,const struct sockaddr*,int)
+servent
+setbuf(FILE* fileSetBuffer, char* caBuffer)
+setjmp
+setlocale(int nCategory, const char* locale)
+setmode(int nHandle, int nAccessMode)
+setsockopt(SOCKET,int,int,const char*,int)
+setvbuf(FILE* fileSetBuffer, char* caBuffer, int nMode, size_t sizeBuffer)
+shutdown(SOCKET,int)
+sockaddr
+sockaddr_in
+socket(int,int,int)
+sopen(const char* szFileName, int nAccess, int nFlag, ...)
+spawnl(int nMode, const char* szPath, const char* szArgv0, ...)
+spawnle(int nMode, const char* szPath, const char* szArgv0, ...)
+spawnlp(int nMode, const char* szPath, const char* szArgv0, ...)
+spawnlpe(int nMode, const char* szPath, const char* szArgv0, ...)
+spawnv(int nMode, const char* szPath, char* const* szaArgv)
+spawnve(int nMode, const char* szPath, char* const* szaArgv, char* const* szaEnv)
+spawnvp(int nMode, const char* szPath, char* const* szaArgv)
+spawnvpe(int nMode, const char* szPath, char* const* szaArgv, char* const* szaEnv)
+sprintf(char* caBuffer, const char* szFormat, ...)
+sqrt(double x)
+srand(unsigned int nSeed)
+sscanf(const char* szReadFrom, const char* szFormat, ...)
+ssize_t
+stderr
+stdin
+stdout
+strcasecmp(const char* sz1, const char* sz2)
+strcat(char* szAddTo, const char* szAdd)
+strchr(const char* szSearch, int cFor)
+strcmp(const char* sz1, const char* sz2)
+strcmpi(const char* sz1, const char* sz2)
+strcoll(const char* sz1, const char* sz2) /* Compare using locale */
+strcpy(char* szCopyTo, const char* szSource)
+strcspn(const char* szGetPrefix, const char* szNotIncluding)
+strdup(const char *szDuplicate)
+strerror(int nError) /* NOTE: NOT an old name wrapper. */
+strftime(char* caBuffer, size_t sizeMax, const char* szFormat, const struct tm* tpPrint)
+strftime(char*, size_t, const char*, const struct tm*)
+stricmp(const char* sz1, const char* sz2)
+stricoll(const char* sz1, const char* sz2)
+strlen(const char* sz)
+strlwr(char* szToConvert)
+strncasecmp(const char* sz1, const char* sz2, size_t sizeMaxCompare)
+strncat(char* szAddTo, const char* szAdd, size_t sizeMaxAdd)
+strncmp(const char* sz1, const char* sz2, size_t sizeMaxCompare)
+strncpy(char* szCopyTo, const char* szSource, size_t sizeMaxCopy)
+strnicmp(const char* sz1, const char* sz2, size_t sizeMaxCompare)
+strnset(char* szToFill, int cFill, size_t sizeMaxFill)
+strpbrk(const char* szSearch, const char* szAnyOf)
+strrchr(const char* szSearch, int cFor)
+strrev(char* szToReverse)
+strset(char* szToFill, int cFill)
+strspn(const char* szGetPrefix, const char *szIncluding)
+strstr(const char* szSearch, const char *szFor)
+strtod(const char* szNumber, char** pszAfterNumber)
+strtok(char* szTokenize, const char* szDelimiters)
+strtol(const char* szNumber, char** pszAfterNumber, int nBase)
+strtoul(const char* szNumber, char** pszAfterNumber, int nBase)
+strupr(char* szToConvert)
+strxfrm(char* szTransformed, const char *szSource, size_t sizeTransform)
+swab(const char* caFrom, char* caTo, size_t sizeToCopy)
+swprintf(wchar_t* wcaBuffer, const wchar_t* wsFormat, ...)
+swscanf(wchar_t* wsReadFrom, const wchar_t* wsFormat, ...)
+tan(double x)
+tanh(double x)
+tell(int nHandle)
+telldir(DIR* dir)
+tempnam(const char* szPath, const char* szPrefix)
+time_t time(time_t* tp)
+time_t
+tm
+toascii(int c)
+tolower(int c)
+tostruct
+toupper(int c)
+u_char
+u_char
+u_int
+u_int
+u_long
+u_long
+u_short
+u_short
+ungetc(int c, FILE* fileWasRead)
+ungetch(int cUnget)
+ungetwc(wchar_t wc, FILE* fileWasRead)
+va_alist
+va_arg
+va_dcl
+va_end
+va_list
+va_start
+vfprintf(FILE* filePrintTo, const char* szFormat, va_list varg)
+vfwprintf(FILE* filePrintTo, const wchar_t* wsFormat, va_list varg)
+vprintf(const char* szFormat, va_list varg)
+vsprintf(char* caBuffer, const char* szFormat, va_list varg)
+vswprintf(wchar_t* wcaBuffer, const wchar_t* wsFormat, va_list varg)
+vwprintf(const wchar_t* wsFormat, va_list varg)
+wWinMain(HINSTANCE,HINSTANCE,LPWSTR,int)
+waccess(const wchar_t *, int)
+waccess(const wchar_t *, int)
+wchmod(const wchar_t *, int)
+wchmod(const wchar_t *, int)
+wcreat(const wchar_t *, int)
+wcreat(const wchar_t *, int)
+wcrtomb(char *, wchar_t, mbstate_t *)
+wcscmp(const wchar_t* ws1, const wchar_t* ws2)
+wcscmpi(const wchar_t* ws1, const wchar_t* ws2)
+wcscoll(const wchar_t* ws1, const wchar_t* ws2)
+wcscspn(const wchar_t* wsGetPrefix, const wchar_t* wsNotIncluding)
+wcsftime(wchar_t* wcaBuffer, size_t sizeMax, const wchar_t* wsFormat, const struct tm* tpPrint)
+wcsftime(wchar_t*, size_t, const wchar_t*, const struct tm*)
+wcsicmp(const wchar_t* ws1, const wchar_t* ws2)
+wcsicoll(const wchar_t* ws1, const wchar_t* ws2)
+wcslen(const wchar_t* ws)
+wcsncmp(const wchar_t* ws1, const wchar_t* ws2, size_t sizeMaxCompare)
+wcsnicmp(const wchar_t* ws1, const wchar_t* ws2, size_t sizeMaxCompare)
+wcsrtombs(char *, const wchar_t **, size_t, mbstate_t *)
+wcsspn(const wchar_t* wsGetPrefix, const wchar_t* wsIncluding)
+wcstod(const wchar_t* wsNumber, wchar_t** pwsAfterNumber)
+wcstol(const wchar_t* wsNumber, wchar_t** pwsAfterNumber, int nBase)
+wcstombs(char* mbsDest, const wchar_t* wsConvert, size_t size)
+wcstoul(const wchar_t* wsNumber, wchar_t** pwsAfterNumber, int nBase)
+wcsxfrm(wchar_t* wsTransformed, const wchar_t *wsSource, size_t sizeTransform)
+wctob(wint_t)
+wctomb(char* mbDest, wchar_t wc)
+wctype_t
+wfindfirst(wchar_t *, struct _wfinddata_t *)
+wfindfirst(wchar_t *, struct _wfinddata_t *)
+wfindnext(long, struct _wfinddata_t *)
+wfindnext(long, struct _wfinddata_t *)
+wopen(const wchar_t *, int, ...)
+wopen(const wchar_t *, int, ...)
+wpopen
+wprintf(const wchar_t* wsFormat, ...)
+wremove(const wchar_t *)
+wrename(const wchar_t *, const wchar_t *)
+wrename(const wchar_t *, const wchar_t *)
+write(int nHandle, const void* caBuffer, unsigned int nToWrite)
+wscanf(const wchar_t* wsFormat, ...)
+wsopen(const wchar_t *, int, int, ...)
+wsopen(const wchar_t *, int, int, ...)
+wsprintf(LPSTR,LPCSTR,...)
+wunlink(const wchar_t *)
+wunlink(const wchar_t *)
+wvsprintf(LPSTR,LPCSTR,va_list arglist)
+y0(double x)
+y1(double x)
+yn(int n, double x)
+
+stdin
+stdout
+stderr
+
+add_const
+add_cv
+add_pointer
+add_reference
+add_volatile
+aligned_storage
+alignment_of
+allocator
+array
+auto_ptr
+back_insert_iterator
+bad_alloc
+bad_exception
+bad_function_call
+bad_weak_ptr
+basic_filebuf
+basic_fstream
+basic_ifstream
+basic_ios
+basic_iostream
+basic_istream
+basic_istringstream
+basic_ofstream
+basic_ostringstream
+basic_regex
+basic_streambuf
+basic_string
+basic_stringbuf
+basic_stringstream
+binary_function
+binary_negate
+binder1st
+binder2nd
+cerr
+char_traits
+checked_array_iterator
+checked_iterator
+cin
+clog
+cmatch
+codecvt
+codecvt_base
+codecvt_byname
+collate
+collate_byname
+const_iterator
+const_mem_fun1_ref_t
+const_mem_fun1_t
+const_mem_fun_ref_t
+const_mem_fun_t
+const_pointer_cast
+const_reference
+const_reverse_iterator
+cout
+cregex_iterator
+cregex_token_iterator
+csub_match
+ctype
+ctype_base
+ctype_byname
+deque
+difference_type
+divides
+domain_error
+dynamic_pointer_cast
+enable_shared_from_this
+exception
+extent
+false_type
+forward_iterator_tag
+fpos
+front_insert_iterator
+fstream
+function
+get_deleter
+has_nothrow_assign
+has_nothrow_constructor
+has_nothrow_copy
+has_trivial_assign
+has_trivial_constructor
+has_trivial_copy
+has_trivial_destructor
+has_virtual_destructor
+hash
+hash_compare
+hash_map
+hash_multimap
+hash_multiset
+hash_set
+integral_constant
+ios
+ios_base
+iostream
+is_abstract
+is_arithmetic
+is_array
+is_base_of
+is_bind_expression
+is_class
+is_compound
+is_const
+is_convertible
+is_empty
+is_enum
+is_floating_point
+is_function
+is_fundamental
+is_integral
+is_member_function_pointer
+is_member_object_pointer
+is_member_pointer
+is_object
+is_placeholder
+is_pod
+is_pointer
+is_polymorphic
+is_reference
+is_same
+is_scalar
+is_signed
+is_union
+is_unsigned
+is_void
+is_volatile
+istream
+istream_iterator
+istreambuf_iterator
+istringstream
+istrstream
+iterator
+iterator_traits
+length_error
+less
+less_equal
+list
+locale
+logic_error
+logical_and
+logical_not
+logical_or
+map
+match_results
+mem_fun1_ref_t
+mem_fun1_t
+mem_fun_ref
+mem_fun_ref_t
+mem_fun_t
+messages
+messages_base
+messages_byname
+minus
+modulus
+money_base
+money_get
+money_put
+moneypunct
+moneypunct_byname
+multimap
+multiplies
+multiset
+negate
+not_equal_to
+nothrow_t
+num_get
+num_put
+numeric_limits
+numpunct
+numpunct_byname
+ofstream
+ostream
+ostream_iterator
+ostreambuf_iterator
+ostringstream
+ostrstream
+out_of_range
+output_iterator_tag
+overflow_error
+pair
+plus
+pointer
+pointer_to_binary_function
+pointer_to_unary_function
+queue
+random_access_iterator_tag
+range_error
+rank
+raw_storage_iterator
+reference
+reference_wrapper
+regex
+regex_constants
+regex_error
+regex_iterator
+regex_token_iterator
+regex_traits
+regex_traits<char>
+regex_traits<wchar_t>
+remove_all_extents
+remove_const
+remove_cv
+remove_extent
+remove_pointer
+remove_reference
+remove_volatile
+result_of
+reverse_iterator
+runtime_error
+set
+shared_ptr
+size_type
+smatch
+sregex_iterator
+sregex_token_iterator
+ssub_match
+stack
+static_pointer_cast
+std
+streambuf
+streamoff
+streampos
+streamsize
+string
+stringbuf
+stringstream
+strstream
+strstreambuf
+sub_match
+time_base
+time_get
+time_get_byname
+time_put
+time_put_byname
+true_type
+tuple
+tuple_element
+tuple_size
+unary_function
+unary_negate
+underflow_error
+unordered_map
+unordered_multimap
+unordered_multiset
+unordered_set
+value_compare
+value_type
+vector
+wcerr
+wcin
+wclog
+wcmatch
+wcout
+wcregex_iterator
+wcregex_token_iterator
+wcsub_match
+weak_ptr
+wfilebuf
+wfstream
+wifstream
+wios
+wiostream
+wistream
+wistringstream
+wofstream
+wostream
+wostringstream
+wregex
+wsmatch
+wsregex_iterator
+wsregex_token_iterator
+wssub_match
+wstreambuf
+wstreampos
+wstring
+wstringbuf
+wstringstream
+
+assign
+at
+back
+begin
+capacity
+clear
+empty
+end
+erase
+front
+insert
+merge
+pop_back
+pop_front 
+push_back
+push_front 
+rbegin
+rend
+reserve
+resize
+size
+splice 
+ 
+
+
+
+
+
+adjacent_find(ForwardIterator _First, ForwardIterator _Last);
+adjacent_find(ForwardIterator _First, ForwardIterator _Last, BinaryPredicate _Comp);
+binary_search(ForwardIterator _First, ForwardIterator _Last,const Type& _Val);
+binary_search(ForwardIterator _First, ForwardIterator _Last,const Type& _Val, BinaryPredicate _Comp);
+copy(InputIterator _First, InputIterator _Last, OutputIterator _DestBeg);
+copy_backward(BidirectionalIterator1 _First, BidirectionalIterator1 _Last,BidirectionalIterator2 _DestEnd);
+count(InputIterator _First, InputIterator _Last, const Type& _Val);
+count_if(InputIterator _First, InputIterator _Last,Predicate _Pred);
+equal(InputIterator1 _First1, InputIterator1 _Last1, InputIterator2 _First2);
+equal(InputIterator1 _First1, InputIterator1 _Last1, InputIterator2 _First2, BinaryPredicate _Comp);
+equal_range(ForwardIterator _First,ForwardIterator _Last, const Type& _Val);
+equal_range(ForwardIterator _First,ForwardIterator _Last, const Type& _Val, Predicate _Comp);
+fill(ForwardIterator _First, ForwardIterator _Last, const Type& _Val);
+fill_n(OutputIterator _First, Size _Count, const Type& _Val);
+find(InputIterator _First, InputIterator _Last, const Type& _Val);
+find_end(ForwardIterator1 _First1, ForwardIterator1 _Last1,ForwardIterator2 _First2, ForwardIterator2 _Last2);
+find_end(ForwardIterator1 _First1, ForwardIterator1 _Last1,ForwardIterator2 _First2, ForwardIterator2 _Last2,Pred _Comp);
+find_first_of(ForwardIterator1 _First1, ForwardIterator1 _Last1,ForwardIterator2 _First2, ForwardIterator2 _Last2);
+find_first_of(ForwardIterator1 _First1, ForwardIterator1 _Last1,ForwardIterator2 _First2, ForwardIterator2 _Last2,BinaryPredicate _Comp);
+find_if(InputIterator _First, InputIterator _Last, Predicate _Pred);
+for_each(InputIterator _First, InputIterator _Last, Function _Func);
+generate(ForwardIterator _First, ForwardIterator _Last, Generator _Gen);
+generate_n(OutputIterator _First, Diff _Count, Generator _Gen);
+includes(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, InputIterator2 _Last1);
+includes(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, InputIterator2 _Last1,BinaryPredicate _Comp);
+inplace_merge(BidirectionalIterator _First, BidirectionalIterator _Middle,BidirectionalIterator _Last);
+inplace_merge(BidirectionalIterator _First, BidirectionalIterator _Middle,BidirectionalIterator _Last,Predicate _Comp);
+iter_swap(ForwardIterator1 _Left,ForwardIterator2 _Right);
+lexicographical_compare(InputIterator1 _First1,InputIterator1 _Last1,InputIterator2 _First2,InputIterator2 _Last2);
+lexicographical_compare(InputIterator1 _First1,InputIterator1 _Last1, InputIterator2 _First2, InputIterator2 _Last2,BinaryPredicate _Comp);
+lower_bound(ForwardIterator _First, ForwardIterator _Last,const Type& _Val);
+lower_bound(ForwardIterator _First, ForwardIterator _Last,const Type& _Val,BinaryPredicate _Comp);
+make_heap(RandomAccessIterator _First, RandomAccessIterator _Last);
+make_heap(RandomAccessIterator _First, RandomAccessIterator _Last,BinaryPredicate _Comp);
+max(const Type& _Left, const Type& _Right);
+max(const Type& _Left, const Type& _Right,BinaryPredicate _Comp);
+max_element(ForwardIterator _First, ForwardIterator _Last);
+max_element(ForwardIterator _First, ForwardIterator _Last, BinaryPredicate _Comp);
+merge(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, InputIterator2 _Last2, OutputIterator _Result);
+merge(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, InputIterator2 _Last2, OutputIterator _ResultBinaryPredicate _Comp);
+min(const Type& _Left, const Type& _Right);
+min(const Type& _Left, const Type& _Right,BinaryPredicate );
+min_element(ForwardIterator _First, ForwardIterator _Last);
+min_element(ForwardIterator _First, ForwardIterator _Last,BinaryPredicate _Comp);
+mismatch(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2);
+mismatch(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2BinaryPredicate _Comp);
+next_permutation(BidirectionalIterator _First, BidirectionalIterator _Last);
+next_permutation(BidirectionalIterator _First, BidirectionalIterator _Last,BinaryPredicate _Comp);
+nth_element(RandomAccessIterator _First, RandomAccessIterator _Nth, RandomAccessIterator _Last);
+nth_element(RandomAccessIterator _First, RandomAccessIterator _Nth, RandomAccessIterator _Last,BinaryPredicate _Comp);
+partial_sort(RandomAccessIterator _First, RandomAccessIterator _SortEnd,RandomAccessIterator _Last);
+partial_sort(RandomAccessIterator _First, RandomAccessIterator _SortEnd,RandomAccessIterator _LastBinaryPredicate _Comp);
+partial_sort_copy(InputIterator _First1, InputIterator _Last1,RandomAccessIterator _First2, RandomAccessIterator _Last2);
+partial_sort_copy(InputIterator _First1, InputIterator _Last1,RandomAccessIterator _First2, RandomAccessIterator _Last2,BinaryPredicate _Comp);
+partition(BidirectionalIterator _First, BidirectionalIterator _Last, Predicate _Comp);
+pop_heap(RandomAccessIterator _First, RandomAccessIterator _Last);
+pop_heap(RandomAccessIterator _First, RandomAccessIterator _Last,BinaryPredicate _Comp);
+prev_permutation(BidirectionalIterator _First, BidirectionalIterator _Last);
+prev_permutation(BidirectionalIterator _First, BidirectionalIterator _Last,BinaryPredicate _Comp);
+push_heap(RandomAccessIterator _First, RandomAccessIterator _Last);
+push_heap(RandomAccessIterator _First, RandomAccessIterator _Last,BinaryPredicate _Comp);
+random_shuffle(RandomAccessIterator _First, RandomAccessIterator _Last);
+random_shuffle(RandomAccessIterator _First, RandomAccessIterator _Last, RandomNumberGenerator& _Rand);
+remove(ForwardIterator _First, ForwardIterator _Last, const Type& _Val);
+remove_copy(InputIterator _First, InputIterator _Last, OutputIterator _Result,const Type& _Val);
+remove_copy_if(InputIterator _First, InputIterator _Last, OutputIterator _Result,Predicate _Pred);
+replace(ForwardIterator _First, ForwardIterator _Last,const Type& _OldVal, const Type& _NewVal);
+replace_copy(InputIterator _First, InputIterator _Last, OutputIterator _Result,const Type& _OldVal, const Type& _NewVal);
+replace_copy_if(InputIterator _First, InputIterator _Last, OutputIterator _Result, Predicate _Pred, const Type& _Val);
+replace_if(ForwardIterator _First, ForwardIterator _Last,Predicate _Pred, const Type& _Val);
+reverse(BidirectionalIterator _First, BidirectionalIterator _Last);
+reverse_copy(BidirectionalIterator _First, BidirectionalIterator _Last, OutputIterator _Result);
+rotate(ForwardIterator _First, ForwardIterator _Middle, ForwardIterator _Last);
+rotate_copy(ForwardIterator _First, ForwardIterator _Middle,ForwardIterator _Last, OutputIterator _Result);
+search(ForwardIterator1 _First1, ForwardIterator1 _Last1,ForwardIterator2 _First2, ForwardIterator2 _Last2);
+search(ForwardIterator1 _First1, ForwardIterator1 _Last1,ForwardIterator2 _First2, ForwardIterator2 _Last2Predicate _Comp);
+search_n(ForwardIterator1 _First1, ForwardIterator1 _Last1,Diff2 _Count, const Type& _Val);
+search_n(ForwardIterator1 _First1, ForwardIterator1 _Last1,Diff2 _Count, const Type& _Val,BinaryPredicate _Comp);
+set_difference(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, InputIterator2 _Last2, OutputIterator _Result);
+set_difference(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, InputIterator2 _Last2, OutputIterator _Result,BinaryPredicate _Comp);
+set_intersection(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, InputIterator2 _Last2, OutputIterator _Result);
+set_intersection(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, InputIterator2 _Last2, OutputIterator _Result,BinaryPredicate _Comp);
+set_symmetric_difference(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, InputIterator2 _Last2, OutputIterator _Result);
+set_symmetric_difference(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, InputIterator2 _Last2, OutputIterator _Result,BinaryPredicate _Comp);
+set_union(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, InputIterator2 _Last2, OutputIterator _Result);
+set_union(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, InputIterator2 _Last2, OutputIterator _Result,BinaryPredicate _Comp);
+sort(RandomAccessIterator _First, RandomAccessIterator _Last);
+sort(RandomAccessIterator _First, RandomAccessIterator _Last, Predicate _Comp);
+sort_heap(RandomAccessIterator _First, RandomAccessIterator _Last);
+sort_heap(RandomAccessIterator _First, RandomAccessIterator _Last,Predicate _Comp);
+stable_partition(BidirectionalIterator _First, BidirectionalIterator _Last,Predicate _Pred);
+stable_sort(BidirectionalIterator _First, BidirectionalIterator _Last);
+stable_sort(BidirectionalIterator _First, BidirectionalIterator _Last,BinaryPredicate _Comp);
+swap(Type& _Left, Type& _Right);
+swap_ranges(ForwardIterator1 _First1, ForwardIterator1 _Last1,ForwardIterator2 _First2);
+transform(InputIterator _First1, InputIterator _Last1, OutputIterator _Result,UnaryFunction _Func);
+transform(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, OutputIterator _Result,BinaryFunction _Func);
+unique(ForwardIterator _First, ForwardIterator _Last);
+unique(ForwardIterator _First, ForwardIterator _Last,Predicate _Comp);
+unique_copy(InputIterator _First, InputIterator _Last, OutputIterator _Result);
+unique_copy(InputIterator _First, InputIterator _Last, OutputIterator _Result,BinaryPredicate _Comp,);
+upper_bound(ForwardIterator _First, ForwardIterator _Last,const Type& _Val);
+upper_bound(ForwardIterator _First, ForwardIterator _Last,const Type& _Val,Predicate _Comp);
+set_terminate(terminate_handler _Pnew) throw();
+set_unexpected(unexpected_handler _Pnew) throw();
+terminate();
+uncaught_exception();
+unexpected();
+bind1st(const Operation& _Func, const Type& _Left);
+bind2nd(const Operation& _Func, const Type& _Right);
+mem_fun (Result(Type::* _Pm )() );
+mem_fun(Result (Type::* _Pm )( Arg ) );
+mem_fun_ref(Result (Type::*_Pm )( ) );
+mem_fun_ref(Result (Type::*_Pm )( Arg ) );
+not1(const UnaryPredicate& _Pred);
+not2(const BinaryPredicate& _Func);
+ptr_fun(Result (*_pfunc)(Arg));
+ptr_fun(Result (*_pfunc)(Arg1, Arg2));
+advance(InputIterator& _InIt, Distance _Off);
+back_inserter(Container& _Cont);
+distance(InputIterator _First, InputIterator _Last); 
+front_inserter(Container& _Cont);
+inserter(Container& _Cont, Iterator _It);
+set_new_handler(new_handler _Pnew) throw( );
+accumulate(InputIterator _First, InputIterator _Last, Type _Val);
+accumulate(InputIterator _First, InputIterator _Last, Type _Val, BinaryOperation _Binary_op);
+adjacent_difference(InputIterator _First, InputIterator _Last,OutputIterator _Result );
+adjacent_difference(InputIterator _First, InputIterator _Last,OutputIterator _Result, BinaryOperation _Binary_op);
+inner_product(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, Type _Val);
+inner_product(InputIterator1 _First1, InputIterator1 _Last1,InputIterator2 _First2, Type _Val, BinaryOperation1 _Binary_op1, BinaryOperation2 _Binary_op2);
+partial_sum(InputIterator _First, InputIterator _Last,OutputIterator _Result);
+partial_sum(InputIterator _First, InputIterator _Last,OutputIterator _Result, BinaryOperation _Binary_op);
+getline(basic_istream<CharType, Traits>& _Istr,basic_string<CharType, Traits, Allocator>& _Str);
+getline(basic_istream<CharType, Traits>& _Istr,basic_string<CharType, Traits, Allocator>& _Str,const CharType _Delim);
+make_pair(Type1 _Val1,Type2 _Val2);
+
+ref(Ty& arg);
+ref(reference_wrapper<Ty>& arg);
+mem_fn(Ret Ty::*pm);
+bind(Fty fn, T1 t1, T2 t2, ..., TN tN);
+swap(array<Ty, N>& left,array<Ty, N>& right);
+
+
+const_pointer_cast(const shared_ptr<Other>& sp);
+dynamic_pointer_cast(const shared_ptr<Other>& sp);
+get_deleter(const shared_ptr<Ty>& sp);
+static_pointer_cast(const shared_ptr<Other>& sp);
+swap(shared_ptr<Ty>& left, shared_ptr<Other>& right);
+swap(weak_ptr<Ty>& left, weak_ptr<Other>& right);
+swap(function<Fty>& f1, function<Fty>& f2);
+
+regex_match(const Elem *ptr,const basic_regex<Elem, RXtraits, Alloc2>& re,match_flag_type flags = match_default);
+regex_match(BidIt first, Bidit last,const basic_regex<Elem, RXtraits, Alloc2>& re,match_flag_type flags = match_default);
+regex_match(const basic_string<Elem, IOtraits, IOalloc>& str,const basic_regex<Elem, RXtraits, Alloc2>& re,match_flag_type flags = match_default);
+regex_match(const Elem *ptr,match_results<const Elem*, Alloc>& match,const basic_regex<Elem, RXtraits, Alloc2>& re,match_flag_type flags = match_default);
+regex_match(BidIt first, Bidit last,match_results<BidIt, Alloc>& match,const basic_regex<Elem, RXtraits, Alloc2>& re,match_flag_type flags = match_default);
+regex_match(const basic_string<Elem, IOtraits, IOalloc>& str,match_results<typename basic_string<Elem, IOtraits, IOalloc>::const_iterator, Alloc>& match,const basic_regex<Elem, RXtraits, Alloc2>& re,match_flag_type flags = match_default);
+
+regex_replace(OutIt out,BidIt first, BidIt last,const basic_regex<Elem, RXtraits, Alloc>& re,const basic_string<Elem>& fmt,match_flag_type flags = match_default);regex_replace.
+regex_replace(const basic_string<Elem>& str,const basic_regex<Elem, RXtraits, Alloc>& re,const basic_string<Elem>& fmt,match_flag_type flags = match_default);regex_replace.
+
+regex_search(const Elem* ptr,const basic_regex<Elem, RXtraits, Alloc2>& re,match_flag_type flags = match_default);
+regex_search(BidIt first, Bidit last,const basic_regex<Elem, RXtraits, Alloc2>& re,match_flag_type flags = match_default);
+regex_search(const basic_string<Elem, IOtraits, IOalloc>& str,const basic_regex<Elem, RXtraits, Alloc2>& re,match_flag_type flags = match_default);
+regex_search(const Elem* ptr,match_results<const Elem*, Alloc>& match,const basic_regex<Elem, RXtraits, Alloc2>& re,match_flag_type flags = match_default);
+regex_search(BidIt first, Bidit last,match_results<BidIt, Alloc>& match,const basic_regex<Elem, RXtraits, Alloc2>& re,match_flag_type flags = match_default);
+regex_search(const basic_string<Elem, IOtraits, IOalloc>& str,match_results<typename basic_string<Elem, IOtraits, IOalloc>::const_iterator, Alloc>& match,const basic_regex<Elem, RXtraits, Alloc2>& re,match_flag_type flags = match_default);
+
+make_tuple(const T1& t1, const T2& t2, ..., const TN& tN);
+tie(T1& t1, T2& t2, ..., TN& tN);

@@ -1,0 +1,482 @@
+urlConnect( url:String ) :haxe.remoting.AsyncConnection;     class haxe.remoting.AsyncConnection
+onError( :Dynamic ) :Void;     class haxe.remoting.AsyncConnection
+call( params:Array, onData:?f ) :Void;     class haxe.remoting.AsyncConnection
+request( s:String ) :neko.db.ResultSet;     class neko.db.Connection
+quote( s:String ) :String;     class neko.db.Connection
+lastInsertId(  ) :Int;     class neko.db.Connection
+hasFeature( f:neko.db.Feature ) :Bool;     class neko.db.Connection
+escape( s:String ) :String;     class neko.db.Connection
+close(  ) :Void;     class neko.db.Connection
+unserialize( s:String ) :Dynamic;     class neko.Lib
+serialize( v:Dynamic ) :String;     class neko.Lib
+rethrow( e:Dynamic ) :Void;     class neko.Lib
+print( v:Dynamic ) :Void;     class neko.Lib
+makeString( size:Int ) :String;     class neko.Lib
+load( lib:String, prim:String, nargs:Int ) :Dynamic;     class neko.Lib
+copyBytes( dst:String, dst_pos:Int, src:String, src_pos:Int, len:Int ) :Void;     class neko.Lib
+request( s:String ) :neko.db.ResultSet;     class neko.db.SqliteConnection
+quote( s:String ) :String;     class neko.db.SqliteConnection
+lastInsertId(  ) :Int;     class neko.db.SqliteConnection
+hasFeature( f:neko.db.Feature ) :Bool;     class neko.db.SqliteConnection
+escape( s:String ) :String;     class neko.db.SqliteConnection
+close(  ) :Void;     class neko.db.SqliteConnection
+new( file:String ) :Void;     class neko.db.SqliteConnection
+results(  ) :List;     class neko.db.ResultSet
+next(  ) :Dynamic;     class neko.db.ResultSet
+hasNext(  ) :Bool;     class neko.db.ResultSet
+getResult( n:Int ) :String;     class neko.db.ResultSet
+getIntResult( n:Int ) :Int;     class neko.db.ResultSet
+getFloatResult( n:Int ) :Float;     class neko.db.ResultSet
+results(  ) :List;     class neko.db.SqliteResultSet
+next(  ) :Dynamic;     class neko.db.SqliteResultSet
+hasNext(  ) :Bool;     class neko.db.SqliteResultSet
+getResult( n:Int ) :String;     class neko.db.SqliteResultSet
+getIntResult( n:Int ) :Int;     class neko.db.SqliteResultSet
+getFloatResult( n:Int ) :Float;     class neko.db.SqliteResultSet
+new( r:Void ) :Void;     class neko.db.SqliteResultSet
+open( file:String ) :neko.db.Connection;     class neko.db.Sqlite
+request( url:String ) :String;     class haxe.Http
+setParameter( param:String, value:String ) :Void;     class haxe.Http
+setHeader( header:String, value:String ) :Void;     class haxe.Http
+request( post:Bool ) :Void;     class haxe.Http
+onStatus( status:Int ) :Void;     class haxe.Http
+onError( msg:String ) :Void;     class haxe.Http
+onData( data:String ) :Void;     class haxe.Http
+new( url:String ) :Void;     class haxe.Http
+toString(  ) :String;     class neko.NekoDate__
+getTime(  ) :Float;     class neko.NekoDate__
+getSeconds(  ) :Int;     class neko.NekoDate__
+getMonth(  ) :Int;     class neko.NekoDate__
+getMinutes(  ) :Int;     class neko.NekoDate__
+getHours(  ) :Int;     class neko.NekoDate__
+getFullYear(  ) :Int;     class neko.NekoDate__
+getDate(  ) :Int;     class neko.NekoDate__
+new( year:Int, month:Int, day:Int, hour:Int, min:Int, sec:Int ) :Void;     class neko.NekoDate__
+toUpperCase(  ) :String;     class String
+toString(  ) :String;     class String
+toLowerCase(  ) :String;     class String
+substr( pos:Int, len:Int ) :String;     class String
+split( delimiter:String ) :Array<String>;     class String
+lastIndexOf( value:String, startIndex:Int ) :Int;     class String
+indexOf( value:String, ?startIndex:Int ) :Int;     class String
+charCodeAt( index:Int ) :Int;     class String
+charAt( index:Int ) :String;     class String
+new( string:String ) :Void;     class String
+toString(  ) :String;     class List
+remove( v:T ) :Bool;     class List
+push( item:T ) :Void;     class List
+pop(  ) :T;     class List
+map( f:?f ) :List<X>;     class List
+last(  ) :T;     class List
+join( sep:String ) :String;     class List
+iterator(  ) :Iterator<T>;     class List
+isEmpty(  ) :Bool;     class List
+first(  ) :T;     class List
+filter( f:?f ) :List<T>;     class List
+clear(  ) :Void;     class List
+add( item:T ) :Void;     class List
+new(  ) :Void;     class List
+time(  ) :Float;     class neko.Sys
+systemName(  ) :String;     class neko.Sys
+stdout(  ) :neko.File;     class neko.Sys
+stdin(  ) :neko.File;     class neko.Sys
+stderr(  ) :neko.File;     class neko.Sys
+sleep( seconds:Float ) :Void;     class neko.Sys
+setTimeLocale( loc:String ) :Bool;     class neko.Sys
+setCwd( s:String ) :Void;     class neko.Sys
+putEnv( s:String, v:String ) :Void;     class neko.Sys
+getEnv( s:String ) :String;     class neko.Sys
+getCwd(  ) :String;     class neko.Sys
+exit( code:Int ) :Void;     class neko.Sys
+executablePath(  ) :String;     class neko.Sys
+environment(  ) :Hash<String>;     class neko.Sys
+command( cmd:String ) :Int;     class neko.Sys
+args(  ) :Array<String>;     class neko.Sys
+setReturnCode( r:Int ) :Void;     class neko.Web
+setHeader( h:String, v:String ) :Void;     class neko.Web
+setCookie( k:String, v:String ) :Void;     class neko.Web
+redirect( url:String ) :Void;     class neko.Web
+getURI(  ) :String;     class neko.Web
+getPostData(  ) :String;     class neko.Web
+getParamsString(  ) :String;     class neko.Web
+getParams(  ) :Hash<String>;     class neko.Web
+getHostName(  ) :String;     class neko.Web
+getCwd(  ) :String;     class neko.Web
+getCookies(  ) :Hash<String>;     class neko.Web
+getClientIP(  ) :String;     class neko.Web
+getClientHeader( k:String ) :String;     class neko.Web
+getAuthorization(  ) :{ user:String, pass:String };     class neko.Web
+cacheModule( f:?f ) :Void;     class neko.Web
+run( v:Dynamic ) :String;     class haxe.Serializer
+toString(  ) :String;     class haxe.Serializer
+serializeException( e:Dynamic ) :Void;     class haxe.Serializer
+serialize( v:Dynamic ) :Void;     class haxe.Serializer
+bytes( s:String ) :Int;     class haxe.Serializer
+new(  ) :Void;     class haxe.Serializer
+run( src:String ) :String;     class neko.zip.Uncompress
+setFlushMode( f:neko.zip.Flush ) :Void;     class neko.zip.Uncompress
+run( src:String, srcPos:Int, dst:String, dstPos:Int ) :{ write:Int, read:Int, done:Bool };     class neko.zip.Uncompress
+close(  ) :Void;     class neko.zip.Uncompress
+new( windowBits:Int ) :Void;     class neko.zip.Uncompress
+setSeed( s:Int ) :Void;     class neko.Random
+int( max:Int ) :Int;     class neko.Random
+float(  ) :Float;     class neko.Random
+new(  ) :Void;     class neko.Random
+new(  ) :Void;     class haxe.unit.TestStatus
+run(  ) :Void;     class haxe.unit.TestRunner
+add( c:haxe.unit.TestCase ) :Void;     class haxe.unit.TestRunner
+new(  ) :Void;     class haxe.unit.TestRunner
+unshift( x:T ) :Void;     class Array
+toString(  ) :String;     class Array
+splice( pos:Int, len:Int ) :Array<T>;     class Array
+sort( f:?f ) :Void;     class Array
+slice( pos:Int, end:Int ) :Array<T>;     class Array
+shift(  ) :T;     class Array
+reverse(  ) :Array<T>;     class Array
+remove( x:T ) :Bool;     class Array
+push( x:T ) :Int;     class Array
+pop(  ) :T;     class Array
+join( sep:String ) :String;     class Array
+iterator(  ) :Iterator<T>;     class Array
+insert( pos:Int, x:T ) :Void;     class Array
+copy(  ) :Array<T>;     class Array
+concat( a:Array<T> ) :Array<T>;     class Array
+new(  ) :Void;     class Array
+unshift( v:neko.T ) :Void;     class neko.NekoArray__
+toString(  ) :String;     class neko.NekoArray__
+splice( pos:Int, len:Int ) :Array<neko.T>;     class neko.NekoArray__
+sort( f:?f ) :Void;     class neko.NekoArray__
+slice( pos:Int, end:Int ) :Array<neko.T>;     class neko.NekoArray__
+shift(  ) :neko.T;     class neko.NekoArray__
+reverse(  ) :Array<neko.T>;     class neko.NekoArray__
+remove( v:neko.T ) :Bool;     class neko.NekoArray__
+push( v:neko.T ) :Int;     class neko.NekoArray__
+pop(  ) :neko.T;     class neko.NekoArray__
+join( delim:String ) :String;     class neko.NekoArray__
+iterator(  ) :Iterator<neko.T>;     class neko.NekoArray__
+insert( pos:Int, x:neko.T ) :Void;     class neko.NekoArray__
+copy(  ) :Array<neko.T>;     class neko.NekoArray__
+concat( arr:Array<neko.T> ) :Array<neko.T>;     class neko.NekoArray__
+stat( path:String ) :neko.FileStat;     class neko.FileSystem
+rename( path:String, newpath:String ) :Void;     class neko.FileSystem
+readDir( path:String ) :Array<String>;     class neko.FileSystem
+kind( path:String ) :neko.FileKind;     class neko.FileSystem
+isDirectory( path:String ) :Bool;     class neko.FileSystem
+fullPath( relpath:String ) :String;     class neko.FileSystem
+exists( path:String ) :Bool;     class neko.FileSystem
+deleteFile( path:String ) :Void;     class neko.FileSystem
+deleteDir( path:String ) :Void;     class neko.FileSystem
+createDir( path:String ) :Void;     class neko.FileSystem
+typeof( v:Dynamic ) :BasicType;     class Reflect
+setPrototype( obj:Dynamic, proto:Dynamic ) :Void;     class Reflect
+setField( o:Dynamic, field:String, value:Dynamic ) :Void;     class Reflect
+resolveEnum( name:Array<String> ) :Dynamic;     class Reflect
+resolveClass( name:Array<String> ) :Class;     class Reflect
+isFunction( f:Dynamic ) :Bool;     class Reflect
+hasField( o:Dynamic, field:String ) :Bool;     class Reflect
+getClass( o:Dynamic ) :Class;     class Reflect
+fields( o:Dynamic ) :Array<String>;     class Reflect
+field( o:Dynamic, field:String ) :Dynamic;     class Reflect
+empty(  ) :{  };     class Reflect
+deleteField( o:Dynamic, f:String ) :Bool;     class Reflect
+createInstance( cl:Dynamic, args:Array ) :Dynamic;     class Reflect
+copy( o:Dynamic ) :Dynamic;     class Reflect
+callMethod( o:Dynamic, func:Dynamic, args:Array ) :Dynamic;     class Reflect
+next(  ) :Int;     class IntIter
+hasNext(  ) :Bool;     class IntIter
+new( min:Int, max:Int ) :Void;     class IntIter
+tan( value:Float ) :Float;     class Math
+sqrt( value:Float ) :Float;     class Math
+sin( value:Float ) :Float;     class Math
+round( value:Float ) :Int;     class Math
+random(  ) :Float;     class Math
+pow( value1:Float, value2:Float ) :Float;     class Math
+min( value1:Float, value2:Float ) :Float;     class Math
+max( value1:Float, value2:Float ) :Float;     class Math
+log( value:Float ) :Float;     class Math
+isNaN( f:Float ) :Bool;     class Math
+isFinite( f:Float ) :Bool;     class Math
+floor( value:Float ) :Int;     class Math
+exp( value:Float ) :Float;     class Math
+cos( value:Float ) :Float;     class Math
+ceil( value:Float ) :Int;     class Math
+atan2( value1:Float, value2:Float ) :Float;     class Math
+atan( value:Float ) :Float;     class Math
+asin( value:Float ) :Float;     class Math
+acos( value:Float ) :Float;     class Math
+abs( value:Float ) :Float;     class Math
+result_set_conv_date( :Void, :?f ) :?unknown;     class neko.db.MysqlResultSet
+results(  ) :List;     class neko.db.MysqlResultSet
+next(  ) :Dynamic;     class neko.db.MysqlResultSet
+hasNext(  ) :Bool;     class neko.db.MysqlResultSet
+getResult( n:Int ) :String;     class neko.db.MysqlResultSet
+getIntResult( n:Int ) :Int;     class neko.db.MysqlResultSet
+getFloatResult( n:Int ) :Float;     class neko.db.MysqlResultSet
+new( r:Void ) :Void;     class neko.db.MysqlResultSet
+now(  ) :Date;     class Date
+fromTime( t:Float ) :Date;     class Date
+fromString( s:String ) :Date;     class Date
+toString(  ) :String;     class Date
+getTime(  ) :Float;     class Date
+getSeconds(  ) :Int;     class Date
+getMonth(  ) :Int;     class Date
+getMinutes(  ) :Int;     class Date
+getHours(  ) :Int;     class Date
+getFullYear(  ) :Int;     class Date
+getDate(  ) :Int;     class Date
+new( year:Int, month:Int, day:Int, hour:Int, min:Int, sec:Int ) :Void;     class Date
+request( s:String ) :neko.db.ResultSet;     class neko.db.MysqlConnection
+quote( s:String ) :String;     class neko.db.MysqlConnection
+lastInsertId(  ) :Int;     class neko.db.MysqlConnection
+hasFeature( f:neko.db.Feature ) :Bool;     class neko.db.MysqlConnection
+escape( s:String ) :String;     class neko.db.MysqlConnection
+close(  ) :Void;     class neko.db.MysqlConnection
+new( c:Void ) :Void;     class neko.db.MysqlConnection
+connect( params:{ user:String, socket:String, port:Int, pass:String, host:String, database:String } ) :neko.db.Connection;     class neko.db.Mysql
+run( s:String, level:Int ) :String;     class neko.zip.Compress
+setFlushMode( f:neko.zip.Flush ) :Void;     class neko.zip.Compress
+run( src:String, srcPos:Int, dst:String, dstPos:Int ) :{ write:Int, read:Int, done:Bool };     class neko.zip.Compress
+close(  ) :Void;     class neko.zip.Compress
+new( level:Int ) :Void;     class neko.zip.Compress
+toString(  ) :String;     class neko.NekoXml__
+set( att:String, value:String ) :Void;     class neko.NekoXml__
+removeChild( x:Xml ) :Bool;     class neko.NekoXml__
+remove( att:String ) :Void;     class neko.NekoXml__
+iterator(  ) :{ next:?f, hasNext:?f };     class neko.NekoXml__
+insertChild( x:Xml, pos:Int ) :Void;     class neko.NekoXml__
+get( att:String ) :String;     class neko.NekoXml__
+firstElement(  ) :Xml;     class neko.NekoXml__
+firstChild(  ) :Xml;     class neko.NekoXml__
+exists( att:String ) :Bool;     class neko.NekoXml__
+elementsNamed( name:String ) :?unknown;     class neko.NekoXml__
+elements(  ) :?unknown;     class neko.NekoXml__
+attributes(  ) :Iterator<String>;     class neko.NekoXml__
+addChild( x:Xml ) :Void;     class neko.NekoXml__
+parse( s:String ) :Xml;     class Xml
+createProlog( data:String ) :Xml;     class Xml
+createPCData( data:String ) :Xml;     class Xml
+createElement( name:String ) :Xml;     class Xml
+createDocument(  ) :Xml;     class Xml
+createDocType( data:String ) :Xml;     class Xml
+createComment( data:String ) :Xml;     class Xml
+createCData( data:String ) :Xml;     class Xml
+toString(  ) :String;     class Xml
+set( att:String, value:String ) :Void;     class Xml
+removeChild( x:Xml ) :Bool;     class Xml
+remove( att:String ) :Void;     class Xml
+iterator(  ) :Iterator<Xml>;     class Xml
+insertChild( x:Xml, pos:Int ) :Void;     class Xml
+get( att:String ) :String;     class Xml
+firstElement(  ) :Xml;     class Xml
+firstChild(  ) :Xml;     class Xml
+exists( att:String ) :Bool;     class Xml
+elementsNamed( name:String ) :Iterator<Xml>;     class Xml
+elements(  ) :Iterator<Xml>;     class Xml
+attributes(  ) :Iterator<String>;     class Xml
+addChild( x:Xml ) :Void;     class Xml
+delayedArg( f:?f, time:Int ) :?f;     class haxe.Timer
+delayed( f:?f, time:Int ) :?f;     class haxe.Timer
+stop(  ) :Void;     class haxe.Timer
+run(  ) :Void;     class haxe.Timer
+new( time:Int ) :Void;     class haxe.Timer
+toString(  ) :String;     class IntHash
+set( key:Int, value:T ) :Void;     class IntHash
+remove( key:Int ) :Bool;     class IntHash
+keys(  ) :Iterator<Int>;     class IntHash
+iterator(  ) :Iterator<T>;     class IntHash
+get( key:Int ) :T;     class IntHash
+exists( key:Int ) :Bool;     class IntHash
+new(  ) :Void;     class IntHash
+toString(  ) :String;     class Hash
+set( key:String, value:T ) :Void;     class Hash
+remove( key:String ) :Bool;     class Hash
+keys(  ) :Iterator<String>;     class Hash
+iterator(  ) :Iterator<T>;     class Hash
+get( key:String ) :T;     class Hash
+exists( key:String ) :Bool;     class Hash
+new(  ) :Void;     class Hash
+initialize(  ) :Void;     class neko.db.Manager
+cleanup(  ) :Void;     class neko.db.Manager
+search( x:{  }, lock:Bool ) :List<neko.db.T>;     class neko.db.Manager
+results( sql:String ) :List;     class neko.db.Manager
+result( sql:String ) :Dynamic;     class neko.db.Manager
+quote( s:String ) :String;     class neko.db.Manager
+objects( sql:String, lock:Bool ) :List<neko.db.T>;     class neko.db.Manager
+objectToString( it:neko.db.T ) :String;     class neko.db.Manager
+object( sql:String, lock:Bool ) :neko.db.T;     class neko.db.Manager
+getWithKeys( keys:{  } ) :neko.db.T;     class neko.db.Manager
+getReadOnly( id:Int ) :neko.db.T;     class neko.db.Manager
+get( id:Int ) :neko.db.T;     class neko.db.Manager
+doUpdate( x:neko.db.T ) :Void;     class neko.db.Manager
+doSync( i:neko.db.T ) :Void;     class neko.db.Manager
+doInsert( x:neko.db.T ) :Void;     class neko.db.Manager
+doDelete( x:neko.db.T ) :Void;     class neko.db.Manager
+count(  ) :Int;     class neko.db.Manager
+all( lock:Bool ) :List<neko.db.T>;     class neko.db.Manager
+new( cl:Dynamic ) :Void;     class neko.db.Manager
+split( s:String ) :Array<String>;     class EReg
+replace( s:String, by:String ) :String;     class EReg
+matchedRight(  ) :String;     class EReg
+matchedPos(  ) :{ pos:Int, len:Int };     class EReg
+matchedLeft(  ) :String;     class EReg
+matched( n:Int ) :String;     class EReg
+match( s:String ) :Bool;     class EReg
+new( r:String, opt:String ) :Void;     class EReg
+execute( context:Dynamic ) :String;     class haxe.Template
+new( str:String ) :Void;     class haxe.Template
+urlConnect( url:String ) :haxe.remoting.Connection;     class haxe.remoting.Connection
+call( params:Array ) :Dynamic;     class haxe.remoting.Connection
+setPrivatePrefix( p:String ) :Void;     class haxe.remoting.Server
+resolvePath( path:Array<String> ) :Dynamic;     class haxe.remoting.Server
+handleRequest(  ) :Bool;     class haxe.remoting.Server
+addObject( name:String, obj:Dynamic ) :Void;     class haxe.remoting.Server
+new(  ) :Void;     class haxe.remoting.Server
+encode( s:String ) :String;     class Md5
+toString(  ) :String;     class StringBuf
+addSub( s:String, pos:Int, len:Int ) :Void;     class StringBuf
+addChar( c:Int ) :Void;     class StringBuf
+add( x:Dynamic ) :Void;     class StringBuf
+new(  ) :Void;     class StringBuf
+map( it:Iterator<A>, f:?f ) :Iterator<B>;     class Lambda
+list( it:Iterator<A> ) :List<A>;     class Lambda
+iter( it:Iterator<A>, f:?f ) :Void;     class Lambda
+fold( it:Iterator<A>, f:?f, first:B ) :B;     class Lambda
+count( it:Iterator<A> ) :Int;     class Lambda
+array( it:Iterator<A> ) :Array<A>;     class Lambda
+amap( a:Array<A>, f:?f ) :Array<B>;     class Lambda
+onResult( path:Array<String>, params:Array, result:Dynamic ) :Void;     class haxe.remoting.AsyncDebugConnection
+onErrorDisplay( path:Array<String>, params:Array, err:Dynamic ) :Void;     class haxe.remoting.AsyncDebugConnection
+onCall( path:Array<String>, params:Array ) :Void;     class haxe.remoting.AsyncDebugConnection
+call( params:Array, onData:?f ) :Void;     class haxe.remoting.AsyncDebugConnection
+new( cnx:haxe.remoting.AsyncConnection ) :Void;     class haxe.remoting.AsyncDebugConnection
+validate( s:String ) :Bool;     class neko.Utf8
+sub( s:String, pos:Int, len:Int ) :String;     class neko.Utf8
+length( s:String ) :Int;     class neko.Utf8
+iter( s:String, chars:?f ) :Void;     class neko.Utf8
+encode( s:String ) :String;     class neko.Utf8
+decode( s:String ) :String;     class neko.Utf8
+compare( a:String, b:String ) :Int;     class neko.Utf8
+charCodeAt( s:String, index:Int ) :Int;     class neko.Utf8
+main( cnx:neko.db.Connection, mainFun:?f, logError:?f ) :Void;     class neko.db.Transaction
+isDeadlock( e:Dynamic ) :Bool;     class neko.db.Transaction
+format( d:Date, f:String ) :String;     class DateTools
+delta( d:Date, t:Float ) :Date;     class DateTools
+trace( v:Dynamic, infos:haxe.PosInfos ) :Void;     class haxe.Log
+clear(  ) :Void;     class haxe.Log
+toString( stack:Array<neko.StackItem> ) :String;     class neko.Stack
+exceptionStack(  ) :Array<neko.StackItem>;     class neko.Stack
+callStack(  ) :Array<neko.StackItem>;     class neko.Stack
+string( s:Dynamic ) :String;     class Std
+resource( name:String ) :String;     class Std
+random( x:Int ) :Int;     class Std
+parseInt( x:String ) :Int;     class Std
+parseFloat( x:String ) :Float;     class Std
+ord( x:String ) :Int;     class Std
+is( v:Dynamic, t:Dynamic ) :Bool;     class Std
+int( x:Float ) :Int;     class Std
+chr( x:Int ) :String;     class Std
+bool( x:Dynamic ) :Bool;     class Std
+read(  ) :Void;     class haxe.remoting.SocketBuffer
+onXmlData( data:String ) :Void;     class haxe.remoting.SocketBuffer
+onData( data:String ) :Void;     class haxe.remoting.SocketBuffer
+lastRead(  ) :Float;     class haxe.remoting.SocketBuffer
+bufferData(  ) :String;     class haxe.remoting.SocketBuffer
+new( s:neko.Socket ) :Void;     class haxe.remoting.SocketBuffer
+create(  ) :haxe.remoting.DelayedConnection;     class haxe.remoting.DelayedConnection
+call( params:Array, onData:?f ) :Void;     class haxe.remoting.DelayedConnection
+socketConnect( s:neko.Socket, r:haxe.remoting.Server ) :haxe.remoting.SocketConnection;     class haxe.remoting.SocketConnection
+processMessage( sc:haxe.remoting.SocketConnection, data:String ) :{ exc:?unknown };     class haxe.remoting.SocketConnection
+call( params:Array, onData:?f ) :Void;     class haxe.remoting.SocketConnection
+run( v:String ) :?unknown;     class haxe.Unserializer
+unserialize(  ) :Dynamic;     class haxe.Unserializer
+setResolver( r:haxe.TypeResolver ) :Void;     class haxe.Unserializer
+new( buf:String ) :Void;     class haxe.Unserializer
+unzip( data:String, f:neko.zip.ZipEntry ) :String;     class neko.zip.File
+read( data:String ) :List<neko.zip.ZipEntry>;     class neko.zip.File
+update(  ) :Void;     class neko.db.Object
+toString(  ) :String;     class neko.db.Object
+sync(  ) :Void;     class neko.db.Object
+insert(  ) :Void;     class neko.db.Object
+delete(  ) :Void;     class neko.db.Object
+new(  ) :Void;     class neko.db.Object
+write( path:String, binary:Bool ) :neko.File;     class neko.File
+read( path:String, binary:Bool ) :neko.File;     class neko.File
+getContent( filename:String ) :String;     class neko.File
+append( path:String, binary:Bool ) :neko.File;     class neko.File
+writeSub( s:String, p:Int, l:Int ) :Int;     class neko.File
+writeChar( c:Int ) :Void;     class neko.File
+write( str:String ) :Void;     class neko.File
+tell(  ) :Int;     class neko.File
+seekEnd( p:Int ) :Int;     class neko.File
+seekBegin( p:Int ) :Int;     class neko.File
+seek( p:Int ) :Int;     class neko.File
+readChar(  ) :Int;     class neko.File
+readBuf( s:String, p:Int, l:Int ) :Int;     class neko.File
+read( nbytes:Int ) :String;     class neko.File
+name(  ) :String;     class neko.File
+flush(  ) :Void;     class neko.File
+eof(  ) :Bool;     class neko.File
+close(  ) :Void;     class neko.File
+toString(  ) :String;     class haxe.unit.TestResult
+add( t:haxe.unit.TestStatus ) :Void;     class haxe.unit.TestResult
+new(  ) :Void;     class haxe.unit.TestResult
+toUpperCase(  ) :String;     class neko.NekoString__
+toString(  ) :String;     class neko.NekoString__
+toLowerCase(  ) :String;     class neko.NekoString__
+substr( pos:Int, len:Int ) :String;     class neko.NekoString__
+split( delim:String ) :Array<String>;     class neko.NekoString__
+lastIndexOf( str:String, pos:Int ) :Int;     class neko.NekoString__
+indexOf( str:String, ?pos:Int ) :Int;     class neko.NekoString__
+charCodeAt( p:Int ) :Int;     class neko.NekoString__
+charAt( p:Int ) :String;     class neko.NekoString__
+tearDown(  ) :Void;     class haxe.unit.TestCase
+setup(  ) :Void;     class haxe.unit.TestCase
+new(  ) :Void;     class haxe.unit.TestCase
+make( params:String, css:String, text:String ) :String;     class tools.Url
+methToString( t:tools.DocType ) :String;     class tools.DocField
+link( name:String ) :String;     class tools.DocField
+isVar(  ) :Bool;     class tools.DocField
+new( name:String, s:Bool, t:tools.DocType, p:tools.DocClass ) :Void;     class tools.DocField
+toString(  ) :String;     class tools.DocClass
+new( path:String ) :Void;     class tools.DocClass
+new( path:String ) :Void;     class tools.DocEnum
+new( path:String ) :Void;     class tools.DocSign
+main(  ) :Void;     class tools.DocView
+select( read:Array<neko.Socket>, write:Array<neko.Socket>, others:Array<neko.Socket>, timeout:Float ) :{ write:Array<neko.Socket>, read:Array<neko.Socket>, others:Array<neko.Socket> };     class neko.Socket
+reverse( host:neko.Host ) :String;     class neko.Socket
+resolve( host:String ) :neko.Host;     class neko.Socket
+localhost(  ) :String;     class neko.Socket
+hostToString( host:neko.Host ) :String;     class neko.Socket
+write( content:String ) :Void;     class neko.Socket
+waitForRead(  ) :Void;     class neko.Socket
+shutdown( read:Bool, write:Bool ) :Void;     class neko.Socket
+setTimeout( timeout:Int ) :Void;     class neko.Socket
+setBlocking( b:Bool ) :Void;     class neko.Socket
+sendChar( chr:Int ) :Void;     class neko.Socket
+send( buffer:String, pos:Int, len:Int ) :Int;     class neko.Socket
+receiveChar(  ) :Int;     class neko.Socket
+receive( buffer:String, pos:Int, len:Int ) :Int;     class neko.Socket
+readUntil( end:Int ) :String;     class neko.Socket
+readLine(  ) :String;     class neko.Socket
+read(  ) :String;     class neko.Socket
+peer(  ) :{ port:Int, host:neko.Host };     class neko.Socket
+listen( connections:Int ) :Void;     class neko.Socket
+host(  ) :{ port:Int, host:neko.Host };     class neko.Socket
+connect( host:neko.Host, port:Int ) :Void;     class neko.Socket
+close(  ) :Void;     class neko.Socket
+bind( host:neko.Host, port:Int ) :Void;     class neko.Socket
+accept(  ) :neko.Socket;     class neko.Socket
+new(  ) :Void;     class neko.Socket
+urlEncode( s:String ) :String;     class StringTools
+urlDecode( s:String ) :String;     class StringTools
+trim( s:String ) :String;     class StringTools
+startsWith( s:String, start:String ) :Bool;     class StringTools
+rtrim( s:String ) :String;     class StringTools
+rpad( s:String, c:String, l:Int ) :String;     class StringTools
+replace( s:String, sub:String, by:String ) :String;     class StringTools
+ltrim( s:String ) :String;     class StringTools
+lpad( s:String, c:String, l:Int ) :String;     class StringTools
+isSpace( s:String, pos:Int ) :Bool;     class StringTools
+htmlUnescape( s:String ) :String;     class StringTools
+htmlEscape( s:String ) :String;     class StringTools
+endsWith( s:String, end:String ) :Bool;     class StringTools

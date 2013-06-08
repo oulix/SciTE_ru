@@ -1,0 +1,487 @@
+#pragma
+#include
+#define
+#if
+#ifdef
+#ifndef
+#else
+#elif
+#endif
+#error
+#line
+#undef
+#import
+once
+comment
+defined
+
+FILE
+errno_t
+wchar_t
+__asm
+__stdcall
+__try
+__cdecl
+__finally
+__except
+__int64
+__declspec
+and
+and_eq
+asm
+auto
+bitand
+bitor
+bitset
+bool
+break
+case
+catch
+char
+class
+compl
+const
+const_cast
+continue
+default
+delete
+do
+double
+dynamic_cast
+else
+enum
+explicit
+export
+extern
+false
+float
+for
+dllexport
+dllimport
+friend
+goto
+if
+inline
+int
+long
+mutable
+namespace
+new
+not
+not_eq
+operator
+or
+or_eq
+private
+protected
+public
+register
+reinterpret_cast
+return
+short
+signed
+sizeof
+static
+static_cast
+struct
+switch
+template
+this
+throw
+true
+try
+typedef
+typeid
+typename
+union
+unsigned
+using
+
+
+abs(int n)
+accept(SOCKET,struct sockaddr*,int*)
+access(const char* szFileName, int nAccessMode)
+acos(double x)
+asctime(const struct tm* tmsp)
+asin(double x)
+assert
+atan(double x)
+atan2(double y, double x)
+atexit(void(*pfuncExitProcessing)(void))
+atof(const char* szNumber)
+atoi(const char* szNumber)
+atol(const char* szNumber)
+bind(SOCKET,const struct sockaddr*,int)
+bsearch(const void* pKey, const void* pBase, size_t cntObjects, size_t sizeObject, _pfunccmp_t pfuncCmp)
+btowc(int)
+cabs(struct _complex x)
+calloc(size_t sizeObjCnt, size_t sizeObject)
+ceil(double x)
+chdir(const char* szPath)
+chsize(int nHandle, long lnNewSize)
+clearerr(FILE* fileClearErrors)
+clock_t clock()
+clock_t
+close(int nHandle)
+closedir(DIR* dir)
+closesocket(SOCKET)
+connect(SOCKET,const struct sockaddr*,int)
+cos(double x)
+cosh(double x)
+creat(const char* szFileName, int nAccessMode)
+ctime(const time_t* tp)
+difftime(time_t t2, time_t t1)
+div_t div(int nNumerator, int nDenominator)
+div_t
+dup(int nHandle)
+dup2(int nOldHandle, int nNewHandle)
+ecvt(double dValue, int nDig, int* pnDec, int* pnSign)
+eof(int nHandle)
+errno
+error_status_t
+execl(const char* szPath, const char* szArgv0, ...)
+execle(const char* szPath, const char* szArgv0, ...)
+execlp(const char* szPath, const char* szArgv0, ...)
+execlpe(const char* szPath, const char* szArgv0, ...)
+execv(const char* szPath, char* const* szaArgv)
+execve(const char* szPath, char* const* szaArgv, char* const* szaEnv)
+execvp(const char* szPath, char* const* szaArgv)
+execvpe(const char* szPath, char* const* szaArgv, char* const* szaEnv)
+exp(double x)
+fabs(double x)
+fclose(FILE* fileClose)
+fcvt(double dValue, int nDig, int* pnDec, int* pnSign)
+fd_set
+fdopen(int nHandle, const char* szMode)
+feof(FILE* fileIsAtEnd)
+ferror(FILE* fileIsError)
+fflush(FILE* fileFlush)
+fgetc(FILE* fileRead)
+fgetchar()
+fgetpos(FILE* fileGetPosition, fpos_t* pfpos)
+fgets(char* caBuffer, int nBufferSize, FILE* fileRead)
+fgetwc(FILE* fileRead)
+fgetwchar(void)
+filelength(int nHandle)
+fileno(FILE* fileGetHandle)
+fileno(FILE* fileGetHandle)
+float_array_from_ndr(PRPC_MESSAGE,unsigned long,unsigned long,void*)
+float_from_ndr(PRPC_MESSAGE,void*)
+floor(double x)
+fmod(double x, double y)
+fopen(const char* szFileName, const char* szMode)
+fpos_t
+fprintf(FILE* filePrintTo, const char* szFormat, ...)
+fputc(int c, FILE* fileWrite)
+fputchar(int c)
+fputs(const char* szOutput, FILE* fileWrite)
+fputwc(wchar_t wc, FILE* fileWrite)
+fputwchar(wint_t c)
+fread(void* pBuffer, size_t sizeObject, size_t sizeObjCount, FILE* fileRead)
+free(void* pObject)
+freopen(const char* szNewFileName, const char* szNewMode, FILE* fileChangeAssociation)
+frexp(double x, int* exp)
+fscanf(FILE* fileReadFrom, const char* szFormat, ...)
+fseek(FILE* fileSetPosition, long lnOffset, int nOrigin)
+fsetpos(FILE* fileSetPosition, fpos_t* pfpos)
+ftell(FILE* fileGetPosition)
+fwprintf(FILE* filePrintTo, const wchar_t* wsFormat, ...)
+fwrite(const void* pObjArray, size_t sizeObject, size_t sizeObjCount, FILE* fileWrite)
+fwscanf(FILE* fileReadFrom, const wchar_t* wsFormat, ...)
+gcvt(double dValue, int nDec, char* caBuf)
+getc(FILE* fileRead)
+getch()
+getchar()
+getche()
+getcwd(char* caBuffer, int nBufferSize)
+getenv(const char* szVarName)
+gethostbyaddr(const char*,int,int)
+gethostbyname(const char*)
+gethostname(char*,int)
+getpeername(SOCKET,struct sockaddr*,int*)
+getpid()
+getprotobyname(const char*)
+getprotobynumber(int)
+gets(char* caBuffer) /* Unsafe: how does gets know how long the
+getservbyname(const char*,const char*)
+getservbyport(int,const char*)
+getsockname(SOCKET,struct sockaddr*,int*)
+getsockopt(SOCKET,int,int,char*,int*)
+getw(FILE*)
+handle_t
+hmemcpy
+hostent
+htonl(u_long)
+htons(u_long)
+htons(u_short)
+in_addr
+inet_addr(const char*)
+inet_ntoa(struct in_addr)
+isalnum(int c)
+isalpha(int c)
+isascii(int c)
+isatty(int nHandle)
+iscntrl(int c)
+iscsym(int c)
+iscsymf(int c)
+isdigit(int c)
+isgraph(int c)
+isleadbyte(int c)
+islower(int c)
+isprint(int c)
+ispunct(int c)
+isspace(int c)
+isupper(int c)
+iswalnum(wint_t wc)
+iswalpha(wint_t wc)
+iswascii(wint_t wc)
+iswcntrl(wint_t wc)
+iswctype(wint_t wc, wctype_t wctypeFlags)
+iswdigit(wint_t wc)
+iswgraph(wint_t wc)
+iswlower(wint_t wc)
+iswprint(wint_t wc)
+iswpunct(wint_t wc)
+iswspace(wint_t wc)
+iswupper(wint_t wc)
+iswxdigit(wint_t wc)
+isxdigit(int c)
+itoa(int nValue, char* sz, int nRadix)
+ioctlsocket(SOCKET,long,u_long *)
+ldiv(long lNumerator, long lDenominator)
+ldiv_t
+listen(SOCKET,int)
+localeconv()
+localtime(const time_t* tm)
+log(double x)
+log10(double x)
+longjmp(jmp_buf, int)
+lseek(int nHandle, long lnOffset, int nOrigin)
+lstrcat(LPSTR,LPCSTR)
+lstrcmp(LPCSTR,LPCSTR)
+lstrcmpi(LPCSTR,LPCSTR)
+lstrcpy(LPSTR,LPCSTR)
+lstrcpyn(LPSTR,LPCSTR,int)
+lstrlen(LPCSTR)
+ltoa(long lnValue, char* sz, int nRadix)
+malloc(size_t sizeObject)
+max
+mblen(const char* mbs, size_t sizeString)
+mbrlen(const char *, size_t, mbstate_t *)
+mbrtowc(wchar_t *, const char *, size_t, mbstate_t *)
+mbsrtowcs(wchar_t *, const char **, size_t, mbstate_t *)
+mbstate_t
+mbstowcs(wchar_t* wcaDest, const char* mbsConvert, size_t size)
+mbtowc(wchar_t* wcDest, const char* mbConvert, size_t size)
+memccpy(void* pCopyTo, const void* pSource, int cTerminator, size_t sizeMaxCopy)
+memchr(const void* p, int cSearchFor, size_t sizeSearch)
+memcmp(const void* p1, const void* p2, size_t sizeSearch)
+memcpy(void* pCopyTo, const void* pSource, size_t sizeSource)
+memicmp(const void* p1, const void* p2, size_t sizeSearch)
+memmove(void* pMoveTo, const void* pSource, size_t sizeSource)
+memset(void* p, int cFill, size_t sizeRepeatCount)
+min
+modf(double x, double* ip)
+ntohl(u_long)
+ntohs(u_long)
+ntohs(u_short)
+offsetof
+open(const char* szFileName, int nFlags, ...)
+opendir(const char* szPath)
+pascal
+pclose(FILE* pipeClose)
+ptrdiff_t
+putc(int c, FILE* fileWrite)
+putch(int cPut)
+putchar(int c)
+putenv(const char* szNameEqValue)
+puts(const char* szOutput)
+putw(int, FILE*)
+perror(const char* szErrorMessage)
+popen(const char* szPipeName, const char* szMode)
+pow(double x, double y)
+j0(double x)
+j1(double x)
+kbhit()
+labs(long n)
+ldexp(double x, int n)
+printf(const char* szFormat, ...)
+signal(int sig, _p_sig_fn_t handler)
+sin(double x)
+sinh(double x)
+size_t
+mkdir(const char* szPath)
+mktemp(char* szTemplate)
+mktime(struct tm* tmsp)
+qsort(const void* pBase, size_t cntObjects, size_t sizeObject, _pfunccmp_t pfuncCmp)
+raise(int sig)
+rand()
+read(int nHandle, void* caBuffer, unsigned int nToRead)
+readdir(DIR* dir)
+realloc(void* pObject, size_t sizeNew)
+recv(SOCKET,char*,int,int)
+recvfrom(SOCKET,char*,int,int,struct sockaddr*,int*)
+remove(const char* szFileName)
+rename(const char* szOldFileName, const char* szNewFileName)
+rewind(FILE* fileRewind)
+rewinddir(DIR* dir)
+rmdir(const char* szPath)
+s_addr
+s_host
+scanf(const char* szFormat, ...)
+searchenv(const char* szFileName, const char* szVar, char* szFullPathBuf)
+seekdir(DIR* dir, long lPos)
+select(int nfds,fd_set*,fd_set*,fd_set*,const struct timeval*)
+send(SOCKET,const char*,int,int)
+sendto(SOCKET,const char*,int,int,const struct sockaddr*,int)
+servent
+setbuf(FILE* fileSetBuffer, char* caBuffer)
+setjmp
+setlocale(int nCategory, const char* locale)
+setmode(int nHandle, int nAccessMode)
+setsockopt(SOCKET,int,int,const char*,int)
+setvbuf(FILE* fileSetBuffer, char* caBuffer, int nMode, size_t sizeBuffer)
+shutdown(SOCKET,int)
+sockaddr
+sockaddr_in
+socket(int,int,int)
+sopen(const char* szFileName, int nAccess, int nFlag, ...)
+spawnl(int nMode, const char* szPath, const char* szArgv0, ...)
+spawnle(int nMode, const char* szPath, const char* szArgv0, ...)
+spawnlp(int nMode, const char* szPath, const char* szArgv0, ...)
+spawnlpe(int nMode, const char* szPath, const char* szArgv0, ...)
+spawnv(int nMode, const char* szPath, char* const* szaArgv)
+spawnve(int nMode, const char* szPath, char* const* szaArgv, char* const* szaEnv)
+spawnvp(int nMode, const char* szPath, char* const* szaArgv)
+spawnvpe(int nMode, const char* szPath, char* const* szaArgv, char* const* szaEnv)
+sprintf(char* caBuffer, const char* szFormat, ...)
+sqrt(double x)
+srand(unsigned int nSeed)
+sscanf(const char* szReadFrom, const char* szFormat, ...)
+ssize_t
+stderr
+stdin
+stdout
+strcasecmp(const char* sz1, const char* sz2)
+strcat(char* szAddTo, const char* szAdd)
+strchr(const char* szSearch, int cFor)
+strcmp(const char* sz1, const char* sz2)
+strcmpi(const char* sz1, const char* sz2)
+strcoll(const char* sz1, const char* sz2) /* Compare using locale */
+strcpy(char* szCopyTo, const char* szSource)
+strcspn(const char* szGetPrefix, const char* szNotIncluding)
+strdup(const char *szDuplicate)
+strerror(int nError) /* NOTE: NOT an old name wrapper. */
+strftime(char* caBuffer, size_t sizeMax, const char* szFormat, const struct tm* tpPrint)
+strftime(char*, size_t, const char*, const struct tm*)
+stricmp(const char* sz1, const char* sz2)
+stricoll(const char* sz1, const char* sz2)
+strlen(const char* sz)
+strlwr(char* szToConvert)
+strncasecmp(const char* sz1, const char* sz2, size_t sizeMaxCompare)
+strncat(char* szAddTo, const char* szAdd, size_t sizeMaxAdd)
+strncmp(const char* sz1, const char* sz2, size_t sizeMaxCompare)
+strncpy(char* szCopyTo, const char* szSource, size_t sizeMaxCopy)
+strnicmp(const char* sz1, const char* sz2, size_t sizeMaxCompare)
+strnset(char* szToFill, int cFill, size_t sizeMaxFill)
+strpbrk(const char* szSearch, const char* szAnyOf)
+strrchr(const char* szSearch, int cFor)
+strrev(char* szToReverse)
+strset(char* szToFill, int cFill)
+strspn(const char* szGetPrefix, const char *szIncluding)
+strstr(const char* szSearch, const char *szFor)
+strtod(const char* szNumber, char** pszAfterNumber)
+strtok(char* szTokenize, const char* szDelimiters)
+strtol(const char* szNumber, char** pszAfterNumber, int nBase)
+strtoul(const char* szNumber, char** pszAfterNumber, int nBase)
+strupr(char* szToConvert)
+strxfrm(char* szTransformed, const char *szSource, size_t sizeTransform)
+swab(const char* caFrom, char* caTo, size_t sizeToCopy)
+swprintf(wchar_t* wcaBuffer, const wchar_t* wsFormat, ...)
+swscanf(wchar_t* wsReadFrom, const wchar_t* wsFormat, ...)
+tan(double x)
+tanh(double x)
+tell(int nHandle)
+telldir(DIR* dir)
+tempnam(const char* szPath, const char* szPrefix)
+time_t time(time_t* tp)
+time_t
+tm
+toascii(int c)
+tolower(int c)
+tostruct
+toupper(int c)
+u_char
+u_char
+u_int
+u_int
+u_long
+u_long
+u_short
+u_short
+ungetc(int c, FILE* fileWasRead)
+ungetch(int cUnget)
+ungetwc(wchar_t wc, FILE* fileWasRead)
+va_alist
+va_arg
+va_dcl
+va_end
+va_list
+va_start
+vfprintf(FILE* filePrintTo, const char* szFormat, va_list varg)
+vfwprintf(FILE* filePrintTo, const wchar_t* wsFormat, va_list varg)
+vprintf(const char* szFormat, va_list varg)
+vsprintf(char* caBuffer, const char* szFormat, va_list varg)
+vswprintf(wchar_t* wcaBuffer, const wchar_t* wsFormat, va_list varg)
+vwprintf(const wchar_t* wsFormat, va_list varg)
+wWinMain(HINSTANCE,HINSTANCE,LPWSTR,int)
+waccess(const wchar_t *, int)
+waccess(const wchar_t *, int)
+wchmod(const wchar_t *, int)
+wchmod(const wchar_t *, int)
+wcreat(const wchar_t *, int)
+wcreat(const wchar_t *, int)
+wcrtomb(char *, wchar_t, mbstate_t *)
+wcscmp(const wchar_t* ws1, const wchar_t* ws2)
+wcscmpi(const wchar_t* ws1, const wchar_t* ws2)
+wcscoll(const wchar_t* ws1, const wchar_t* ws2)
+wcscspn(const wchar_t* wsGetPrefix, const wchar_t* wsNotIncluding)
+wcsftime(wchar_t* wcaBuffer, size_t sizeMax, const wchar_t* wsFormat, const struct tm* tpPrint)
+wcsftime(wchar_t*, size_t, const wchar_t*, const struct tm*)
+wcsicmp(const wchar_t* ws1, const wchar_t* ws2)
+wcsicoll(const wchar_t* ws1, const wchar_t* ws2)
+wcslen(const wchar_t* ws)
+wcsncmp(const wchar_t* ws1, const wchar_t* ws2, size_t sizeMaxCompare)
+wcsnicmp(const wchar_t* ws1, const wchar_t* ws2, size_t sizeMaxCompare)
+wcsrtombs(char *, const wchar_t **, size_t, mbstate_t *)
+wcsspn(const wchar_t* wsGetPrefix, const wchar_t* wsIncluding)
+wcstod(const wchar_t* wsNumber, wchar_t** pwsAfterNumber)
+wcstol(const wchar_t* wsNumber, wchar_t** pwsAfterNumber, int nBase)
+wcstombs(char* mbsDest, const wchar_t* wsConvert, size_t size)
+wcstoul(const wchar_t* wsNumber, wchar_t** pwsAfterNumber, int nBase)
+wcsxfrm(wchar_t* wsTransformed, const wchar_t *wsSource, size_t sizeTransform)
+wctob(wint_t)
+wctomb(char* mbDest, wchar_t wc)
+wctype_t
+wfindfirst(wchar_t *, struct _wfinddata_t *)
+wfindfirst(wchar_t *, struct _wfinddata_t *)
+wfindnext(long, struct _wfinddata_t *)
+wfindnext(long, struct _wfinddata_t *)
+wopen(const wchar_t *, int, ...)
+wopen(const wchar_t *, int, ...)
+wpopen
+wprintf(const wchar_t* wsFormat, ...)
+wremove(const wchar_t *)
+wrename(const wchar_t *, const wchar_t *)
+wrename(const wchar_t *, const wchar_t *)
+write(int nHandle, const void* caBuffer, unsigned int nToWrite)
+wscanf(const wchar_t* wsFormat, ...)
+wsopen(const wchar_t *, int, int, ...)
+wsopen(const wchar_t *, int, int, ...)
+wsprintf(LPSTR,LPCSTR,...)
+wunlink(const wchar_t *)
+wunlink(const wchar_t *)
+wvsprintf(LPSTR,LPCSTR,va_list arglist)
+y0(double x)
+y1(double x)
+yn(int n, double x)
