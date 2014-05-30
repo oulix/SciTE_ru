@@ -1,4 +1,4 @@
-#HTML - XML Abbreviations
+﻿#HTML - XML Abbreviations
 
 #Author: P.Sorokin
 #Source: Alexey Rozenvaser (alexroz@softhome.net), mozers™, dB6
@@ -169,13 +169,14 @@ xmld=<?xml version="1.0"?>\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "h
 <q=<q>%SEL%|</q>
 <s=<s>%SEL%|</s>
 <sa=<samp>%SEL%|</samp>
-<sc=<script type="text/javascript" src="|">%SEL%\n|</script>\n
+<sc=<script src="|.js"></script>\n
 <se=<select>\n\t<option value="|">|</option>\n\n</select>\n
 <sm=<small>%SEL%|</small>
 <sp=<span>%SEL%|</span>
 <str=<strike>DEPRECATED%SEL%|</strike>
 <st=<strong>%SEL%|</strong>
-<sty=<style type="text/css">\n%SEL%|\n</style>\n
+<sty=<style src="|.css"></style>\n
+<style=<style type="text/css">\n%SEL%|\n</style>\n
 <sub=<sub>%SEL%|</sub>
 <sup=<sup>%SEL%|</sup>
 <t=<table width="100%%" cellpadding="0" cellspacing="0" border="0">\n\t<tr>\n\t\t<td>|</td>\n\t</tr>\n</table>\n
@@ -222,7 +223,7 @@ v-= value="|"
 w-= width="|"
 
 # Специальные символы HTML
-& =&nbsp;
+&n =&nbsp;
 &¦=&brvbar;
 &s=&sect;
 &<<=&laquo;
