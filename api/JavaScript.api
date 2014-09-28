@@ -1,443 +1,445 @@
-### Данные взяты с книги "Клиентский JavaScript v1.3. Справочник"
+﻿### Данные взяты с книги "Клиентский JavaScript v1.3. Справочник"
 ### Подсказки будут работать когда будет реализовано Issue 86 <http://code.google.com/p/scite-ru/issues/detail?id=86>
 ### (или переносите все их 2й строкой вручную)
 
 #anchor=string.anchor
 #anchor=document.anchors
-anchor.name \nИмя якоря.
-anchor.text \nТекст якоря.
-anchor.x \nПозиция левого края якоря по оси х в пикселах относительно левого края документа.
-anchor.y \nПозиция верхнего края якоря по оси у в пикселах относительно верхнего края документа.
+anchor.name
+anchor.text
+anchor.x
+anchor.y
 
 #$array=%[%]
 #$array=%a+%.split%b()
 #$array=%a+%.match%b()
 #$array=%a+%.exec%b()
-array.constructor \nСпецифицирует функцию, создающую прототип объекта.
-array.index \nДля массива, созданного в результате совпадения с регулярным выражением, это индекс с базой 0 совпадения в строке.
-array.input \nДля массива, созданного в результате совпадения с регулярным выражением, отражает строку-оригинал, относительно которой выполняется подстановка регулярного выражения.
-array.length \nКоличество элементов массива.
-array.prototype \nПозволяет добавлять свойства ко всем объектам.
-array.concat() \nОбъединяет два массива и возвращает новый массив.
-array.join() \nОбъединяет все элементы массива в строку.
-array.pop() \nУдаляет последний элемент массива и возвращает этот элемент.
-array.push() \nДобавляет один или более элементов в конец массива и возвращает новый размер массива.
-array.reverse() \nПеремещает/разворачивает элементы массива: первый элемент становится последним, а последний - первым.
-array.shift() \nУдаляет первый элемент массива и возвращает этот элемент.
-array.slice() \nИзвлекает раздел массива и возвращает новый массив.
-array.splice() \nДобавляет и/или удаляет элементы массива.
-array.sort() \nСортирует элементы массива.
-array.toSource() \nВозвращает литерал массива, представляющий специфицированный массив; Вы можете использовать это значение для создания нового массива. Переопределяет метод Object.toSource.
-array.toString() \nВозвращает строку, представляющую массив и его элементы. Переопределяет метод Object.toString.
-array.unshift() \nДобавляет один или более элементов в начало массива и возвращает новый размер массива.
-array.valueOf() \nВозвращает примитивное значение массива. Переопределяет метод Object.valueOf.
+array.constructor
+array.index
+array.input
+array.length
+array.prototype
+array.concat()
+array.join()
+array.pop()
+array.push()
+array.reverse()
+array.shift()
+array.slice()
+array.splice()
+array.sort()
+array.toSource()
+array.toString()
+array.unshift()
+array.valueOf()
 
-boolean.constructor \nСпецифицирует функцию, создающую прототип объекта.
-boolean.prototype \nОпределяет свойство, которое используется всеми Boolean-объектами.
-boolean.toSource() \nВозвращает литерал объекта, представляющий специфицированный Boolean-объект; Вы можете использовать это значение для создания нового объекта. Переопределяет метод Object.toSource.
-boolean.toString() \nВозвращает строку, представляющую специфицированный объект. Переопределяет метод Object.toString.
-boolean.valueOf() \nВозвращает примитивное значение Boolean-объекта. Переопределяет метод Object.valueOf.
+boolean.constructor
+boolean.prototype
+boolean.toSource()
+boolean.toString()
+boolean.valueOf()
 
 #button=form.elements
-button.form \nСпецифицирует форму, содержащую объект Button.
-button.name \nОтражает атрибут NAME.
-button.type \nОтражает атрибут TYPE.
-button.value \nОтражает атрибут VALUE.
-button.blur() \nУбирает фокус с кнопки.
-button.click() \nСимулирует щелчок мышью по кнопке.
-button.focus() \nПередаёт фокус кнопке.
-button.handleEvent() \nВызывает обработчик специфицированного события.
+button.form
+button.name
+button.type
+button.value
+button.blur()
+button.click()
+button.focus()
+button.handleEvent()
 
 #checkbox=form.elements
-checkbox.checked \nБулево свойство, отражающее текущее состояние переключателя (есть ли "птичка").
-checkbox.defaultChecked \n Булево свойство, отражающее атрибут CHECKED.
-checkbox.form \nСпецифицирует форму, содержащую объект Checkbox.
-checkbox.name \nОтражает атрибут NAME.
-checkbox.type \nОтражает атрибут TYPE.
-checkbox.value \nОтражает атрибут TYPE.
-checkbox.blur() \nУбирает фокус.
-checkbox.click() \nСимулирует щелчок мыши.
-checkbox.focus() \nПередаёт фокус ввода.
-checkbox.handleEvent() \nВызывает обработчик специфицированного события.
+checkbox.checked
+checkbox.defaultChecked
+checkbox.form
+checkbox.name
+checkbox.type
+checkbox.value
+checkbox.blur()
+checkbox.click()
+checkbox.focus()
+checkbox.handleEvent()
 
-date.constructor \nСпецифицирует функцию, которая создаёт прототип объекта.
-date.prototype \nПозволяет добавлять свойства к  Date -объекту.
-date.getDate() \nВозвращает день/число месяца для специфицированной даты в соответствии с локальным временем.
-date.getDay() \nВозвращает день недели для специфицированной даты в соответствии с локальным временем.
-date.getFullYear() \nВозвращает год для специфицированной даты в соответствии с локальным временем.
-date.getHours() \nВозвращает часы для специфицированной даты в соответствии с локальным временем.
-date.getMilliseconds() \nВозвращает миллисекунды для специфицированной даты в соответствии с локальным временем.
-date.getMinutes() \nВозвращает минуты для специфицированной даты в соответствии с локальным временем.
-date.getMonth() \nВозвращает месяц для специфицированной даты в соответствии с локальным временем.
-date.getSeconds() \nВозвращает секунды для специфицированной даты в соответствии с локальным временем.
-date.getTime() \nВозвращает числовое значение - время для специфицированной даты в соответствии с локальным временем.
-date.getTimezoneOffset() \nВозвращает смещение часового пояса в минутах для текущей местности.
-date.getUTCDate() \nВозвращает число/день месяца для специфицированной даты в соответствии со всемирным временем.
-date.getUTCDay() \nВозвращает день недели для специфицированной даты в соответствии со всемирным временем.
-date.getUTCFullYear() \nВозвращает год для специфицированной даты в соответствии со всемирным временем.
-date.getUTCHours() \nВозвращает часы для специфицированной даты в соответствии со всемирным временем.
-date.getUTCMilliseconds() \nВозвращает миллисекунды для специфицированной даты в соответствии со всемирным временем.
-date.getUTCMinutes() \nВозвращает минуты для специфицированной даты в соответствии со всемирным временем.
-date.getUTCMonth() \nВозвращает месяц для специфицированной даты в соответствии со всемирным временем.
-date.getUTCSeconds() \nВозвращает секунды для специфицированной даты в соответствии со всемирным временем.
-date.getYear() \nВозвращает год для специфицированной даты в соответствии с локальным временем.
-date.parse() \nВозвращает количество миллисекунд в дате, прошедших после 1 января 1970, 00:00:00, местного времени.
-date.setDate() \nУстанавливает день месяца для специфицированной даты в соответствии с локальным временем.
-date.setFullYear() \nУстанавливает год для специфицированной даты в соответствии с локальным временем.
-date.setHours() \nУстанавливает час для специфицированной даты в соответствии с локальным временем.
-date.setMilliseconds() \nУстанавливает часы для специфицированной даты в соответствии с локальным временем.
-date.setMinutes() \nУстанавливает минуты для специфицированной даты в соответствии с локальным временем.
-date.setMonth() \nУстанавливает месяц для специфицированной даты в соответствии с локальным временем.
-date.setSeconds() \nУстанавливает секунды для специфицированной даты в соответствии с локальным временем.
-date.setTime() \nУстанавливает значение объекта Date в соответствии с локальным временем.
-date.setUTCDate() \nУстанавливает число/день месяца для специфицированной даты в соответствии со всемирным временем.
-date.setUTCFullYear() \nУстанавливает полный год для специфицированной даты в соответствии со всемирным временем.
-date.setUTCHours() \nУстанавливает час для специфицированной даты в соответствии со всемирным временем.
-date.setUTCMilliseconds() \nУстанавливает миллисекунды для специфицированной даты в соответствии со всемирным временем.
-date.setUTCMinutes() \nУстанавливает минуты для специфицированной даты в соответствии со всемирным временем.
-date.setUTCMonth() \nУстанавливает месяц для специфицированной даты в соответствии со всемирным временем.
-date.setUTCSeconds() \nУстанавливает секунды для специфицированной даты в соответствии со всемирным временем.
-date.setYear() \nУстанавливает год для специфицированной даты в соответствии с локальным временем.
-date.toGMTString() \nКонвертирует дату в строку, используя соглашения Internet по GMT.
-date.toLocaleString() \nКонвертирует дату в строку, используя соглашения текущей местности.
-date.toSource() \nВозвращает литерал объекта, представляющий специфицированный Date -объект; Вы можете использовать это значение для создания нового объекта. Переопределяет метод Object.toSource.
-date.toString() \nВозвращает строку, представляющую специфицированный Date -объект. Переопределяет метод Object.toString.
-date.toUTCString() \nКонвертирует дату в строку, используя соглашения по всемирному времени.
-date.UTC() \nВозвращает количество миллисекунд в Date -объекте после 1 января 1970, 00:00:00, всемирного времени.
-date.valueOf() \nВозвращает примитивное значение Date -объекта. Переопределяет метод Object.valueOf.
+date.constructor
+date.prototype
+date.getDate()
+date.getDay()
+date.getFullYear()
+date.getHours()
+date.getMilliseconds()
+date.getMinutes()
+date.getMonth()
+date.getSeconds()
+date.getTime()
+date.getTimezoneOffset()
+date.getUTCDate()
+date.getUTCDay()
+date.getUTCFullYear()
+date.getUTCHours()
+date.getUTCMilliseconds()
+date.getUTCMinutes()
+date.getUTCMonth()
+date.getUTCSeconds()
+date.getYear()
+date.parse()
+date.setDate()
+date.setFullYear()
+date.setHours()
+date.setMilliseconds()
+date.setMinutes()
+date.setMonth()
+date.setSeconds()
+date.setTime()
+date.setUTCDate()
+date.setUTCFullYear()
+date.setUTCHours()
+date.setUTCMilliseconds()
+date.setUTCMinutes()
+date.setUTCMonth()
+date.setUTCSeconds()
+date.setYear()
+date.toGMTString()
+date.toLocaleString()
+date.toSource()
+date.toString()
+date.toUTCString()
+date.UTC()
+date.valueOf()
 
 #document=window.document
-document.alinkColor \nСтрока, специфицирующая атрибут ALINK.
-document.anchors \nМассив, содержащий вхождение каждого якоря документа.
-document.applets \nМассив, содержащий вхождение каждого аплета документа.
-document.bgColor \nСтрока, специфицирующая атрибут BGCOLOR.
-document.classes \nСоздаёт объект Style, который может специфицировать стили тэгов HTML с атрибутом CLASS.
-document.cookie \nСпецифицирует куку.
-document.domain \nСпецифицирует имя домена сервера, обслужившего документ.
-document.embeds \nМассив, содержащий вхождение каждого plug-in документа.
-document.fgColor \nСтрока, специфицирующая атрибут TEXT.
-document.formName \nОтдельное свойство для каждой именованной формы документа.
-document.forms \nМассив, содержащий вхождение каждой формы документа.
-document.height \nВысота документа в пикселах.
-document.ids \nСоздаёт объект Style, который может специфицировать стиль отдельных тэгов HTML.
-document.images \nМассив, содержащий вхождение каждого изображения документа.
-document.lastModified \nСтрока, специфицирующая дату последнего изменения документа.
-document.layers \nМассив, содержащий вхождение каждого слоя документа.
-document.linkColor \nСтрока, специфицирующая атрибут LINK.
-document.links \nМассив, содержащий вхождение каждой гиперссылки документа.
-document.parentWindow \nРодительское окно
-document.plugins \nМассив, содержащий вхождение каждого plug-in документа.
-document.referrer \nСтрока, специфицирующая URL вызывающего документа.
-document.tags \nСоздаёт объект Style, который может специфицировать стили тэгов HTML.
-document.title \nСтрока, специфицирующая содержимое тэга TITLE.
-document.URL \nСтрока, специфицирующая полный URL документа.
-document.vlinkColor \nСтрока, специфицирующая атрибут VLINK.
-document.width \nШирина документа в пикселах.
-document.captureEvents() \nУстанавливает захват документом всех событий специфицированного типа.
-document.close() \nЗакрывает поток вывода и форсирует отображение данных.
-document.contextual() \nИспользует контекстуальный отбор по критериям специфицирования объекта Style, который может устанавливать стиль отдельных тэгов HTML.
-document.getSelection() \nВозвращает строку, содержащую текущий выбранный текст.
-document.handleEvent() \nВызывает обработчик специфицированного события.
-document.open() \nОткрывает поток сбора вывода методов write или writeln.
-document.releaseEvents() \nУстанавливает освобождение объектами window или document захваченных событий специфицированного типа.
-document.routeEvent() \nПередаёт захваченное событие по иерархии нормальных событий.
-document.write() \nЗаписывает одно или более выражений HTML в документ в специфицированном окне.
-document.writeln() \nЗаписывает одно или более выражений HTML и символ новой строки в документ в специфицированном окне.
+document.alinkColor
+document.anchors
+document.applets
+document.bgColor
+document.classes
+document.cookie
+document.domain
+document.embeds
+document.fgColor
+document.formName
+document.forms
+document.height
+document.ids
+document.images
+document.lastModified
+document.layers
+document.linkColor
+document.links
+document.parentWindow
+document.plugins
+document.referrer
+document.tags
+document.title
+document.URL
+document.vlinkColor
+document.width
+document.captureEvents()
+document.close()
+document.contextual()
+document.getSelection()
+document.handleEvent()
+document.open()
+document.releaseEvents()
+document.routeEvent()
+document.write()
+document.writeln()
 
-event.data \nВозвращает массив строк, содержащий URL'ы отпущенных объектов. Передаётся событием DragDrop.
-event.height \nВысота окна или фрэйма.
-event.layerX \nЧисло, специфицирующее ширину объекта при передаче с событием resize, либо горизонтальную координату курсора в пикселах относительно слоя, в котором событие возникло. Заметьте, что layerX является синонимом x.
-event.layerY \nЧисло, специфицирующее высоту объекта при передаче с событием resize либо вертикальную координату курсора в пикселах относительно слоя, в котором событие возникло. Заметьте, что layerY является синонимом y.
-event.modifiers \nСтрока, специфицирующая ключи-модификаторы, ассоциированные с событием мыши или клавиатуры. Ключи-модификаторы это: ALT_MASK, CONTROL_MASK, SHIFT_MASK и META_MASK.
-event.pageX \nЧисло, специфицирующее позицию курсора по горизонтали в пикселах относительно страницы.
-event.pageY \nЧисло, специфицирующее позицию курсора по вертикали в пикселах относительно страницы.
-event.screenX \nЧисло, специфицирующее позицию курсора по горизонтали в пикселах относительно экрана.
-event.screenY \nЧисло, специфицирующее позицию курсора по вертикали в пикселах относительно экрана.
-event.target \nСтрока, представляющая объект, которому событие было первоначально направлено. (Все события.)
-event.type \nСтрока, представляющая тип события. (Все события.)
-event.which \nЧисло, специфицирующее нажатую кнопку, или ASCII-значение нажатой клавиши. Для мыши: 1 это левая клавиша, 2 - средняя, а 3 - правая клавиша.
-event.width \nШирина окна или фрэйма.
-event.x \nСиноним для layerX.
-event.y \nСиноним для layerY.
+event.data
+event.height
+event.layerX
+event.layerY
+event.modifiers
+event.pageX
+event.pageY
+event.screenX
+event.screenY
+event.target
+event.type
+event.which
+event.width
+event.x
+event.y
+event.fromElement
+event.toElement
 
 #FileUpload=form.elements
-FileUpload.form \nСпецифицирует форму, содержащую объект FileUpload.
-FileUpload.name \nОтражает атрибут NAME.
-FileUpload.type \nОтражает атрибут TYPE.
-FileUpload.value \nОтражает текущее значение поля элемента загрузки файла; соответствует имени загружаемого файла.
-FileUpload.blur() \nУбирает фокус с объекта.
-FileUpload.focus() \nПередаёт фокус объекту.
-FileUpload.handleEvent() \n Вызывает обработчик для специфицированного события.
-FileUpload.select() \nВыбирает область ввода поля загрузки файла.
+FileUpload.form
+FileUpload.name
+FileUpload.type
+FileUpload.value
+FileUpload.blur()
+FileUpload.focus()
+FileUpload.handleEvent()
+FileUpload.select()
 
 #form=document.forms
-form.action \nОтражает атрибут ACTION.
-form.elements \nМассив, отражающий все элементы формы.
-form.encoding \nОтражает атрибут ENCTYPE.
-form.length \nОтражает количество элементов формы.
-form.method \nОтражает атрибут METHOD.
-form.name \nОтражает атрибут NAME.
-form.target \nОтражает атрибут TARGET.
-form.handleEvent() \nВызывает обработчик для специфицированного события.
-form.reset() \nСимулирует щелчок мыши по кнопке reset.
-form.submit() \nОтправляет форму на сервер.
+form.action
+form.elements
+form.encoding
+form.length
+form.method
+form.name
+form.target
+form.handleEvent()
+form.reset()
+form.submit()
 
 #hidden=form.elements
-hidden.form \nСпецифицирует форму, содержащую объект Hidden.
-hidden.name \nОтражает атрибут NAME.
-hidden.type \nОтражает атрибут TYPE.
-hidden.value \nОтражает текущее значение объекта Hidden.
-hidden.history.current \nСпецифицирует URL текущего вхождения в history.
-hidden.length \nОтражает количество вхождений в списке history.
-hidden.next \nСпецифицирует URL следующего вхождения в history.
-hidden.previous \nСпецифицирует URL предыдущего вхождения в history.
-hidden.back() \nЗагружает предыдущий URL из списка history.
-hidden.forward() \nЗагружает следующий URL из списка history.
-hidden.go() \nЗагружает URL из списка history.
+hidden.form
+hidden.name
+hidden.type
+hidden.value
+hidden.history.current
+hidden.length
+hidden.next
+hidden.previous
+hidden.back()
+hidden.forward()
+hidden.go()
 
 #image=document.images
-image.border \nОтражает атрибут BORDER.
-image.complete \nБулево значение, указывающее, завершил ли браузер попытку загрузки изображения.
-image.height \nОтражает атрибут HEIGHT.
-image.hspace \nОтражает атрибут HSPACE.
-image.lowsrc \nОтражает атрибут LOWSRC.
-image.name \nОтражает атрибут NAME.
-image.src \nОтражает атрибут SRC.
-image.vspace \nОтражает атрибут VSPACE.
-image.width \nОтражает атрибут WIDTH.
-image.handleEvent() \nВызывает обработчик для специфицированного события.
+image.border
+image.complete
+image.height
+image.hspace
+image.lowsrc
+image.name
+image.src
+image.vspace
+image.width
+image.handleEvent()
 
 #JavaArray=java.lang.String
-JavaArray.length \nКоличество элементов в Java-массиве,  представляемом объектом JavaArray.
-JavaArray.toString() \nВозвращает строку, идентифицирующую объект как JavaArray
+JavaArray.length
+JavaArray.toString()
 
 #layer=document.layers
-layer.above \nОбъект layer, расположенный выше данного объекта в порядке z-order относительно всех слоёв документа, или содержащего объекта window, если этот слой - самый верхний.
-layer.ackground \nИзображение, используемое в качестве фона канвы слоя.
-layer.bgColor \nЦвет, используемый в качестве однородного цвета фона канвы слоя.
-layer.below \nОбъект layer, расположенный  ниже данного объекта в порядке z-order относительно всех слоёв документа, или null, если этот слой - самый нижний.
-layer.clip.bottom \nНижний край отсекающего прямоугольника (видимой части слоя).
-layer.clip.height \nВысота отсекающего прямоугольника (видимой части слоя).
-layer.clip.left \nЛевый край отсекающего прямоугольника (видимой части слоя).
-layer.clip.right \nПравый край отсекающего прямоугольника (видимой части слоя).
-layer.clip.top \nВерхний край отсекающего прямоугольника (видимой части слоя).
-layer.clip.width \nШирина отсекающего прямоугольника (видимой части слоя).
-layer.document \nАссоциированный документ слоя.
-layer.left \nПозиция по горизонтали левого края слоя в пикселах относительно его родительского слоя.
-layer.name \nСтрока, специфицирующая имя, присвоенное слою атрибутом ID тэга LAYER.
-layer.pageX \nПозиция слоя по горизонтали в пикселах относительно страницы.
-layer.pageY \nПозиция слоя по вертикали в пикселах относительно страницы.
-layer.parentLayer \nОбъект layer, который содержит данный слой, или содержащий объект window, если этот слой не вложен в другой слой.
-layer.siblingAbove \nОбъект layer, расположенный выше данного в порядке z-order среди всех слоёв, использующих тот же самый родительский слой, или null, если слой не имеет родственников, расположенных выше него.
-layer.siblingBelow \nОбъект layer, расположенный ниже данного в порядке z-order среди всех слоёв, использующих тот же самый родительский слой, или null, если это самый нижний слой.
-layer.src \nСтрока, специфицирующая URL содержимого слоя.
-layer.top \nПозиция по вертикали верхнего края слоя в пикселах относительно его родительского слоя.
-layer.visibility \nВиден слой или нет.
-layer.window \nОбъект window или Frame, содержащий данный слой, вне зависимости от того, вложен ли слой в другой слой.
-layer.x \nУдобный синоним для Layer.left.
-layer.y \nУдобный синоним для Layer.top.
-layer.zIndex \nПорядок z-order расположения данного слоя относительно других слоёв-родственников.
-layer.captureEvents() \nУстанавливает окно или документ для захвата всех событий специфицированного типа.
-layer.handleEvent() \nВызывает обработчик для специфицированного события.
-layer.load() \nЗаменяет исходное содержимое слоя на содержимое специфицированного файла и одновременно изменяет ширину размещения HTML-содержимого слоя.
-layer.moveAbove() \nПомещает данный слой в стэк над слоем, специфицированным как аргумент, без изменения горизонтальной и вертикальной позиции слоя.
-layer.moveBelow() \nПомещает данный слой в стэк под специфицированным слоем без изменения горизонтальной и вертикальной позиции слоя.
-layer.moveBy() \nИзменяет позицию слоя, применяя специфицированные deltas, измеряемые в пикселах.
-layer.moveTo() \nПеремещает верхний левый угол окна на специфицированные координаты экрана.
-layer.moveToAbsolute() \nИзменяет позицию слоя на специфицированные пикселные координаты страницы (вместо содержащего слоя).
-layer.releaseEvents() \nДаёт слою установку освободить захваченное событие специфицированного типа, отправляя событие объекту, следующему далее по цепи иерархии.
-layer.resizeBy() \nИзменяет размеры слоя на специфицированные значения height и width (в пикселах).
-layer.resizeTo() \nИзменяет значения размеров слоя на специфицированные height и width (в пикселах).
-layer.routeEvent() \nПередаёт захваченное событие по нормальной цепи иерархии.
+layer.above
+layer.ackground
+layer.bgColor
+layer.below
+layer.clip.bottom
+layer.clip.height
+layer.clip.left
+layer.clip.right
+layer.clip.top
+layer.clip.width
+layer.document
+layer.left
+layer.name
+layer.pageX
+layer.pageY
+layer.parentLayer
+layer.siblingAbove
+layer.siblingBelow
+layer.src
+layer.top
+layer.visibility
+layer.window
+layer.x
+layer.y
+layer.zIndex
+layer.captureEvents()
+layer.handleEvent()
+layer.load()
+layer.moveAbove()
+layer.moveBelow()
+layer.moveBy()
+layer.moveTo()
+layer.moveToAbsolute()
+layer.releaseEvents()
+layer.resizeBy()
+layer.resizeTo()
+layer.routeEvent()
 
 #link=document.links
-link.hash \nСпецифицирует имя якоря в URL.
-link.host \nСпецифицирует хост и имя домена или IP-адрес сетевого хоста.
-link.hostname \nСпецифицирует часть host:port из URL.
-link.href \nСпецифицирует весь URL.
-link.pathname \nСпецифицирует часть URL-пути из URL.
-link.port \nСпецифицирует порт, используемый сервером.
-link.protocol \nСпецифицирует начало URL, включая двоеточие.
-link.search \nСпецифицирует строку запроса.
-link.target \nОтражает атрибут TARGET.
-link.text \nСтрока, содержащая содержимое соответствующего тэга A.
-link.x \nПозиция левого края ссылки по горизонтали в пикселах относительно левого края документа.
-link.y \nПозиция верхнего края ссылки по вертикали в пикселах относительно верхнего края документа.
-link.handleEvent() \nВызывает обработчик для специфицированного события.
+link.hash
+link.host
+link.hostname
+link.href
+link.pathname
+link.port
+link.protocol
+link.search
+link.target
+link.text
+link.x
+link.y
+link.handleEvent()
 
 #location=window.location
-location.hash \nСпецифицирует имя якоря в URL.
-location.host \nСпецифицирует имя хоста и домена или IP-адрес сетевого хоста.
-location.hostname \nСпецифицирует часть host:port в URL.
-location.href \nСпецифицирует полный URL.
-location.pathname \nСпецифицирует часть URL-пути в URL.
-location.port \nСпецифицирует порт, используемый сервером при соединении.
-location.protocol \nСпецифицирует начало URL, включая двоеточие.
-location.search \nСпецифицирует запрос.
-location.reload() \nФорсирует перезагрузку текущего документа окна.
-location.replace() \nЗагружает специфицированный URL поверх текущего вхождения в списке history.
+location.hash
+location.host
+location.hostname
+location.href
+location.pathname
+location.port
+location.protocol
+location.search
+location.reload()
+location.replace()
 
-Math.E \nЭйлерова константа и база натуральных логарифмов, приблизительно 2.718.
-Math.LN10 \nНатуральный логарифм 10, приблизительно 2.302.
-Math.LN2 \nНатуральный логарифм 2, приблизительно 0.693.
-Math.LOG10E \nБаза 10 логарифма E (приблизительно 0.434).
-Math.LOG2E \nБаза 2 логарифма E (приблизительно 1.442).
-Math.PI \nЧастное от деления длины окружности на диаметр, приблизительно 3.14159.
-Math.SQRT1_2 \nКвадратный корень 1/2; эквивалентно 1 на квадратный корень 2, приблизительно 0.707.
-Math.SQRT2 \nКвадратный корень2, приблизительно 1.414.
-Math.abs() \nВозвращает абсолютное значение числа.
-Math.acos() \nВозвращает арккосинус (в радианах) числа.
-Math.asin() \nВозвращает арксинус (в радианах) числа.
-Math.atan() \nВозвращает арктангенс (в радианах) числа.
-Math.atan2() \nВозвращает арктангенс частного аргументов.
-Math.ceil() \nВозвращает наименьшее целое, которое больше или равно.
-Math.cos() \nВозвращает косинус числа.
-Math.exp() \nВозвращает Enumber, где number это аргумент, а E это константа Эйлера - база натуральных логарифмов.
-Math.floor() \nВозвращает наибольшее целое, которое меньше или равно.
-Math.log() \nВозвращает натуральный логарифм (база E) числа.
-Math.max() \nВозвращает большее из двух чисел.
-Math.min() \nВозвращает меньшее из двух чисел.
-Math.pow() \nВозвращает base, возведённую в степень exponent, то есть baseexponent.
-Math.random() \nВозвращает псевдослучайное число в диапазоне от 0 до 1.
-Math.round() \nВозвращает значение числа, округлённое до ближайшего целого.
-Math.sin() \nВозвращает синус числа.
-Math.sqrt() \nВозвращает квадратный корень числа.
-Math.tan() \nВозвращает тангенс числа.
+Math.E
+Math.LN10
+Math.LN2
+Math.LOG10E
+Math.LOG2E
+Math.PI
+Math.SQRT1_2
+Math.SQRT2
+Math.abs()
+Math.acos()
+Math.asin()
+Math.atan()
+Math.atan2()
+Math.ceil()
+Math.cos()
+Math.exp()
+Math.floor()
+Math.log()
+Math.max()
+Math.min()
+Math.pow()
+Math.random()
+Math.round()
+Math.sin()
+Math.sqrt()
+Math.tan()
 
 #mimetype=navigator.mimeTypes
 #mimetype=Plugin.mimeTypes
-mimetype.description \nОписание MIME-типа.
-mimetype.enabledPlugin \nСсылка на Plugin-объект, сконфигурированный для данного MIME-типа.
-mimetype.suffixes \nСтрока с перечислением допустимых расширений имён файлов для данного MIME-типа, например, "mpeg, mpg, mpe, mpv, vbs, mpegv".
-mimetype.type \nИмя MIME-типа, например, "video/mpeg" или "audio/x-wav".
+mimetype.description
+mimetype.enabledPlugin
+mimetype.suffixes
+mimetype.type
 
-navigator.appCodeName \nСпецифицирует кодовое имя браузера.
-navigator.appName \nСпецифицирует  имя браузера.
-navigator.appVersion \nСпецифицирует версию Navigator'а.
-navigator.language \nЯзык Navigator'а.
-navigator.mimeTypes \nМассив всех MIME-типов, поддерживаемых клиентом.
-navigator.platform \nТип машины, для которого Navigator был скомпилирован. 
-navigator.plugins \nМассив всех plug-in'ов, установленных на клиенте.
-navigator.userAgent \nСпецифицирует шапку/header user-agent (пользовательский агент).
-navigator.javaEnabled() \nПроверяет, включён ли Java.
+navigator.appCodeName
+navigator.appName
+navigator.appVersion
+navigator.language
+navigator.mimeTypes
+navigator.platform
+navigator.plugins
+navigator.userAgent
+navigator.javaEnabled()
 
 #plugins=navigator.plugins
-plugins.refresh() \nДелает вновь установленные plug-in'ы доступными и по выбору перезагружает открытые документы, содержащие plug-in'ы.
-plugins.preference() \nДаёт возможность помеченному скрипту получать и устанавливать определённые настройки Navigator'а.
-plugins.savePreferences() \nСохраняет настройки Navigator'а в локальном файле prefs.js.
-plugins.taintEnabled() \nСпецифицирует, включено ли разрушение данных.
+plugins.refresh()
+plugins.preference()
+plugins.savePreferences()
+plugins.taintEnabled()
 
-Number.constructor \nСпецифицирует функцию, которая создаёт прототип объекта.
-Number.MAX_VALUE \nНаибольшее представимое число.
-Number.MIN_VALUE \nНаименьшее представимое число.
-Number.NaN \nСпециальное значение "not a number".
-Number.NEGATIVE_INFINITY \nСпециальное значение - отрицательная бесконечность; возвращается при переполнении.
-Number.POSITIVE_INFINITY \nСпециальное значение - положительная бесконечность; возвращается при переполнении.
-Number.prototype \nПозволяет добавлять свойства к Number-объекту.
-Number.toSource() \nВозвращает литерал объекта, представляющий специфицированный Number-объект; Вы можете использовать это значение для создания нового объекта. Переопределяет метод Object.toSource.
-Number.toString() \nВозвращает строку, представляющую специфицированный объект. Переопределяет метод Object.toString.
-Number.valueOf() \nВозвращает примитивное значение специфицированного объекта. Переопределяет метод Object.valueOf.
+Number.constructor
+Number.MAX_VALUE
+Number.MIN_VALUE
+Number.NaN
+Number.NEGATIVE_INFINITY
+Number.POSITIVE_INFINITY
+Number.prototype
+Number.toSource()
+Number.toString()
+Number.valueOf()
 
-object.constructor \nСпецифицирует функцию, которая создаёт прототип объекта.
-object.prototype \nПозволяет добавлять свойства во все объекты.
-object.eval() \nНе рекомендуется. Вычисляет строку кода JavaScript в контексте специфицированного объекта.
-object.toSource() \nВозвращает литерал объекта, представляющий специфицированный объект; Вы можете использовать это значение для создания нового объекта.
-object.toString() \nВозвращает строку, представляющую специфицированный объект.
-object.unwatch() \nУдаляет точку наблюдения/watchpoint из свойства объекта.
-object.valueOf() \nВозвращает примитивное значение специфицированного объекта.
-object.watch() \nДобавляет точку наблюдения/watchpoint в свойство объекта.
+object.constructor
+object.prototype
+object.eval()
+object.toSource()
+object.toString()
+object.unwatch()
+object.valueOf()
+object.watch()
 
 #option=select.options
-option.defaultSelected \nСпецифицирует статус по умолчанию опции.
-option.index \nИндекс с базой 0 элемента в массиве Select.options.
-option.length \nКоличество элементов в массиве Select.options.
-option.selected \nСпецифицирует текущий статус опции (выбрана или нет).
-option.text \nСпецифицирует текст опции.
-option.value \nСпецифицирует значение, возвращаемое на сервер, когда опция выбрана и форма отправляется.
+option.defaultSelected
+option.index
+option.length
+option.selected
+option.text
+option.value
 
 #packages=Packages.java.awt.Frame
-packages.className \nПолное квалифицированное имя Java-класса в других пакетах, кроме пакетов netscape, java или sun, доступного в JavaScript.
-packages.java \nЛюбой класс Java-пакета java.*.
-packages.netscape \nЛюбой класс Java-пакета netscape.*.
-packages.sun \nЛюбой класс Java-пакета sun.*.
+packages.className
+packages.java
+packages.netscape
+packages.sun
 
 #password=form.elements
-password.defaultValue \nОтражает атрибут VALUE.
-password.form \nСпецифицирует форму, содержащую Password-объект.
-password.name \nОтражает атрибут NAME.
-password.type \nОтражает атрибут TYPE.
-password.value \nОтражает текущее значение поля Password-объекта.
-password.blur() \nУбирает фокус с объекта.
-password.focus() \nПередаёт объекту фокус.
-password.handleEvent() \nВызывает обработчик для специфицированного события. 
-password.select() \nВыделяет область ввода объекта.
+password.defaultValue
+password.form
+password.name
+password.type
+password.value
+password.blur()
+password.focus()
+password.handleEvent()
+password.select()
 
 #plugin=navigator.plugins
-plugin.description \nОписание plug-in'а.
-plugin.filename \nИмя файла plug-in'а на диске.
-plugin.length \nКоличество элементов массива MimeType-объектов plug-in'а.
-plugin.name \nИмя plug-in'а.
+plugin.description
+plugin.filename
+plugin.length
+plugin.name
 
 #reset=form.elements
-radio.checked \nДаёт возможность программно выбрать радио-кнопку (свойство отдельной кнопки).
-radio.defaultChecked \nОтражает атрибут CHECKED (свойство отдельной кнопки).
-radio.form \nСпецифицирует форму, содержащую Radio-объект (свойство массива кнопок).
-radio.name \nОтражает атрибут NAME (свойство массива кнопок).
-radio.type \nОтражает атрибут TYPE (свойство массива кнопок).
-radio.value \nОтражает атрибут VALUE (свойство массива кнопок).
-radio.blur() \nУбирает фокус с радио-кнопки.
-radio.click() \nСимулирует щелчок мыши по радио-кнопке.
-radio.focus() \nПередаёт фокус радио-кнопке.
-radio.handleEvent() \nВызывает обработчик для специфицированного события.
+radio.checked
+radio.defaultChecked
+radio.form
+radio.name
+radio.type
+radio.value
+radio.blur()
+radio.click()
+radio.focus()
+radio.handleEvent()
 
-RegExp.constructor \nСпецифицирует функцию, которая создаёт прототип объекта.
-RegExp.global \nТестировать или нет регулярное выражение относительно всех возможных совпадений в строке, или только относительно первого совпадения.
-RegExp.ignoreCase \nИгнорировать ли регистр при поиске совпадения в строке.
-RegExp.input \nСтрока, относительно которой выполняется поиск совпадения с регулярным выражением.
-RegExp.lastIndex \nИндекс, с которого начинается следующее совпадение. 
-RegExp.lastMatch \nПоследние совпавшие символы.
-RegExp.lastParen \nПоследнее совпадение подстроки в скобках, если имеется.
-RegExp.leftContext \nПодстрока, предшествующая самому последнему совпадению.
-RegExp.multiline \nИскать ли на нескольких строках.
-RegExp.prototype \nПозволяет добавлять свойства всем объектам.
-RegExp.rightContext \nСтрока, следующая за самым последним совпадением.
-RegExp.source \nТекст патэрна.
-RegExp.compile() \nКомпилирует объект регулярного выражения.
-RegExp.exec() \nВыполняет поиск совпадения в своём строковом параметре. 
-RegExp.test() \nТестирует на совпадение в своём строковом параметре.
-RegExp.toSource() \nВозвращает литерал объекта, представляющий специфицированный объект; Вы можете использовать это значение для создания нового объекта. Переопределяет метод Object.toSource.
-RegExp.toString() \nВозвращает строку, представляющую специфицированный объект. Переопределяет метод Object.toString.
-RegExp.valueOf() \nВозвращает примитивное значение специфицированного объекта. Переопределяет метод Object.valueOf.
+RegExp.constructor
+RegExp.global
+RegExp.ignoreCase
+RegExp.input
+RegExp.lastIndex
+RegExp.lastMatch
+RegExp.lastParen
+RegExp.leftContext
+RegExp.multiline
+RegExp.prototype
+RegExp.rightContext
+RegExp.source
+RegExp.compile()
+RegExp.exec()
+RegExp.test()
+RegExp.toSource()
+RegExp.toString()
+RegExp.valueOf()
 
 #reset=form.elements
-reset.form \nСпецифицирует форму, содержащую объект Reset.
-reset.name \nОтражает атрибут NAME.
-reset.type \nОтражает атрибут TYPE.
-reset.value \nОтражает атрибут VALUE.
-reset.blur() \nУбирает фокус с кнопки reset.
-reset.click() \nСимулирует щелчок мыши по кнопке reset.
-reset.focus() \nПередаёт фокус кнопке reset.
-reset.handleEvent() \nВызывает обработчик для специфицированного события.
+reset.form
+reset.name
+reset.type
+reset.value
+reset.blur()
+reset.click()
+reset.focus()
+reset.handleEvent()
 
-screen.availHeight \nСпецифицирует высоту экрана в пикселах, минус постоянные или полупостоянные настройки пользовательского интерфейса, отображаемые операционной системой, такие как Taskbar в Windows.
-screen.availLeft \nСпецифицирует х-координату первого пиксела, который не размещен в постоянных или полупостоянных настройках пользовательского интерфейса.
-screen.availTop \nСпецифицирует у-координату первого пиксела, который не размещен в постоянных или полупостоянных настройках пользовательского интерфейса.
-screen.availWidth \nСпецифицирует ширину экрана в пикселах, минус постоянные или полупостоянные настройки пользовательского интерфейса, отображаемые операционной системой, такие как Taskbar в Windows.
-screen.colorDepth \nБитовая глубина цветовой гаммы, если она используется; иначе значение берётся из screen.pixelDepth.
-screen.height \nВысота экрана монитора.
-screen.pixelDepth \nРазрешение экрана монитора (в битах на пиксел). 
-screen.width \nШирина экрана монитора.
+screen.availHeight
+screen.availLeft
+screen.availTop
+screen.availWidth
+screen.colorDepth
+screen.height
+screen.pixelDepth
+screen.width
 
 #select=form.elements
-select.form \nСпецифицирует форму, содержащую список selection.
-select.length \nОтражает количество опций в списке selection.
-select.name \nОтражает атрибут NAME.
-select.options \nОтражает тэги OPTION.
-select.selectedIndex \nОтражает индекс выбранной опции (или первой выбранной опции, если выбрано несколько опций).
-select.type \nСпецифицирует, что представляемый им объект это список selection и может ли он иметь одну или более выбранных опций.
-select.blur() \nУбирает фокус со списка selection.
-select.focus() \nПередаёт фокус списку selection.
-select.handleEvent() \nВызывает обработчик для специфицированного события
+select.form
+select.length
+select.name
+select.options
+select.selectedIndex
+select.type
+select.blur()
+select.focus()
+select.handleEvent()
 
 #$string=^%b''
 #$string=^%b""
@@ -455,181 +457,325 @@ select.handleEvent() \nВызывает обработчик для специф
 #$string=%a+%.toGMTString$
 #$string=%a+%.toLocaleString$
 #$string=%a+%.toUTCString$
-string.constructor \nСпецифицирует функцию, которая создаёт прототип объекта.
-string.length \nОтражает длину строки.
-string.prototype \nПозволяет добавлять свойства в String-объект.
-string.anchor() \nСоздаёт HTML-якорь, используемый как цель гиперссылки.
-string.big() \nВыводит строку шрифтом big/увеличенным, как в тэге BIG.
-string.blink() \nВыводит строку шрифтом blink, как в тэге BLINK.
-string.bold() \nВыводит строку жирным шрифтом, как в тэге B.
-string.charAt() \nВозвращает символ по специфицированному индексу.
-string.charCodeAt() \nВозвращает число, указывающее Unicode-значение символа по данному индексу.
-string.concat() \nОбъединяет текст двух строк и возвращает новую строку.
-string.fixed() \nВыводит строку шрифтом фиксированной ширины, как в тэге TT.
-string.fontcolor() \nВыводит строку специфицированным цветом, как в тэге <FONT COLOR=color>.
-string.fontsize() \nВыводит строку шрифтом специфицированного размера, как в тэге <FONT SIZE=size>.
-string.fromCharCode() \nВозвращает строку, созданную с использованием специфицированной последовательности Unicode-значений.
-string.indexOf() \nВозвращает индекс, в вызывающем String-объекте, первого появления специфицированного значения или -1 - если оно не найдено.
-string.italics() \nВыводит строку шрифтом italic, как в тэге I.
-string.lastIndexOf() \nВозвращает индекс, в вызывающем String-объекте, последнего появления специфицированного значения или -1 - если оно не найдено.
-string.link() \nСоздаёт гиперссылку HTML, которая вызывает другой URL.
-string.match() \nИспользуется для поиска совпадений регулярного выражения со строкой.
-string.replace() \nИспользуется для поиска совпадений регулярного выражения со строкой и для замены совпавшей подстроки новой подстрокой.
-string.search() \nВыполняет поиск совпадения между регулярным выражением и специфицированной строкой.
-string.slice() \nИзвлекает часть строки и возвращает новую строку. 
-string.small() \nВыводит строку шрифтом small/уменьшенным, как в тэге SMALL.
-string.split() \nРазделяет String-объект на массив строк, разделяя строку на подстроки.
-string.strike() \nВыводит строку перечёркнутым шрифтом, как в тэге STRIKE.
-string.sub() \nВыводит строку как subscript/подиндекс, как в тэге SUB.
-string.substr() \nВозвращает специфицированное количество символов строки, начинающихся от специфицированного места.
-string.substring() \nВозвращает символы строки между двумя индексами строки.
-string.sup() \nВыводит строку как superscript/надиндекс, как в тэге SUP.
-string.toLowerCase() \nВозвращает вызывающую строку, конвертированную в нижний регистр.
-string.toSource() \nВозвращает литерал объекта, представляющий специфицированный объект; можно использовать это значение для создания нового объекта. Переопределяет метод Object.toSource.
-string.toString() \nВозвращает строку, представляющую специфицированный объект. Переопределяет метод Object.toString.
-string.toUpperCase() \nВозвращает вызывающую строку, конвертированную в верхний регистр.
-string.valueOf() \nВозвращает примитивное значение специфицированного объекта. Переопределяет метод Object.valueOf.
+string.constructor
+string.length
+string.prototype
+string.anchor()
+string.big()
+string.blink()
+string.bold()
+string.charAt()
+string.charCodeAt()
+string.concat()
+string.fixed()
+string.fontcolor()
+string.fontsize()
+string.fromCharCode()
+string.indexOf()
+string.italics()
+string.lastIndexOf()
+string.link()
+string.match()
+string.replace()
+string.search()
+string.slice()
+string.small()
+string.split()
+string.strike()
+string.sub()
+string.substr()
+string.substring()
+string.sup()
+string.toLowerCase()
+string.toSource()
+string.toString()
+string.toUpperCase()
+string.valueOf()
 
 #style=document.classes
 #style=document.ids
 #style=document.tags
-style.align \nСпецифицирует выравнивание HTML-элемента относительно родительского элемента.
-style.backgroundColor \nСпецифицирует сплошной цвет фона элемента.
-style.backgroundImage \nСпецифицирует фоновый рисунок для HTML-элемента.
-style.borderBottomWidth \nСпецифицирует ширину нижней линии рамки HTML-элемента.
-style.borderColor \nСпецифицирует цвет рамки HTML-элемента.
-style.borderLeftWidth \nСпецифицирует ширину левой линии рамки HTML-элемента.
-style.borderRightWidth \nСпецифицирует ширину правой линии рамки HTML-элемента.
-style.borderStyle \nСпецифицирует стиль рамки, такой как solid или double, вокруг HTML-элемента уровня блока.
-style.borderTopWidth \nСпецифицирует ширину верхней линии рамки HTML-элемента.
-style.clear \nСпецифицирует стороны HTML-элемента, которые разрешают всплывание/floating элементов.
-style.color \nСпецифицирует цвет текста HTML-элемента.
-style.display \nПереопределяет обычное отображение элемента и специфицирует, отображается ли он in- line, как элемент уровня блока или как емента списка уровня блока.
-style.fontFamily \nСпецифицирует семейство шрифтов, такое как Helvetica или Arial, для текстового элемента HTML.
-style.fontSize \nСпецифицирует размер шрифта для HTML-элемента.
-style.fontStyle \nСпецифицирует стиль шрифта для HTML-элемента.
-style.fontWeight \nСпецифицирует вес шрифта для HTML-элемента.
-style.lineHeight \nСпецифицирует расстояние между базовыми линиями двух смежных строк шрифта уровня блока.
-style.listStyleType \nСпецифицирует стиль символа, отображаемого в начале элемента списка.
-style.marginBottom \nСпецифицирует минимальное расстояние между низом HTML-элемента и верхом прилегающего элемента.
-style.marginLeft \nСпецифицирует минимальное расстояние между левым краем HTML-элемента и правым краем прилегающего элемента.
-style.marginRight \nСпецифицирует минимальное расстояние между правым краем HTML-элемента и левым краем прилегающего элемента.
-style.marginTop \nСпецифицирует минимальное расстояние между верхом HTML-элемента и низом прилегающего элемента.
-style.paddingBottom \nСпецифицирует, какое пространство вставить между низом элемента и его содержимым, таким как текст или рисунок.
-style.paddingLeft \nСпецифицирует, какое пространство вставить между левым краем элемента и его содержимым, таким как текст или рисунок.
-style.paddingRight \nСпецифицирует, какое пространство вставить между правым краем элемента и его содержимым, таким как текст или рисунок.
-style.paddingTop \nСпецифицирует, какое пространство вставить между верхом элемента и его содержимым, таким как текст или рисунок.
-style.textAlign \nСпецифицирует выравнивание текстового HTML-элемента уровня блока.
-style.textDecoration \nСпецифицирует специальные эффекты, такие как мигание, перечёркивание и подчёркивание, добавляемые к текстовому HTML-элементу.
-style.textIndent \nСпецифицирует размер отступа перед первой отформатированной строкой текстового HTML-элемента уровня блока.
-style.textTransform \nСпецифицирует регистр текстового HTML-элемента уровня блока.
-style.whiteSpace \nСпецифицирует, должен ли сжиматься пробел внутри HTML-элемента.
-style.width \nСпецифицирует ширину HTML-элемента уровня блока.
-style.borderWidths() \nСпецифицирует ширину рамки HTML-элемента.
-style.margins() \nСпецифицирует минимальное расстояние между краями HTML-элемента и краями смежных элементов. 
-style.paddings() \nСпецифицирует, какое пространство вставить между краями элемента и его содержимым, таким как текст или рисунок.
+style.align
+style.backgroundColor
+style.backgroundImage
+style.borderBottomWidth
+style.borderColor
+style.borderLeftWidth
+style.borderRightWidth
+style.borderStyle
+style.borderTopWidth
+style.clear
+style.color
+style.display
+style.fontFamily
+style.fontSize
+style.fontStyle
+style.fontWeight
+style.lineHeight
+style.listStyleType
+style.marginBottom
+style.marginLeft
+style.marginRight
+style.marginTop
+style.paddingBottom
+style.paddingLeft
+style.paddingRight
+style.paddingTop
+style.textAlign
+style.textDecoration
+style.textIndent
+style.textTransform
+style.whiteSpace
+style.width
+style.borderWidths()
+style.margins()
+style.paddings()
 
 #submit=form.elements
-submit.form \nСпецифицирует форму, содержащую Submit-объект.
-submit.name \nОтражает атрибут NAME.
-submit.type \nОтражает атрибут TYPE.
-submit.value \nОтражает атрибут VALUE.
-submit.blur() \nУбирает фокус с кнопки submit.
-submit.click() \nСимулирует щелчок мыши по кнопке submit.
-submit.focus() \nПередаёт фокус кнопке submit.
-submit.handleEvent() \nВызывает обработчик для специфицированного события.
+submit.form
+submit.name
+submit.type
+submit.value
+submit.blur()
+submit.click()
+submit.focus()
+submit.handleEvent()
 
 #text=form.elements
-text.defaultValue \nОтражает атрибут VALUE.
-text.form \nСпецифицирует форму, содержащую Text-объект.
-text.name \nОтражает атрибут NAME.
-text.type \nОтражает атрибут TYPE.
-text.value \nОтражает текущее значение поля объекта Text.
-text.blur() \nУбирает фокус с объекта.
-text.focus() \nПередаёт фокус объекту.
-text.handleEvent() \nВызывает обработчик для специфицированного события.
-text.select() \nВыделяет область ввода объекта.
+text.defaultValue
+text.form
+text.name
+text.type
+text.value
+text.blur()
+text.focus()
+text.handleEvent()
+text.select()
 
 #textarea=form.elements
-textarea.defaultValue \nОтражает атрибут VALUE.
-textarea.form \nСпецифицирует форму, содержащую Textarea-объект.
-textarea.name \nОтражает атрибут NAME.
-textarea.type \nСпецифицирует тип объекта (в данном случае Textarea).
-textarea.value \nОтражает текущее значение Textarea-объекта.
-textarea.blur() \nУбирает фокус с объекта.
-textarea.focus() \nПередаёт фокус объекту.
-textarea.handleEvent() \nВызывает обработчик для специфицированного события.
-textarea.select() \nВыделяет область ввода объекта.
+textarea.defaultValue
+textarea.form
+textarea.name
+textarea.type
+textarea.value
+textarea.blur()
+textarea.focus()
+textarea.handleEvent()
+textarea.select()
 
 #window=open
 #window=opener
 #window=parent
-window.closed \nСпецифицирует, закрыто ли окно.
+window.closed
 window.clipboardData.getData("Text")
 window.clipboardData.setData("Text", set_text)
-window.crypto \nОбъект, дающий доступ к возможностям шифрования Navigator'а.
-window.defaultStatus \nОтражает сообщение по умолчанию, выводимое в статусной строке.
-window.document \nСодержит информацию о текущем документе и предоставляет методы для отображения вывода HTML пользователю.
-window.frames \nМассив, отражающий все фрэймы окна.
-window.history \nСодержит информацию о URL, которые клиент посетил в данном окне.
-window.innerHeight \nСпецифицирует вертикальные размеры в пикселах области содержимого окна.
-window.innerWidth \nСпецифицирует горизонтальные размеры в пикселах области содержимого окна.
-window.length \nКоличество фрэймов в окне.
-window.location \nСодержит информацию о текущем URL.
-window.locationbar \nАдресная строка окна браузера.
-window.menubar \nСтрока меню окна браузера. 
-window.name \nУникальное имя, используемое для обращения к данному окну.
-window.offscreenBuffering \nСпецифицирует, выполняются ли обновления окна во внеоконном буфере.
-window.opener \nСпецифицирует имя окна вызывающего документа, если окно открывается методом open.
-window.outerHeight \nСпецифицирует вертикальные размеры в пикселах внешней границы окна. 
-window.outerWidth \nСпецифицирует горизонтальные размеры в пикселах внешней границы окна.
-window.pageXOffset \nПредоставляет текущую x-позицию в пикселах просматриваемой страницы окна.
-window.pageYOffset \nПредоставляет текущую у-позицию в пикселах просматриваемой страницы окна.
-window.parent \nСиноним окна или фрэйма, чей frameset содержит текущий фрэйм.
-window.personalbar \nПредставляет personal bar окна браузера (называемый также строкой директорий).
-window.screenX \nСпецифицирует x-координату левого края окна.
-window.screenY \nСпецифицирует у-координату верхнего края окна.
-window.scrollbars \nПолосы прокрутки окна браузера.
-window.self \nСиноним текущего окна.
-window.status \nСпецифицирует приоритетное сообщение статусной строки окна.
-window.statusbar \nСтатусная строка окна браузера.
-window.toolbar \nСтрока утилит окна браузера.
-window.top \nСиноним наивысшего окна браузера.
-window.window \nСиноним текущего окна.
-window.alert() \nОтображает диалоговое окно Alert с сообщением и кнопкой OK.
-window.atob() \nДекодирует строку данных, кодированную с использованием кодировки base-64.
-window.back() \nОтменяет последний шаг истории в любом фрэйме окна верхнего уровня.
-window.blur() \nУбирает фокус со специфицированного объекта.
-window.btoa() \nСоздаёт строку с кодирование base-64.
-window.captureEvents() \nУстанавливает захват окном или документом всех событий специфицированного типа.
-window.clearInterval() \nОтменяет таймаут, установленный методом setInterval.
-window.clearTimeout() \nОтменяет таймаут, установленный методом setTimeout.
-window.close() \nЗакрывает специфицированное окно.
-window.confirm() \nВыводит диалог Confirm со специфицированным сообщением и кнопками OK и Cancel.
-window.crypto.random() \nВозвращает псевдослучайную строку, длина которой равна специфицированному количеству байтов.
-window.crypto.signText() \nВозвращает строку кодированных данных, которая представляет маркированный/помеченный объект.
-window.disableExternalCapture() \nОтменяет захват внешних событий, установленный методом enableExternalCapture.
-window.enableExternalCapture() \nРазрешает окну с фрэймами захватывать события в страницах, загружаемых с других серверов. 
-window.find() \nНаходит специфицированную текстовую строку в содержимом специфицированного окна.
-window.focus() \nПередаёт фокус специфицированному элементу.
-window.forward() \nЗагружает следующий URL из списка history.
-window.handleEvent() \nВызывает обработчик для специфицированного события.
-window.home() \nПереводит браузер на URL, специфицированный в установках пользователя как домашняя страница.
-window.moveBy() \nПеремещает окно на специфицированные величины.
-window.moveTo() \nПеремещает верхний левый угол окна на специфицированные координаты экрана.
-window.open() \nОткрывает новое окно web-браузера.
-window.print() \nПечатает содержимое текущего окна или фрэйма.
-window.prompt() \nВыводит диалог Prompt с сообщением и полем для ввода.
-window.releaseEvents() \nУстанавливает освобождение захваченных окном событий специфицированного типа, отправляя событие объектам далее по иерархии событий.
-window.resizeBy() \nИзменяет размеры всего окна, перемещая нижний правый угол окна на специфицированные величины.
-window.resizeTo() \nИзменяет размеры всего окна на специфицированные внешние высоту и ширину.
-window.routeEvent() \nПередаёт захваченное событие по нормальной иерархии событий.
-window.scroll() \nПрокручивает окно до специфицированной координаты.
-window.scrollBy() \nПрокручивает область просмотра окна на специфицированную величину.
-window.scrollTo() \nПрокручивает окно до специфицированной координаты, так что специфицированная точка становится левым верхним углом.
-window.setHotKeys() \nВключает или отключает горячие клавиши окна, не имеющего меню.
-window.setInterval() \nВычисляет выражение или вызывает функцию всякий раз по истечении специфицированного количества миллисекунд.
-window.setResizable() \nСпецифицирует, может ли пользователь изменять размеры окна.
-window.setTimeout() \nВычисляет выражение или вызывает функцию всякий раз по истечении специфицированного количества миллисекунд.
-window.setZOptions() \nСпецифицирует z-order стэкирования в окне.
-window.stop() \nОстанавливает загрузку.
+window.crypto
+window.defaultStatus
+window.document
+window.frames
+window.history
+window.innerHeight
+window.innerWidth
+window.length
+window.location
+window.locationbar
+window.menubar
+window.name
+window.offscreenBuffering
+window.opener
+window.outerHeight
+window.outerWidth
+window.pageXOffset
+window.pageYOffset
+window.parent
+window.personalbar
+window.screenX
+window.screenY
+window.scrollbars
+window.self
+window.status
+window.statusbar
+window.toolbar
+window.top
+window.window
+window.alert()
+window.atob()
+window.back()
+window.blur()
+window.btoa()
+window.captureEvents()
+window.clearInterval()
+window.clearTimeout()
+window.close()
+window.confirm()
+window.crypto.random()
+window.crypto.signText()
+window.disableExternalCapture()
+window.enableExternalCapture()
+window.find()
+window.focus()
+window.forward()
+window.handleEvent()
+window.home()
+window.moveBy()
+window.moveTo()
+window.open()
+window.print()
+window.prompt()
+window.releaseEvents()
+window.resizeBy()
+window.resizeTo()
+window.routeEvent()
+window.scroll()
+window.scrollBy()
+window.scrollTo()
+window.setHotKeys()
+window.setInterval()
+window.setResizable()
+window.setTimeout()
+window.setZOptions()
+window.stop()
+
+
+$(html)  根据提供的原始HTML标记字符串，动态创建由jQuery对象包装的DOM元素。
+$(elements)  为一个或多个DOM元素捆绑jQuery功能。
+$(fn)  $(document).ready()的简写方式，允许你绑定一个在DOM文档载入完成后执行的函数。
+$(expr, context)  这个函数接收一个包含CSS或基本的XPath选择符的字符串，然后用这个字符串去匹配一组元素。
+extend(prop)  扩展jQuery对象。可以用于把函数添加到jQuery名称空间中，以及添加插件方法（插件）。
+noConfilict()  运行这个函数将变量$的控制权让渡给第一个实现它的那个库。这样可以确保jQuery不会与其他库的$对象发生冲突。
+each(fn)  以每一个匹配的元素作为上下文来执行一个函数
+eq(pos)  将匹配的元素集合缩减为一个元素。这个元素在匹配元素集合中的位置变为0，而集合长度变成1。
+get()  取得所有匹配的（DOM）元素集合。这是取得所有匹配元素的一种向后兼容的方式（不同于jQuery对象，而实际上两者都是元素数组）。
+get(num)  取得其中一个匹配的元素。 num表示取得第几个匹配的元素。
+gt(pos)  将匹配的元素集合缩减为给定位置之后的所有元素。这个元素在匹配元素集合中的位置变为0，而长度变成1。
+index(subject)  搜索与参数表示的对象匹配的元素，并返回相应元素的索引值。如果找到了匹配的元素，从0开始返回；如果没有找到匹配的元素，返回-1。
+length
+lt(pos)  将匹配的元素集合缩减为给定位置之前的所有元素。这个元素在匹配元素集合中的位置变为0，而长度变成1。
+size()  当前匹配的元素数量。
+addClass(class) 为每个匹配的元素添加指定的类名。
+attr(name) 取得第一个匹配元素的属性值。通过这个方法可以方便地从第一个匹配元素中获取一个属性的值。
+attr(properties) 将一个“名/值”形式的对象设置为所有匹配元素的属性。
+attr(key, value) 为所有匹配的元素设置一个属性值。
+attr(key, fn) 为所有匹配的元素设置一个计算的属性值。
+html() 取得第一个匹配元素的html内容。这个函数不能用于XML文档。
+html(val) 设置每一个匹配元素的html内容。这个函数不能用于XML文档。
+removeAttr(name) 从每一个匹配的元素中删除一个属性。
+removeClass(class) 从所有匹配的元素中删除全部或者指定的类。
+text() 取得所有匹配元素的内容。结果是由所有匹配元素包含的文本内容组合起来的文本。这个方法对HTML和XML文档都有效。
+text(val) 设置所有匹配元素的文本内容。这个函数与html()函数具有同样的效果。
+toggleClass(class) 如果存在（不存在）就删除（添加）一个类。
+val() 获得第一个匹配元素的当前值。
+val(val) 设置每一个匹配元素的值。
+after(content)  在每个匹配的元素之后插入内容。
+append(content)  向每个匹配的元素内部追加内容。
+appendTo(expr)  把所有匹配的元素追加到另一个、指定的元素元素集合中。
+before(content)  在每个匹配的元素之前插入内容。
+clone(deep)  克隆匹配的DOM元素并且选中这些克隆的副本。
+empty()  删除匹配的元素集合中所有的子节点。
+insertAfter(expr)  把所有匹配的元素插入到另一个、指定的元素元素集合的后面。
+insertBefore(expr)  把所有匹配的元素插入到另一个、指定的元素元素集合的前面。
+prepend(content)  向每个匹配的元素内部前置内容。
+prependTo(expr)  把所有匹配的元素前置到另一个、指定的元素元素集合中
+remove(expr)  从DOM中删除所有匹配的元素。
+wrap(html)  把所有匹配的元素用其他元素的结构化标记包装起来。
+wrap(elem)  把所有匹配的元素用其他元素的结构化标记包装起来。
+add(expr)  把与表达式匹配的元素添加到jQuery对象中
+add(html)  向匹配的元素集合中添加更多动态创建的元素。
+add(elements)  把一个或多个DOM元素添加到匹配的元素集合中。
+children(expr)  取得一个包含匹配的元素集合中每一个元素的所有唯一子元素的元素集合。
+contains(str)  把元素集合筛选为包含指定文本（区分大小写）的元素。
+end()  结束最近的“破坏性”操作，把匹配的元素列表回复到前一个状态。
+filter(expression)  从匹配的元素集合中删除那些不符合指定的筛选条件的元素（即返回与指定表达式匹配的元素集合）。
+filter(filter)  从匹配的元素集合中删除那些不符合指定的筛选条件的元素（即返回与指定表达式匹配的元素集合）。
+find(expr)  搜索所有与指定表达式匹配的元素。
+is(expr)  用一个表达式来检查当前选择的元素集合，如果其中至少有一个元素符合这个给定的表达式就返回true。
+next(expr)  取得一个包含匹配的元素集合中每一个元素紧邻的后面同辈元素的元素集合。
+not(el)  从匹配的元素集合中删除指定的元素。
+not(expr)  从匹配的元素集合中删除与指定的表达式匹配的元素。
+not(elements)  从匹配的元素集合中删除所有符合条件的元素集合。
+parent(expr)  取得一个包含着所有匹配元素的唯一父元素的元素集合。
+parents(expr)  取得一个包含着所有匹配元素的唯一祖先元素的元素集合（不包含根元素）。
+prev(expr)  取得一个包含匹配的元素集合中每一个元素紧邻的前一个同辈元素的元素集合。
+siblings(expr)  取得一个包含匹配的元素集合中每一个元素的所有唯一同辈元素的元素集合。
+css(name)  访问第一个匹配元素的样式属性。
+css(properties)  把一个“名/值对”对象设置为所有匹配元素的样式属性。
+css(key, value)  在所有匹配的元素中，设置一个样式属性的值。
+height()  取得第一个匹配元素当前计算的高度值（px）。
+height(val)  为每个匹配的元素设置CSS高度(width)属性的值。
+width()  取得第一个匹配元素当前计算的宽度值（px）。
+width(val)  为每个匹配的元素设置CSS宽度(width)属性的值。
+browser  包含从navigator.userAgent属性中读取的用户代理标签（代理检测）。
+each(obj, fn)  一个通用的迭代函数，可用于近似地迭代对象和数组。
+extend(target, prop1, propN)  用一个或多个其他对象来扩展一个对象，返回这个被扩展的对象。
+grep(array, fn, inv)  使用筛选函数，从一个数组中筛选项目。
+map(array, fn)  把一个数组中的项目转换到另一个数组中。
+merge(first, second)  合并两个数组，删除其中重复的项目。
+trim(str)  删除字符串两端的空白字符。
+animate(params, speed, easing, callback)  用于创建自定义动画的函数。这个函数的关键在于指定动画形式及结果样式属性对象。
+fadeIn(speed, callback)  通过不透明度的变化来实现所有匹配元素的淡入效果，并在动画完成后可选地触发一个回调函数。
+fadeOut(speed, callback)  通过不透明度的变化来实现所有匹配元素的淡出效果，并在动画完成后可选地触发一个回调函数。
+fadeTo(speed, opacity, callback)  把所有匹配元素的不透明度以渐进方式调整到指定的不透明度，并在动画完成后可选地触发一个回调函数。
+hide()  隐藏显示的元素。
+hide(speed, callback)  以优雅的动画隐藏所有匹配的元素，并在显示完成后可选地触发一个回调函数。
+show()  显示隐藏的匹配元素。
+show(speed, callback)  以优雅的动画显示所有匹配的元素，并在显示完成后可选地触发一个回调函数。
+slideDown(speed, callback)  通过高度变化（向下增大）来动态地显示所有匹配的元素，在显示完成后可选地触发一个回调函数。
+slideToggle(speed, callback)  通过高度变化来切换所有匹配元素的可见性，并在切换完成后可选地触发一个回调函数。
+slideUp(speed, callback)  通过高度变化（向上减小）来动态地隐藏所有匹配的元素，在隐藏完成后可选地触发一个回调函数。
+toggle()  切换元素的可见状态。如果元素是可见的，切换为隐藏的。
+bind(type, data, fn)  为每一个匹配元素的特定事件（像click）绑定一个事件处理器函数。
+blur()  触发每一个匹配元素的blur事件。
+blur(fn)  在每一个匹配元素的blur事件中绑定一个处理函数。
+change(fn)  在每一个匹配元素的change事件中绑定一个处理函数
+click()  触发每一个匹配元素的click事件。
+click(fn)  在每一个匹配元素的click事件中绑定一个处理函数。
+dblclick(fn)  在每一个匹配元素的dblclick事件中绑定一个处理函数。
+error(fn)  在每一个匹配元素的error事件中绑定一个处理函数。
+focus()  触发每一个匹配元素的focus事件。
+focus(fn)  在每一个匹配元素的focus事件中绑定一个处理函数。
+hover(over, out)  一个模仿悬停事件（鼠标移动到一个对象上面及移出这个对象）的方法。
+keydown(fn)  在每一个匹配元素的keydown事件中绑定一个处理函数。
+keypress(fn)  在每一个匹配元素的keypress事件中绑定一个处理函数。
+keyup(fn)  在每一个匹配元素的keyup事件中绑定一个处理函数。
+load(fn)  在每一个匹配元素的load事件中绑定一个处理函数。
+mousedown(fn)  在每一个匹配元素的mousedown事件中绑定一个处理函数。
+mousemove(fn)  在每一个匹配元素的mousemove事件中绑定一个处理函数。
+mouseout(fn)  在每一个匹配元素的mouseout事件中绑定一个处理函数。
+mouseover(fn)  在每一个匹配元素的mouseover事件中绑定一个处理函数。
+mouseup(fn)  在每一个匹配元素的mouseup事件中绑定一个处理函数。
+one(type, data, fn)  为每一个匹配元素的特定事件（像click）绑定一个事件处理器函数。
+ready(fn)  当DOM载入就绪可以查询及操纵时绑定一个要执行的函数。
+resize(fn)  在每一个匹配元素的resize事件中绑定一个处理函数。
+scroll(fn)  在每一个匹配元素的scroll事件中绑定一个处理函数。
+select()  触发每一个匹配元素的select事件。
+select(fn)  在每一个匹配元素的select事件中绑定一个处理函数。
+submit()  触发每一个匹配元素的submit事件。
+submit(fn)    在每一个匹配元素的submit事件中绑定一个处理函数。
+toggle(even, odd)  每次点击时切换要调用的函数。（even 偶次，odd 偶次）
+trigger(type)  在每一个匹配的元素上触发某类事件。
+unbind(type, fn)  反绑定，从每一个匹配的元素中删除绑定的事件。
+unload(fn)  在每一个匹配元素的unload事件中绑定一个处理函数。
+ajax(properties)  使用HTTP请求（XMLHttpRequest）载入一个远程页面。
+ajaxSetup(settings)  为AJAX请求设定全局设置。
+ajaxTimeout(time)  设置AJAX请求的超时所需具体的时间要求。
+get(url, params, callback)  使用HTTP GET请求（XMLHttpRequest）载入远程页面。
+getIfModified(url, params, callback)  使用HTTP请求（XMLHttpRequest）载入自上次接收后产生变化的远程页面。
+getJSON(url, params, callback)  使用HTTP请求（XMLHttpRequest）载入JSON数据。
+getScript(url, callback)  使用HTTP请求（XMLHttpRequest）载入并执行远程JavaScript文件。
+post(url, params, callback)  使用HTTP POST请求（XMLHttpRequest）载入远程页面。
+ajaxComplete(callback)  当AJAX请求完成时，执行一个附加函数。
+ajaxError(callback)  当AJAX请求失败时，执行一个附加函数。
+ajaxSend(callback)  在AJAX请求发送前，执行一个附加函数。
+ajaxStart(callback)  在AJAX请求开始并且没有任何返回状态时，执行一个附加函数。
+ajaxStop(callback)  在AJAX请求结束后，执行一个附加函数。
+ajaxSuccess(callback)  当AJAX请求成功完成时，执行一个附加函数。
+load(url, params, callback)  从一个远程文件中载入HTML并把它注入DOM。
+loadIfModified(url, params, callback)  从一个自上次接收后产生变化的远程文件中载入HTML并把它注入DOM。
+serialize()  Serialize化输入的所有元素。
+Accordion(settings)  Make the selected elements Accordion widgets.
+activate(index)  Activate a content part of the Accordion programmatically with the position zero-based index.
+button(hash)  Creates a button from an image element.
+center()  Takes all matched elements and centers them, absolutely, within the context of their parent element.
+cookie(name)  Get the value of a cookie with the given name.
+cookie(name, value, options)  Create a cookie with the given name and value and other optional parameters.
+
