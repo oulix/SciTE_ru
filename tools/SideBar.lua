@@ -126,7 +126,7 @@ if colorback then memo_path:set_memo_colour('', colorback) end
 local list_dir_height = win_height/3
 if list_dir_height <= 0 then list_dir_height = 200 end
 local list_favorites = gui.list(true)
-list_favorites:add_column("Favorites", 600)
+list_favorites:add_column("Favorites", 300)
 tab0:add(list_favorites, "bottom", list_dir_height)
 if colorback then list_favorites:set_list_colour(colorfore,colorback) end
 
@@ -162,7 +162,7 @@ local list_func_height = win_height/3
 if list_func_height <= 0 then list_func_height = 200 end
 local list_bookmarks = gui.list(true)
 list_bookmarks:add_column("@", 24)
-list_bookmarks:add_column("Bookmarks", 600)
+list_bookmarks:add_column("Bookmarks", 300)
 tab1:add(list_bookmarks, "bottom", list_func_height)
 if colorback then list_bookmarks:set_list_colour(colorfore,colorback) end
 
@@ -181,7 +181,7 @@ list_func:context_menu {
 local tab2 = gui.panel(panel_width)
 
 local list_abbrev = gui.list(true)
-list_abbrev:add_column("Abbrev", 60)
+list_abbrev:add_column("Abbrev", 80)
 list_abbrev:add_column("Expansion", 600)
 tab2:client(list_abbrev)
 if colorback then list_abbrev:set_list_colour(colorfore,colorback) end
