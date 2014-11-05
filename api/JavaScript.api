@@ -1,7 +1,3 @@
-﻿### Данные взяты с книги "Клиентский JavaScript v1.3. Справочник"
-### Подсказки будут работать когда будет реализовано Issue 86 <http://code.google.com/p/scite-ru/issues/detail?id=86>
-### (или переносите все их 2й строкой вручную)
-
 #anchor=string.anchor
 #anchor=document.anchors
 anchor.name
@@ -492,6 +488,7 @@ string.toString()
 string.toUpperCase()
 string.valueOf()
 
+
 #style=document.classes
 #style=document.ids
 #style=document.tags
@@ -636,146 +633,575 @@ window.setTimeout()
 window.setZOptions()
 window.stop()
 
+length #Reflects the number of elements in an array/string.
+#array:
+pop() #Removes the last element from an array and returns that element.
+push(element1,...,elementN) #Adds one or more elements to the end of an array and returns the new length of the array.
+reverse() #Reverses the order of the elements of an array -- the first becomes the last, and the last becomes the first.
+shift() #Removes the first element from an array and returns that element.
+sort(compareFunction) #Sorts the elements of an array.
+splice(index,howMany,[element1][,...,elementN]) #Adds and/or removes elements from an array.
+unshift(element1,...,elementN) #Adds one or more elements to the front of an array and returns the new length of the array.
+concat(value1,value2,...,valueN) #Returns a new array comprised of this array joined with other array(s) and/or value(s).
+indexOf(searchElement[,fromIndex]) #Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.
+join(separator) #Joins all elements of an array into a string.
+lastIndexOf(searchElement[,fromIndex]) #Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.
+slice(begin[,end]) #Extracts a section of an array and returns a new array.
 
-$(html)  根据提供的原始HTML标记字符串，动态创建由jQuery对象包装的DOM元素。
-$(elements)  为一个或多个DOM元素捆绑jQuery功能。
-$(fn)  $(document).ready()的简写方式，允许你绑定一个在DOM文档载入完成后执行的函数。
-$(expr, context)  这个函数接收一个包含CSS或基本的XPath选择符的字符串，然后用这个字符串去匹配一组元素。
-extend(prop)  扩展jQuery对象。可以用于把函数添加到jQuery名称空间中，以及添加插件方法（插件）。
-noConfilict()  运行这个函数将变量$的控制权让渡给第一个实现它的那个库。这样可以确保jQuery不会与其他库的$对象发生冲突。
-each(fn)  以每一个匹配的元素作为上下文来执行一个函数
-eq(pos)  将匹配的元素集合缩减为一个元素。这个元素在匹配元素集合中的位置变为0，而集合长度变成1。
-get()  取得所有匹配的（DOM）元素集合。这是取得所有匹配元素的一种向后兼容的方式（不同于jQuery对象，而实际上两者都是元素数组）。
-get(num)  取得其中一个匹配的元素。 num表示取得第几个匹配的元素。
-gt(pos)  将匹配的元素集合缩减为给定位置之后的所有元素。这个元素在匹配元素集合中的位置变为0，而长度变成1。
-index(subject)  搜索与参数表示的对象匹配的元素，并返回相应元素的索引值。如果找到了匹配的元素，从0开始返回；如果没有找到匹配的元素，返回-1。
-length
-lt(pos)  将匹配的元素集合缩减为给定位置之前的所有元素。这个元素在匹配元素集合中的位置变为0，而长度变成1。
-size()  当前匹配的元素数量。
-addClass(class) 为每个匹配的元素添加指定的类名。
-attr(name) 取得第一个匹配元素的属性值。通过这个方法可以方便地从第一个匹配元素中获取一个属性的值。
-attr(properties) 将一个“名/值”形式的对象设置为所有匹配元素的属性。
-attr(key, value) 为所有匹配的元素设置一个属性值。
-attr(key, fn) 为所有匹配的元素设置一个计算的属性值。
-html() 取得第一个匹配元素的html内容。这个函数不能用于XML文档。
-html(val) 设置每一个匹配元素的html内容。这个函数不能用于XML文档。
-removeAttr(name) 从每一个匹配的元素中删除一个属性。
-removeClass(class) 从所有匹配的元素中删除全部或者指定的类。
-text() 取得所有匹配元素的内容。结果是由所有匹配元素包含的文本内容组合起来的文本。这个方法对HTML和XML文档都有效。
-text(val) 设置所有匹配元素的文本内容。这个函数与html()函数具有同样的效果。
-toggleClass(class) 如果存在（不存在）就删除（添加）一个类。
-val() 获得第一个匹配元素的当前值。
-val(val) 设置每一个匹配元素的值。
-after(content)  在每个匹配的元素之后插入内容。
-append(content)  向每个匹配的元素内部追加内容。
-appendTo(expr)  把所有匹配的元素追加到另一个、指定的元素元素集合中。
-before(content)  在每个匹配的元素之前插入内容。
-clone(deep)  克隆匹配的DOM元素并且选中这些克隆的副本。
-empty()  删除匹配的元素集合中所有的子节点。
-insertAfter(expr)  把所有匹配的元素插入到另一个、指定的元素元素集合的后面。
-insertBefore(expr)  把所有匹配的元素插入到另一个、指定的元素元素集合的前面。
-prepend(content)  向每个匹配的元素内部前置内容。
-prependTo(expr)  把所有匹配的元素前置到另一个、指定的元素元素集合中
-remove(expr)  从DOM中删除所有匹配的元素。
-wrap(html)  把所有匹配的元素用其他元素的结构化标记包装起来。
-wrap(elem)  把所有匹配的元素用其他元素的结构化标记包装起来。
-add(expr)  把与表达式匹配的元素添加到jQuery对象中
-add(html)  向匹配的元素集合中添加更多动态创建的元素。
-add(elements)  把一个或多个DOM元素添加到匹配的元素集合中。
-children(expr)  取得一个包含匹配的元素集合中每一个元素的所有唯一子元素的元素集合。
-contains(str)  把元素集合筛选为包含指定文本（区分大小写）的元素。
-end()  结束最近的“破坏性”操作，把匹配的元素列表回复到前一个状态。
-filter(expression)  从匹配的元素集合中删除那些不符合指定的筛选条件的元素（即返回与指定表达式匹配的元素集合）。
-filter(filter)  从匹配的元素集合中删除那些不符合指定的筛选条件的元素（即返回与指定表达式匹配的元素集合）。
-find(expr)  搜索所有与指定表达式匹配的元素。
-is(expr)  用一个表达式来检查当前选择的元素集合，如果其中至少有一个元素符合这个给定的表达式就返回true。
-next(expr)  取得一个包含匹配的元素集合中每一个元素紧邻的后面同辈元素的元素集合。
-not(el)  从匹配的元素集合中删除指定的元素。
-not(expr)  从匹配的元素集合中删除与指定的表达式匹配的元素。
-not(elements)  从匹配的元素集合中删除所有符合条件的元素集合。
-parent(expr)  取得一个包含着所有匹配元素的唯一父元素的元素集合。
-parents(expr)  取得一个包含着所有匹配元素的唯一祖先元素的元素集合（不包含根元素）。
-prev(expr)  取得一个包含匹配的元素集合中每一个元素紧邻的前一个同辈元素的元素集合。
-siblings(expr)  取得一个包含匹配的元素集合中每一个元素的所有唯一同辈元素的元素集合。
-css(name)  访问第一个匹配元素的样式属性。
-css(properties)  把一个“名/值对”对象设置为所有匹配元素的样式属性。
-css(key, value)  在所有匹配的元素中，设置一个样式属性的值。
-height()  取得第一个匹配元素当前计算的高度值（px）。
-height(val)  为每个匹配的元素设置CSS高度(width)属性的值。
-width()  取得第一个匹配元素当前计算的宽度值（px）。
-width(val)  为每个匹配的元素设置CSS宽度(width)属性的值。
-browser  包含从navigator.userAgent属性中读取的用户代理标签（代理检测）。
-each(obj, fn)  一个通用的迭代函数，可用于近似地迭代对象和数组。
-extend(target, prop1, propN)  用一个或多个其他对象来扩展一个对象，返回这个被扩展的对象。
-grep(array, fn, inv)  使用筛选函数，从一个数组中筛选项目。
-map(array, fn)  把一个数组中的项目转换到另一个数组中。
-merge(first, second)  合并两个数组，删除其中重复的项目。
-trim(str)  删除字符串两端的空白字符。
-animate(params, speed, easing, callback)  用于创建自定义动画的函数。这个函数的关键在于指定动画形式及结果样式属性对象。
-fadeIn(speed, callback)  通过不透明度的变化来实现所有匹配元素的淡入效果，并在动画完成后可选地触发一个回调函数。
-fadeOut(speed, callback)  通过不透明度的变化来实现所有匹配元素的淡出效果，并在动画完成后可选地触发一个回调函数。
-fadeTo(speed, opacity, callback)  把所有匹配元素的不透明度以渐进方式调整到指定的不透明度，并在动画完成后可选地触发一个回调函数。
-hide()  隐藏显示的元素。
-hide(speed, callback)  以优雅的动画隐藏所有匹配的元素，并在显示完成后可选地触发一个回调函数。
-show()  显示隐藏的匹配元素。
-show(speed, callback)  以优雅的动画显示所有匹配的元素，并在显示完成后可选地触发一个回调函数。
-slideDown(speed, callback)  通过高度变化（向下增大）来动态地显示所有匹配的元素，在显示完成后可选地触发一个回调函数。
-slideToggle(speed, callback)  通过高度变化来切换所有匹配元素的可见性，并在切换完成后可选地触发一个回调函数。
-slideUp(speed, callback)  通过高度变化（向上减小）来动态地隐藏所有匹配的元素，在隐藏完成后可选地触发一个回调函数。
-toggle()  切换元素的可见状态。如果元素是可见的，切换为隐藏的。
-bind(type, data, fn)  为每一个匹配元素的特定事件（像click）绑定一个事件处理器函数。
-blur()  触发每一个匹配元素的blur事件。
-blur(fn)  在每一个匹配元素的blur事件中绑定一个处理函数。
-change(fn)  在每一个匹配元素的change事件中绑定一个处理函数
-click()  触发每一个匹配元素的click事件。
-click(fn)  在每一个匹配元素的click事件中绑定一个处理函数。
-dblclick(fn)  在每一个匹配元素的dblclick事件中绑定一个处理函数。
-error(fn)  在每一个匹配元素的error事件中绑定一个处理函数。
-focus()  触发每一个匹配元素的focus事件。
-focus(fn)  在每一个匹配元素的focus事件中绑定一个处理函数。
-hover(over, out)  一个模仿悬停事件（鼠标移动到一个对象上面及移出这个对象）的方法。
-keydown(fn)  在每一个匹配元素的keydown事件中绑定一个处理函数。
-keypress(fn)  在每一个匹配元素的keypress事件中绑定一个处理函数。
-keyup(fn)  在每一个匹配元素的keyup事件中绑定一个处理函数。
-load(fn)  在每一个匹配元素的load事件中绑定一个处理函数。
-mousedown(fn)  在每一个匹配元素的mousedown事件中绑定一个处理函数。
-mousemove(fn)  在每一个匹配元素的mousemove事件中绑定一个处理函数。
-mouseout(fn)  在每一个匹配元素的mouseout事件中绑定一个处理函数。
-mouseover(fn)  在每一个匹配元素的mouseover事件中绑定一个处理函数。
-mouseup(fn)  在每一个匹配元素的mouseup事件中绑定一个处理函数。
-one(type, data, fn)  为每一个匹配元素的特定事件（像click）绑定一个事件处理器函数。
-ready(fn)  当DOM载入就绪可以查询及操纵时绑定一个要执行的函数。
-resize(fn)  在每一个匹配元素的resize事件中绑定一个处理函数。
-scroll(fn)  在每一个匹配元素的scroll事件中绑定一个处理函数。
-select()  触发每一个匹配元素的select事件。
-select(fn)  在每一个匹配元素的select事件中绑定一个处理函数。
-submit()  触发每一个匹配元素的submit事件。
-submit(fn)    在每一个匹配元素的submit事件中绑定一个处理函数。
-toggle(even, odd)  每次点击时切换要调用的函数。（even 偶次，odd 偶次）
-trigger(type)  在每一个匹配的元素上触发某类事件。
-unbind(type, fn)  反绑定，从每一个匹配的元素中删除绑定的事件。
-unload(fn)  在每一个匹配元素的unload事件中绑定一个处理函数。
-ajax(properties)  使用HTTP请求（XMLHttpRequest）载入一个远程页面。
-ajaxSetup(settings)  为AJAX请求设定全局设置。
-ajaxTimeout(time)  设置AJAX请求的超时所需具体的时间要求。
-get(url, params, callback)  使用HTTP GET请求（XMLHttpRequest）载入远程页面。
-getIfModified(url, params, callback)  使用HTTP请求（XMLHttpRequest）载入自上次接收后产生变化的远程页面。
-getJSON(url, params, callback)  使用HTTP请求（XMLHttpRequest）载入JSON数据。
-getScript(url, callback)  使用HTTP请求（XMLHttpRequest）载入并执行远程JavaScript文件。
-post(url, params, callback)  使用HTTP POST请求（XMLHttpRequest）载入远程页面。
-ajaxComplete(callback)  当AJAX请求完成时，执行一个附加函数。
-ajaxError(callback)  当AJAX请求失败时，执行一个附加函数。
-ajaxSend(callback)  在AJAX请求发送前，执行一个附加函数。
-ajaxStart(callback)  在AJAX请求开始并且没有任何返回状态时，执行一个附加函数。
-ajaxStop(callback)  在AJAX请求结束后，执行一个附加函数。
-ajaxSuccess(callback)  当AJAX请求成功完成时，执行一个附加函数。
-load(url, params, callback)  从一个远程文件中载入HTML并把它注入DOM。
-loadIfModified(url, params, callback)  从一个自上次接收后产生变化的远程文件中载入HTML并把它注入DOM。
-serialize()  Serialize化输入的所有元素。
-Accordion(settings)  Make the selected elements Accordion widgets.
-activate(index)  Activate a content part of the Accordion programmatically with the position zero-based index.
-button(hash)  Creates a button from an image element.
-center()  Takes all matched elements and centers them, absolutely, within the context of their parent element.
-cookie(name)  Get the value of a cookie with the given name.
-cookie(name, value, options)  Create a cookie with the given name and value and other optional parameters.
+#Date
+now() #Returns the numeric value corresponding to the current time.
+parse(dateString) #Parses a string representation of a date, and returns the number of milliseconds since January 1, 1970, 00:00:00, local time.
+UTC(year,month[,date[,hrs[,min[,sec[,ms]]]]]) #Accepts the same parameters as the longest form of the constructor, and returns the number of milliseconds in a Date object since January 1, 1970, 00:00:00, universal time.
+getDate() #Returns the day of the month for the specified date according to local time.
+getDay() #Returns the day of the week for the specified date according to local time.
+getFullYear() #Returns the year of the specified date according to local time.
+getHours() #Returns the hour in the specified date according to local time.
+getMilliseconds() #Returns the milliseconds in the specified date according to local time.
+getMinutes() #Returns the minutes in the specified date according to local time.
+getMonth() #Returns the month in the specified date according to local time.
+getSeconds() #Returns the seconds in the specified date according to local time.
+getTime() #Returns the numeric value corresponding to the time for the specified date according to universal time.
+getTimezoneOffset() #Returns the time-zone offset in minutes for the current locale.
+getUTCDate() #Returns the day (date) of the month in the specified date according to universal time.
+getUTCDay() #Returns the day of the week in the specified date according to universal time.
+getUTCFullYear() #Returns the year in the specified date according to universal time.
+getUTCHours() #Returns the hours in the specified date according to universal time.
+getUTCMilliseconds() #Returns the milliseconds in the specified date according to universal time.
+getUTCMinutes() #Returns the minutes in the specified date according to universal time.
+getUTCMonth() #Returns the month in the specified date according to universal time.
+getUTCSeconds() #Returns the seconds in the specified date according to universal time.
+#getYear Deprecated: Returns the year in the specified date according to local time. Use getFullYear instead.
+setDate(dayValue) #Sets the day of the month for a specified date according to local time.
+setFullYear(yearValue[,monthValue[,dayValue]]) #Sets the full year for a specified date according to local time.
+setHours(hoursValue[,minutesValue[,secondsValue[,msValue]]]) #Sets the hours for a specified date according to local time.
+setMilliseconds(millisecondsValue) #Sets the milliseconds for a specified date according to local time.
+setMinutes(minutesValue[,secondsValue[,msValue]]) #Sets the minutes for a specified date according to local time.
+setMonth(monthValue[,dayValue]) #Sets the month for a specified date according to local time.
+setSeconds(secondsValue[,msValue]) #Sets the seconds for a specified date according to local time.
+setTime(timeValue) #Sets the value of the Date object according to local time.
+setUTCDate(dayValue) #Sets the day of the month for a specified date according to universal time.
+setUTCFullYear(yearValue[,monthValue[,dayValue]]) #Sets the full year for a specified date according to universal time.
+setUTCHours(hoursValue[,minutesValue[,secondsValue[,msValue]]]) #Sets the hour for a specified date according to universal time.
+setUTCMilliseconds(millisecondsValue) #Sets the milliseconds for a specified date according to universal time.
+setUTCMinutes(minutesValue[,secondsValue[,msValue]]) #Sets the minutes for a specified date according to universal time.
+setUTCMonth(monthValue[,dayValue]) #Sets the month for a specified date according to universal time.
+setUTCSeconds(secondsValue[,msValue]) #Sets the seconds for a specified date according to universal time.
+#setYear Deprecated : Sets the year for a specified date according to local time. Use setFullYear instead.
+#toGMTString Deprecated: Converts a date to a string, using the Internet GMT conventions. Use toUTCString instead.
+toLocaleString() #Converts a date to a string, using the current locale's conventions. Overrides the Object.toLocaleString method.
+toLocaleDateString() #Returns the "date" portion of the Date as a string, using the current locale's conventions.
+toLocaleTimeString() #Returns the "time" portion of the Date as a string, using the current locale's conventions.
+toUTCString() #Converts a date to a string, using the universal time convention.
 
+#math
+Math.E #Euler's constant and the base of natural logarithms, approximately 2.718.
+Math.LN2 #Natural logarithm of 2, approximately 0.693.
+Math.LN10 #Natural logarithm of 10, approximately 2.302.
+Math.LOG2E #Base 2 logarithm of E, approximately 1.442.
+Math.LOG10E #Base 10 logarithm of E, approximately 0.434.
+Math.PI Ratio of the circumference of a circle to its diameter, approximately 3.14159.
+Math.SQRT1_2 #Square root of 1/2; equivalently, 1 over the square root of 2, approximately 0.707.
+Math.SQRT2 #Square root of 2, approximately 1.414.
+Math.abs(x) #Returns the absolute value of a number.
+Math.acos(x) #Returns the arccosine (in radians) of a number.
+Math.asin(x) #Returns the arcsine (in radians) of a number.
+Math.atan(x) #Returns the arctangent (in radians) of a number.
+Math.atan2(x) #Returns the arctangent of the quotient of its arguments.
+Math.ceil(x) #Returns the smallest integer greater than or equal to a number.
+Math.cos(x) #Returns the cosine of a number.
+Math.exp(x) #Returns E^x, where number is the argument, and E is Euler's constant, the base of the natural logarithms.
+Math.floor(x) #Returns the largest integer less than or equal to a number.
+Math.log(x) #Returns the natural logarithm (base E) of a number.
+Math.max([value1[,value2[,...]]]) #Returns the largest of zero or more numbers.
+Math.min([value1[,value2[,...]]]) #Returns the smallest of zero or more numbers.
+Math.pow(base,exponent) #Returns base to the exponent power, that is, base exponent.
+Math.random() #Returns a pseudo-random number between 0 and 1.
+Math.round(x) Returns the value of a number rounded to the nearest integer.
+Math.sin(x) #Returns the sine of a number.
+Math.sqrt(x) #Returns the square root of a number.
+Math.tan(x) #Returns the tangent of a number.
+
+#string
+charAt(index) #Returns the character at the specified index.
+charCodeAt(index) #Returns a number indicating the Unicode value of the character at the given index.
+concat(string2,string3[,...,stringN]) #Combines the text of two strings and returns a new string.
+indexOf(searchValue[, fromIndex]) #Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.
+lastIndexOf(searchValue[,fromIndex]) #Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found.
+match(regexp) #Used to match a regular expression against a string.
+replace(regexp/substr,newSubStr/function[,flags]) #Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.
+search(regexp) #Executes the search for a match between a regular expression and a specified string.
+slice(beginslice[,endSlice]) #Extracts a section of a string and returns a new string.
+split([separator][,limit]) #Splits a String object into an array of strings by separating the string into substrings.
+substr(start[,length]) #Returns the characters in a string beginning at the specified location through the specified number of characters.
+substring(indexA,[indexB]) #Returns the characters in a string between two indexes into the string.
+toLowerCase() #Returns the calling string value converted to lowercase.
+toUpperCase() #Returns the calling string value converted to uppercase.
+
+#window
+closed #Returns the Boolean variable indicating whether window has been closed or not.
+defaultStatus #Read/write property that reflects the default window status bar message that appears.
+document #Reference to the current document object.
+frames #An array referencing all of the frames in the current window. Use frames.length to probe the number of frames.
+history #Reference to the History object of JavaScript, which contains information on the URLs the visitor has visited within the window.
+length #Returns the number of frames contained in the window.
+location #Reference to the Location object of JavaScript, which contains information on the current URL.
+name #The name of the window as optionally specified when calling window.open().
+opener #Contains a reference to the window that opened the secondary window via window.open(). This property should be invoked in the secondary window.
+parent #Reference to the parent window of the current window, assuming current window is a frame. Otherwise, it simply refers to current window.
+self #A synonym for the current window.
+status #A read/write property that allows you to probe and write to the browser's status bar.
+top #A synonym for the topmost browser window.
+window #References the current window. Same as "self."
+innerWidth #Specifies the width of the window's content area [NS4/6+] [IE4+: document.body.clientWidth]
+innerHeight #Specifies the height of the window's content area [NS4/6+] [IE4+:document.body.clientHeight]
+outerWidth #Specifies the total width of the window's content area. Includes any toolbar, scrollbars etc. [NS4/6+]
+outerHeight #Specifies the total height of the window's content area. Includes any toolbar, scrollbars etc. [NS4/6+].
+pageXOffset #Returns the count of pixels the current document has been scrolled from the left. [NS4/6+] [IE4+: document.body.scrollLeft]
+pageYOffset #Returns the count of pixels the current document has been scrolled from the top. [NS4/6+] [IE4+: document.body.scrollTop]
+screenX #Specifies the x coordinate of the window relative to the user's monitor screen. [NS4/6+] [IE5+: screenLeft]
+screenY #Specifies the y coordinate of the window relative to the user's monitor screen. [NS4/6+] [IE5+: screenTop]
+
+alert(msg) #Displays an Alert dialog box with the desired message and OK button.
+blur() #Removes focus from the window in question, sending the window to the background on the user's desktop.
+clearInterval(ID) #Clears the timer set using ID=setInterval().
+clearTimeout(ID) #Clears the timer set using ID=setTimeout().
+close() #Closes a window.
+confirm(msg) #Displays a Confirm dialog box with the specified message and OK and Cancel buttons. Example(s)
+find(string,[casesensitive],[backward]) #Searches for the "string" within the page, and returns string or false, accordingly. "casesensitive" is a Boolean denoting whether search is case sensitive. "backwards" is a Boolean when set to true, searches the page backwards. Final two optional parameters must be set together or none at all. NS4/NS6+ exclusive method.
+focus() #Sets focus to the window, bringing it to the forefront on the desktop.
+home() #Navigates the window to the homepage as designated by the user's browser setting. NS4/NS6+ only.
+moveBy(dx,dy) #Moves a window by the specified amount in pixels.
+moveTo(x,y) #Moves a window to the specified coordinate values, in pixels.
+open(URL,[name], [height|left/screenX|location|menubar|resizable|scrollbars|status|toolbar|top/screenY|width], [replace]) #Opens a new browser window. "Name" argument specifies a name that you can use in the target attribute of your  tag. "Features" allows you to show/hide various aspects of the window interface. "Replace" is a Boolean argument that denotes whether the URL loaded into the new window should add to the window's history list. A value of true causes URL to not be added. Example(s)
+print() #Prints the contents of the window or frame.
+prompt(msg,[input]) #Displays a Prompt dialog box with a message. Optional "input" argument allows you to specify the default input (response) that gets entered into the dialog box. Set "input" to "" to create a blank input field. Example(s)
+resizeBy(dx,dy) #Resizes a window by the specified amount in pixels.
+resizeTo(x,y) #Resizes a window to the specified pixel values.
+scrollBy(dx,dy) #Scrolls a window by the specified amount in pixels.
+scrollTo(x,y) #Scrolls a window to the specified pixel values.
+setInterval("func",interval,[args]) #Calls the specified "func" (or a JavaScript statement) repeatedly per the "interval" interval, in milliseconds (ie: 1000=every 1 second). "func" must be surrounded in quotations, as if it was a string. Use the optional "args" to pass any number of arguments to the function.
+setTimeout("func",interval) #Calls the specified "func" (or a JavaScript statement) once after "interval" has elapsed, in milliseconds (ie: 1000=after 1 second). "func" must be surrounded in quotations, as if it was a string.
+stop() #Stops the window from loading. NS4/NS6+ exclusive method.
+
+#document
+body #References the body element of the page. From there, you can then access other nodes contained within the body.
+body.offsetWidth #Returns the width of the entire document
+body.offsetHeight #Returns the height of the entire document
+compatMode #Returns the compatibility mode of the current document, specifically, whether the page is rendered in Quirks or Stricts mode. The two possible values returned are "BackCompat" for Quirks and "CSS1Compat" for Strict. Useful for determining the doctype setting of the page and executing different code accordingly.
+doctype #Read-only property that returns the Document Type Definition (DTD) of the current document, or null if the page doesn't contain a DTD. Not supported in IE as of IE6.
+documentElement #References the root element of the document, in the case of HTML documents, the html element. This read only property is useful for accessing all elements on the page, such as the HEAD.
+domain() #Gets/sets the domain of the current document. Useful in cross domain scripting when one domain is to communicate with another.
+implementation #Returns the DOM implementation of the current document.
+ownerDocument #Returns a reference to the document object that contains the current element/node.
+styleSheets[] #An array referencing all stylesheet objects on the page, whether they are defined using the <style> or <link> tag.
+title #Specifies the title of the document. Read/write in modern browsers.
+URL #A string that specifies the complete URL of the document.
+createAttribute("attributename") #Creates a new attribute, ready to be inserted somewhere in the document. It returns a reference to the created attribute.
+createComment(commenttext) #Creates an instance of the comment node. Once created, you can then insert it into the document tree using appendChild(), for example.
+createDocumentFragment() #Creates an empty document fragment. The result is a temporary container for creating and modifying new elements or attributes before introducing the final result to your document tree. This is a very useful method when you're performing multiple operations that add to or modify the document tree. Instead of directly modifying the document tree each time (very inefficient), it's much better to use a temporary "whiteboard" that is created by createDocumentFragment() to perform all your operations on first before finally inserting the result to the document tree.
+createElement(tagName) #Creates an instance of the element object, which can then added to the document tree using appendChild(), for example.
+createTextNode(text) #Creates a new text node, which can then be added to an element in the document tree.
+getElementById(id) #Accesses any element on the page via its ID attribute. A fundamental method within the DOM for accessing elements on the page.
+getElementsByName(name) #Returns an array of elements with a name attribute whose value matches that of the parameter's. In IE6, elements with an ID attribute of the matching value will also be included in the array, and getElementsByName() is limited to retrieving form objects such as checkboxes and INPUT. In Firefox, nither of these "pitfalls" apply.
+getElementsByTagName(tagname)      #Returns an array of elements whose tag name matches the parameter. In Firefox/ IE6+, you may enter an asterisk ("*") as the parameter to retrieve a list of all elements within the document.
+
+
+style.accelerator
+style.background
+style.backgroundAttachment
+style.backgroundColor
+style.backgroundImage
+style.backgroundPosition
+style.backgroundPositionX
+style.backgroundPositionY
+style.backgroundRepeat
+style.behavior
+style.border
+style.borderBottom
+style.borderBottomColor
+style.borderBottomStyle
+style.borderBottomWidth
+style.borderCollapse
+style.borderColor
+style.borderLeft
+style.borderLeftColor
+style.borderLeftStyle
+style.borderLeftWidth
+style.borderRight
+style.borderRightColor
+style.borderRightStyle
+style.borderRightWidth
+style.borderStyle
+style.borderTop
+style.borderTopColor
+style.borderTopStyle
+style.borderTopWidth
+style.borderWidth
+style.bottom
+style.clear
+style.clip
+style.color
+style.cssText
+style.cursor
+style.direction
+style.display
+style.filter
+style.font
+style.fontFamily
+style.fontSize
+style.fontStyle
+style.fontVariant
+style.fontWeight
+style.height
+style.imeMode
+style.layoutFlow
+style.layoutGrid
+style.layoutGridChar
+style.layoutGridLine
+style.layoutGridMode
+style.layoutGridType
+style.left
+style.letterSpacing
+style.lineBreak
+style.lineHeight
+style.listStyle
+style.listStyleImage
+style.listStylePosition
+style.listStyleType
+style.margin
+style.marginBottom
+style.marginLeft
+style.marginRight
+style.marginTop
+style.minHeight
+style.overflow
+style.overflowX
+style.overflowY
+style.padding
+style.paddingBottom
+style.paddingLeft
+style.paddingRight
+style.paddingTop
+style.pageBreakAfter
+style.pageBreakBefore
+style.posBottom
+style.posHeight
+style.posLeft
+style.posRight
+style.posTop
+style.posWidth
+style.position
+style.right
+style.rubyAlign
+style.rubyOverhang
+style.rubyPosition
+style.scrollbar3dLightColor
+style.scrollbarArrowColor
+style.scrollbarBaseColor
+style.scrollbarDarkShadowColor
+style.scrollbarFaceColor
+style.scrollbarHighlightColor
+style.scrollbarShadowColor
+style.scrollbarTrackColor
+style.styleFloat
+style.tableLayout
+style.textAlign
+style.textAlignLast
+style.textAutospace
+style.textDecoration
+style.textDecorationBlink
+style.textDecorationLineThrough
+style.textDecorationNone
+style.textDecorationOverline
+style.textDecorationUnderline
+style.textIndent
+style.textJustify
+style.textJustifyTrim
+style.textKashida
+style.textKashidaSpace
+style.textOverflow
+style.textTransform
+style.textUnderlinePosition
+style.top
+style.unicodeBidi
+style.verticalAlign
+style.visibility
+style.whiteSpace
+style.width
+style.wordBreak
+style.wordSpacing
+style.wordWrap
+style.writingMode
+style.zIndex
+style.zoom
+
+#jQuery
+jQuery.extend(prop) #Extends the jQuery object itself. Can be used to add functions into the jQuery namespace and to add plugin methods (plugins).\nParameters\n prop: ( Object ): The object that will be merged into the jQuery object\nReturns: Object
+jQuery.noConflict() #Run this function to give control of the $ variable back to whichever library first implemented it. This helps to make sure that jQuery doesn't conflict with the $ object of other libraries. By using this function, you will only be able to access jQuery using the 'jQuery' variable. For example, where you used to do $("div p"), you now must do jQuery("div p").\nReturns: undefined
+jQuery.find() #Returns: Array
+jQuery.parents(elem) #All ancestors of a given element.\nParameters\n elem: ( Element ): The element to find the ancestors of.\nReturns: Array
+jQuery.nth(cur, num, dir) #A handy, and fast, way to traverse in a particular direction and find a specific element.\nParameters\n cur: ( DOMElement ): The element to search from.\nnum: ( Number|String ): The Nth result to match. Can be a number or a string (like 'even' or 'odd').\ndir: ( String ): The direction to move in (pass in something like 'previousSibling' or 'nextSibling').\nReturns: DOMElement
+jQuery.sibling(elem) #All elements on a specified axis.\nParameters\n elem: ( Element ): The element to find all the siblings of (including itself).\nReturns: Array
+jQuery.extend(target, prop1, propN) \nExtend one object with one or more others, returning the original, modified, object. This is a great utility for simple inheritance.\nParameters\n target: ( Object ): The object to extend\n prop1: ( Object ): The object that will be merged into the first.\n propN: ( Object ): (optional) More objects to merge into the first\nReturns: Object
+jQuery.each(obj, fn) #A generic iterator function, which can be used to seemlessly iterate over both objects and arrays. This function is not the same as $().each() - which is used to iterate, exclusively, over a jQuery object. This function can be used to iterate over anything. The callback has two arguments:the key (objects) or index (arrays) as first the first, and the value as the second.\nParameters\n obj: ( Object ): The object, or array, to iterate over.\n fn: ( Function ): The function that will be executed on every object.\nReturns: Object
+jQuery.trim(str) #Remove the whitespace from the beginning and end of a string.\nParameters\n str: ( String ): The string to trim.\nReturns: String
+jQuery.merge(first, second) #Merge two arrays together, removing all duplicates. The new array is: All the results from the first array, followed by the unique results from the second array.\nParameters\n first: ( Array ): The first array to merge.\n second: ( Array ): The second array to merge.\nReturns: Array
+jQuery.grep(array, fn, inv) #Filter items out of an array, by using a filter function. The specified function will be passed two arguments: The current array item and the index of the item in the array. The function must return 'true' to keep the item in the array, false to remove it. \nParameters\n array: ( Array ): The Array to find items in.\n fn: ( Function ): The function to process each item against.\n inv: ( Boolean ): Invert the selection - select the opposite of the function.\nReturns: Array
+jQuery.map(array, fn) #Translate all items in an array to another array of items. The translation function that is provided to this method is called for each item in the array and is passed one argument: The item to be translated. The function can then return the translated value, 'null' (to remove the item), or an array of values - which will be flattened into the full array.\nParameters\n array: ( Array ): The Array to translate.\n fn: ( Function ): The function to process each item against.\nReturns: Array
+jQuery.browser() #Contains flags for the useragent, read from navigator.userAgent. Available flags are: safari, opera, msie, mozilla This property is available before the DOM is ready, therefore you can use it to add ready events only for certain browsers. There are situations where object detections is not reliable enough, in that cases it makes sense to use browser detection. Simply try to avoid both! A combination of browser and object detection yields quite reliable results.\nReturns: Boolean
+jQuery.get(url, params, callback) #Load a remote page using an HTTP GET request.\nParameters\n url: ( String ): The URL of the page to load.\n params: ( Map ): (optional) Key/value pairs that will be sent to the server.\n callback: ( Function ): (optional) A function to be executed whenever the data is loaded.\nReturns: XMLHttpRequest
+jQuery.getIfModified(url, params, callback) #Load a remote page using an HTTP GET request, only if it hasn't been modified since it was last retrieved.\nParameters\n url: ( String ): The URL of the page to load.\n params: ( Map ): (optional) Key/value pairs that will be sent to the server.\n callback: ( Function ): (optional) A function to be executed whenever the data is loaded.\nReturns: XMLHttpRequest
+jQuery.getScript( url, callback) #Loads, and executes, a remote JavaScript file using an HTTP GET request. Warning: Safari <= 2.0.x is unable to evalulate scripts in a global context synchronously. If you load functions via getScript, make sure to call them after a delay.\nParameters\n url: ( String ): The URL of the page to load.\n callback: ( Function ): (optional) A function to be executed whenever the data is loaded.\nReturns: XMLHttpRequest
+jQuery.getJSON( url, params, callback) #Load JSON data using an HTTP GET request.\nParameters\n url: ( String ): The URL of the page to load.\n params: ( Map ): (optional) Key/value pairs that will be sent to the server.\ncallback: ( Function ): A function to be executed whenever the data is loaded.\nReturns: XMLHttpRequest
+jQuery.post(url, params, callback) #Load a remote page using an HTTP POST request.\nParameters\n url: ( String ): The URL of the page to load.\n params: ( Map ): (optional) Key/value pairs that will be sent to the server.\n callback: ( Function ): (optional) A function to be executed whenever the data is loaded.\nReturns: XMLHttpRequest
+jQuery.ajaxSetup(settings) #Setup global settings for AJAX requests. See $.ajax for a description of all available options.\nParameters\n settings: ( Map ): Key/value pairs to use for all AJAX requests\nReturns: undefined
+jQuery.cookie(name, value, options) #Create a cookie with the given name and value and other optional parameters.\nReturns: undefined
+jQuery.cookie(name) \nGet the value of a cookie with the given name.\nParameters\n name: ( String ): The name of the cookie.\nReturns: String
+jQuery.data(element, key, value)
+jQuery.data(element, key)
+
+#jQuery Core
+.jquery
+jquery() #The current version of jQuery. Returns: String
+.length
+length() #The number of elements currently matched.\nReturns: Number
+.size
+size() #The number of elements currently matched.\nReturn: Number
+.get
+get() #Access all matched elements. This serves as a backwards-compatible way of accessing all matched elements (other than thejQuery object itself, which is, in fact, an array of elements).\nReturns: Array
+get(num) #Access a single matched element. num is used to access the Nth element matched.\nReturns: Element
+.set
+set(elems) #Set the jQuery object to an array of elements, while maintaining the stack.\nReturns: jQuery
+.setArray
+setArray(elems) #Set the jQuery object to an array of elements. This operation is completely destructive - be sure to use .set() if you wish to maintain the jQuery stack.\nReturn: jQuery
+.each
+each(fn) #Execute a function within the context of every matched element. This means that every time the passed-in function is executed (which is once for every element matched)\nthe 'this' keyword points to the specific element. Additionally, the function, when executed, is passed a single argument representing the position of the element in the matched set.\nReturns: jQuery
+.index
+index(subject) #Searches every matched element for the object and returns the index of the element, if found, starting with zero. Returns -1 if the object wasn't found.\nReturns: Number
+.domManip
+domManip(args, table, dir ,fn ) #Parameters\n args: ( Array ):\n table: ( Boolean ): Insert TBODY in TABLEs if one is not found.\n dir: ( Number ): If dir<0, process args in reverse order.\n fn: ( Function ): The function doing the DOM manipulation.\nReturns: jQuery
+.eq
+eq(pos) #Reduce the set of matched elements to a single element. The position of the element in the set of matched elements starts at 0 and goes to length - 1.\nParameters\n pos: ( Number ): The index of the element that you wish to limit to.\nReturns: jQuery
+.lt
+lt(pos) #Reduce the set of matched elements to all elements before a given position. The position of the element in the set of matched elements starts at 0 and goes to length - 1.\nParameters\n pos: ( Number ): Reduce the set to all elements below this position.\nReturns: jQuery
+.gt
+gt(pos) #Reduce the set of matched elements to all elements after a given position. The position of the element in the set of matched elements starts at 0 and goes to length - 1.\nParameters \n pos: ( Number ): Reduce the set to all elements after this position.\nReturns: jQuery
+
+#jQuery DOM
+.attr
+attr(name) #Access a property on the first matched element. This method makes it easy to retrieve a property value from the first matched element.\nParameters \n name: ( String ): The name of the property to access.\nReturns: Object
+attr(properties) #Set a key/value object as properties to all matched elements. This serves as the best way to set a large number of properties on all matched elements.\nParameters \n properties: ( Map ): Key/value pairs to set as object properties.\nReturns: jQuery
+attr(key, value) #Set a single property to a value, on all matched elements. Can compute values provided as ${formula}, see second example. Note that you can't set the name property of input elements in IE. Use $(html) or .append(html) or .html(html) to create elements on the fly including the name property.\nParameters\n key: ( String ): The name of the property to set.\n value: ( Object ): The value to set the property to.\nReturns: jQuery
+attr(key, value) #Set a single property to a computed value, on all matched elements. Instead of a value, a function is provided, that computes the value.\nParameters\n key: ( String ): The name of the property to set.\n value: ( Function ): A function returning the value to set.\nReturns: jQuery
+.text
+text() #Get the text contents of all matched elements. The result is a string that contains the combined text contents of all matched elements. This method works on both HTML and XML documents.\nReturns: String
+text(val) #Set the text contents of all matched elements. This has the same effect as html().\nParameters\n val: ( String ): The text value to set the contents of the element to.\nReturns: String
+.val
+val() #Get the current value of the first matched element.\nReturns: String
+val(val) #Set the value of every matched element.\nParameters\n val: ( String ): Set the property to the specified value.\nReturns: jQuery
+.html
+html() #Get the html contents of the first matched element. This property is not available on XML documents.\nReturns: String
+html(val) #Set the html contents of every matched element. This property is not available on XML documents.\nParameters\n val: ( String ): Set the html contents to the specified value.\nReturns: jQuery
+.removeAttr
+removeAttr(name) #Remove an attribute from each of the matched elements.\nParameters\n name: ( String ): The name of the attribute to remove.\nReturns: jQuery
+.addClass
+addClass(class) #Adds the specified class to each of the set of matched elements.\nParameters\n class: ( String ): A CSS class to add to the elements\nReturns: jQuery
+.removeClass
+removeClass(class) #Removes all or the specified class from the set of matched elements.\nParameters\n class: ( String ): (optional) A CSS class to remove from the elements\nReturns: jQuery
+.toggleClass
+toggleClass(class) #Adds the specified class if it is not present, removes it if it is present.\nParameters\n class: ( String ): A CSS class with which to toggle the elements\nReturns: jQuery
+
+#jQuery Manipulation
+.wrap
+wrap(html) #Wrap all matched elements with a structure of other elements.\nParameters\n html: ( String ): A string of HTML, that will be created on the fly and wrapped around the target.\nReturns: jQuery
+wrap(elem) #Wrap all matched elements with a structure of other elements. This wrapping process is most useful for injecting additional\nstucture into a document, without ruining the original semantic qualities of a document.\nParameters\n elem: ( Element ): A DOM element that will be wrapped around the target.\nReturns: jQuery
+.append
+append(content) #Append content to the inside of every matched element. This operation is similar to doing an appendChild to all the specified elements, adding them into the document.\nParameters\n content: ( ): Content to append to the target\nReturns: jQuery
+.prepend
+prepend(content) #Prepend content to the inside of every matched element. This operation is the best way to insert elements inside, at the beginning, of all matched elements.\nParameters\n content: ( ): Content to prepend to the target.\nReturns: jQuery
+.before
+before(content) #Insert content before each of the matched elements.\nParameters\n content: ( ): Content to insert before each target.\nReturns: jQuery
+.after
+after(content) #Insert content after each of the matched elements.\nParameters\n content: ( ): Content to insert after each target.\nReturns: jQuery
+.clone
+clone() #Clone matched DOM Elements and select the clones. This is useful for moving copies of the elements to another location in the DOM.\n Returns: jQuery
+.appendTo
+appendTo(expr) #Append all of the matched elements to another, specified, set of elements. This operation is, essentially, the reverse of doing a regular $(A).append(B), in that instead of appending B to A, you're appending A to B.\nParameters\n expr: ( String ): A jQuery expression of elements to match.\nReturns: jQuery
+.prependTo
+prependTo(expr) #Prepend all of the matched elements to another, specified, set of elements. This operation is, essentially, the reverse of doing a regular $(A).prepend(B), in that instead of prepending B to A, you're prepending A to B.\nParameters\n expr: ( String ): A jQuery expression of elements to match.\nReturns: jQuery
+.insertBefore
+insertBefore(expr) #Insert all of the matched elements before another, specified, set of elements. This operation is, essentially, the reverse of doing a regular $(A).before(B), in that instead of inserting B before A, you're inserting A before B.\nParameters\n expr: ( String ): A jQuery expression of elements to match.\nReturns: jQuery
+.insertAfter
+insertAfter(expr) #Insert all of the matched elements after another, specified, set of elements. This operation is, essentially, the reverse of doing a regular $(A).after(B), in that instead of inserting B after A, you're inserting A after B.\nParameters\n expr: ( String ): A jQuery expression of elements to match.\nReturns: jQuery
+.remove
+remove(#expr) #Removes all matched elements from the DOM. This does NOT remove them from the jQuery object, allowing you to use the matched elements further. Can be filtered with an optional expressions.\nParameters\n expr: ( String ): (optional) A jQuery expression to filter elements by.\nReturns: jQuery
+.empty
+empty() #Removes all child nodes from the set of matched elements.\nReturns: jQuery
+
+#jQuery Traversing
+.end
+end() #End the most recent 'destructive' operation, reverting the list of matched elements back to its previous state. After an end operation, the list of matched elements will revert to the last state of matched elements. If there was no destructive operation before, an empty set is returned.\nReturns: jQuery
+.find
+find(#expr) #Searches for all elements that match the specified expression. This method is a good way to find additional descendant elements with which to process. All searching is done using a jQuery expression. The expression can be written using CSS 1-3 Selector syntax, or basic XPath.\nParameters\n expr: ( String ): An expression to search with.\nReturns: jQuery
+.filter
+filter(expression) #Removes all elements from the set of matched elements that do not match the specified expression(s). This method is used to narrow down the results of a search. Provide a String array of expressions to apply multiple filters at once.\nParameters\n expression: ( String|Array ): Expression(s) to search with.\nReturns: jQuery
+filter(filter) #Removes all elements from the set of matched elements that do not pass the specified filter. This method is used to narrow down the results of a search.\nParameters\n filter: ( Function ): A function to use for filtering\nReturns: jQuery
+.not
+not(el) #Removes the specified Element from the set of matched elements. This method is used to remove a single Element from a jQuery object.\nParameters\n el: ( Element ): An element to remove from the set\nReturns: jQuery
+not(expr) #Removes elements matching the specified expression from the set of matched elements. This method is used to remove one or more elements from a jQuery object.\nParameters\n expr: ( String ): An expression with which to remove matching elements\nReturns: jQuery
+.add
+add(expr) #Adds the elements matched by the expression to the jQuery object. This can be used to concatenate the result sets of two expressions.\nParameters\n expr: ( String ): An expression whose matched elements are added\nReturns: jQuery
+add(elements) #Adds one or more Elements to the set of matched elements. This is used to add a set of Elements to a jQuery object.\nParameters\n elements: ( Element|Array ): One or more Elements to add\nReturns: jQuery
+.is
+is(expr) #Checks the current selection against an expression and returns true, if at least one element of the selection fits the given expression. Does return false, if no element fits or the expression is not valid. filter(String) is used internally, therefore all rules that apply there apply here, too.\nParameters\n expr: ( String ): The expression with which to filter\nReturns: Boolean
+.parent
+parent(expr) #Get a set of elements containing the unique parents of the matched set of elements. Can be filtered with an optional expressions.\nParameters\n expr: ( String ): (optional) An expression to filter the parents with\nReturns: jQuery
+.parents
+parents(expr) #Get a set of elements containing the unique ancestors of the matched set of elements (except for the root element). Can be filtered with an optional expressions.\nParameters\n expr: ( String ): (optional) An expression to filter the ancestors with\nReturns: jQuery
+.next
+next(expr) #Get a set of elements containing the unique next siblings of each of the matched set of elements. It only returns the very next sibling, not all next siblings. Can be filtered with an optional expressions.\nParameters\n expr: ( String ): (optional) An expression to filter the next Elements with\nReturns: jQuery
+.prev
+prev(expr) #Get a set of elements containing the unique previous siblings of each of the matched set of elements. Can be filtered with an optional expressions. It only returns the immediately previous sibling, not all previous siblings.\nParameters\n expr: ( String ): (optional) An expression to filter the previous Elements with\nReturns: jQuery
+.siblings
+siblings(expr) #Get a set of elements containing all of the unique siblings of each of the matched set of elements. Can be filtered with an optional expressions.\nParameters\n expr: ( String ): (optional) An expression to filter the sibling Elements with\nReturns: jQuery
+.children
+children(expr) #Get a set of elements containing all of the unique children of each of the matched set of elements. Can be filtered with an optional expressions.\nParameters\n expr: ( String ): (optional) An expression to filter the child Elements with\nReturns: jQuery
+.contains
+contains(str) #Filter the set of elements to those that contain the specified text.\nParameters\nstr: ( String ): The string that will be contained within the text of an element.\nReturns: jQuery
+
+#jQuery CSS
+.css
+css(name) #Access a style property on the first matched element. This method makes it easy to retrieve a style property value from the first matched element.\nParameters\n name: ( String ): The name of the property to access.\nReturns: String
+css(properties) #Set a key/value object as style properties to all matched elements. This serves as the best way to set a large number of style properties on all matched elements.\nParameters\n properties: ( Map ): Key/value pairs to set as style properties.\nReturns: jQuery
+css(key, value) #Set a single style property to a value, on all matched elements.\nParameters\n key: ( String ): The name of the property to set.\n value: ( Object ): The value to set the property to.\nReturns: jQuery
+
+#jQuery Effects
+.show
+show() #Displays each of the set of matched elements if they are hidden.\nReturns: jQuery
+show(speed, callback) #Show all matched elements using a graceful animation and firing an optional callback after completion. The height, width, and opacity of each of the matched elements are changed dynamically according to the specified speed.\nParameters\n speed: ( String|Number ): A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).\n callback: ( Function ): (optional) A function to be executed whenever the animation completes.\nReturns: jQuery
+.hide
+hide() #Hides each of the set of matched elements if they are shown.\nReturns: jQuery
+hide(speed, callback) #Hide all matched elements using a graceful animation and firing an optional callback after completion. The height, width, and opacity of each of the matched elements are changed dynamically according to the specified speed.\nParameters\n speed: ( String|Number ): A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).\n callback: ( Function ): (optional) A function to be executed whenever the animation completes.\nReturns: jQuery
+.toggle
+toggle() #Toggles each of the set of matched elements. If they are shown, toggle makes them hidden. If they are hidden, toggle makes them shown.\nReturns: jQuery
+.slideDown
+slideDown(speed, callback) #Reveal all matched elements by adjusting their height and firing an optional callback after completion. Only the height is adjusted for this animation, causing all matched elements to be revealed in a "sliding" manner.\nParameters\n speed: ( String|Number ): (optional) A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).\n callback: ( Function ): (optional) A function to be executed whenever the animation completes.\nReturns: jQuery
+.slideUp
+slideUp(speed, callback) #Hide all matched elements by adjusting their height and firing an optional callback after completion. Only the height is adjusted for this animation, causing all matched elements to be hidden in a "sliding" manner.\nParameters\n speed: ( String|Number ): (optional) A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).\ncallback: ( Function ): (optional) A function to be executed whenever the animation completes.\nReturns: jQuery
+.slideToggle
+slideToggle(speed, callback) #Toggle the visibility of all matched elements by adjusting their height and firing an optional callback after completion. Only the height is adjusted for this animation, causing all matched elements to be hidden in a "sliding" manner.\nParameters speed: ( String|Number ): (optional) A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).\n callback: ( Function ): (optional) A function to be executed whenever the animation completes.\nReturns: jQuery
+.fadeIn
+fadeIn(speed, callback) #Fade in all matched elements by adjusting their opacity and firing an optional callback after completion. Only the opacity is adjusted for this animation, meaning that all of the matched elements should already have some form of height and width associated with them.\nParameters\n speed: ( String|Number ): (optional) A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).\n callback: ( Function ): (optional) A function to be executed whenever the animation completes.\nReturns: jQuery
+.fadeOut
+fadeOut(speed, callback) #Fade out all matched elements by adjusting their opacity and firing an optional callback after completion. Only the opacity is adjusted for this animation, meaning that all of the matched elements should already have some form of height and width associated with them.\nParameters\n speed: ( String|Number ): (optional) A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).\n callback: ( Function ): (optional) A function to be executed whenever the animation completes.\nReturns: jQuery
+.fadeTo
+fadeTo(speed, opacity, callback) #Fade the opacity of all matched elements to a specified opacity and firing an optional callback after completion. Only the opacity is adjusted for this animation, meaning that all of the matched elements should already have some form of height and width associated with them.\nParameters\n speed: ( String|Number ): A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).\n opacity: ( Number ): The opacity to fade to (a number from 0 to 1).\n callback: ( Function ): (optional) A function to be executed whenever the animation completes.\nReturns: jQuery
+.animate
+animate(params, speed, easing, callback) #A function for making your own, custom, animations. The key aspect of this function is the object of style properties that will be animated, and to what end. Each key within the object represents a style property that will also be animated (for example: "height", "top", or "opacity"). The value associated with the key represents to what end the property will be animated. If a number is provided as the value, then the style property will be transitioned from its current state to that new number. Oterwise if the string "hide", "show", or "toggle" is provided, a default animation will be constructed for that property.\n Parameters\n params: ( Hash ): A set of style attributes that you wish to animate, and to what end.\n speed: ( String|Number ): (optional) A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).\n easing: ( String ): (optional) The name of the easing effect that you want to use (Plugin Required).\n callback: ( Function ): (optional) A function to be executed whenever the animation completes.\nReturns: jQuery
+
+#jQuery Events
+.bind
+bind(type, data, fn) #Binds a handler to a particular event (like click) for each matched element. The event handler is passed an event object that you can use to prevent default behaviour. To stop both default action and event bubbling, your handler has to return false. In most cases, you can define your event handlers as anonymous functions (see first example). In cases where that is not possible, you can pass additional data as the second paramter (and the handler function as the third), see second example.\nParameters\n type: ( String ): An event type\n data: ( Object ): (optional) Additional data passed to the event handler as event.data\n fn: ( Function ): A function to bind to the event on each of the set of matched elements\nReturns: jQuery
+.one
+one(type, data, fn) #Binds a handler to a particular event (like click) for each matched element. The handler is executed only once for each element. Otherwise, the same rules as described in bind() apply. The event handler is passed an event object that you can use to prevent default behaviour. To stop both default action and event bubbling, your handler has to return false. In most cases, you can define your event handlers as anonymous functions (see first example). In cases where that is not possible, you can pass additional data as the second paramter (and the handler function as the third), see second example.\nParameters\n type: ( String ): An event type\n data: ( Object ): (optional) Additional data passed to the event handler as event.data\n fn: ( Function ): A function to bind to the event on each of the set of matched elements\nReturns: jQuery
+.unbind
+unbind(type, fn) #The opposite of bind, removes a bound event from each of the matched elements. Without any arguments, all bound events are removed. If the type is provided, all bound events of that type are removed. If the function that was passed to bind is provided as the second argument, only that specific event handler is removed.\nParameters\n type: ( String ): (optional) An event type\n fn: ( Function ): (optional) A function to unbind from the event on each of the set of matched elements\nReturns: jQuery
+.trigger
+trigger(type) #Trigger a type of event on every matched element.\nParameters\n type: ( String ): An event type to trigger.\nReturns: jQuery
+.toggle
+toggle(even, odd) #Toggle between two function calls every other click. Whenever a matched element is clicked, the first specified function is fired, when clicked again, the second is fired. All subsequent clicks continue to rotate through the two functions. Use unbind("click") to remove.\nParameters\n even: ( Function ): The function to execute on every even click.\n odd: ( Function ): The function to execute on every odd click.\nReturns: jQuery
+.hover
+hover(over, out) #A method for simulating hovering (moving the mouse on, and off, an object). This is a custom method which provides an 'in' to a frequent task. Whenever the mouse cursor is moved over a matched element, the first specified function is fired. Whenever the mouse moves off of the element, the second specified function fires. Additionally, checks are in place to see if the mouse is still within the specified element itself (for example, an image inside of a div), and if it is, it will continue to 'hover', and not move out (a common error in using a mouseout event handler).\nParameters\n over: ( Function ): The function to fire whenever the mouse is moved over a matched element.\n out: ( Function ): The function to fire whenever the mouse is moved off of a matched element.\nReturns: jQuery
+.ready
+ready(fn) #Bind a function to be executed whenever the DOM is ready to be traversed and manipulated. This is probably the most important function included in the event module, as it can greatly improve the response times of your web applications. In a nutshell, this is a solid replacement for using window.onload, and attaching a function to that. By using this method, your bound Function will be called the instant the DOM is ready to be read and manipulated, which is exactly what 99.99% of all Javascript code needs to run. Please ensure you have no code in your  onload event handler, otherwise $(document).ready() may not fire. You can have as many $(document).ready events on your page as you like. The functions are then executed in the order they were added.\nParameters\n fn: ( Function ): The function to be executed when the DOM is ready.\nReturns: jQuery
+.scroll
+scroll(fn) #Bind a function to the scroll event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the scroll event on each of the matched elements.\nReturns: jQuery
+.submit
+submit(fn) #Bind a function to the submit event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the submit event on each of the matched elements.\nReturns: jQuery
+submit() #Trigger the submit event of each matched element. This causes all of the functions that have been bound to thet submit event to be executed. Note: This does not execute the submit method of the form element! If you need to submit the form via code, you have to use the DOM method, eg. $("form")[0].submit();\nReturns: jQuery
+.focus
+focus(fn) #Bind a function to the focus event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the focus event on each of the matched elements.\nReturns: jQuery
+focus() #Trigger the focus event of each matched element. This causes all of the functions that have been bound to thet focus event to be executed. Note: This does not execute the focus method of the underlying elements! If you need to focus an element via code, you have to use the DOM method, eg. $("#myinput")[0].focus();\nReturns: jQuery
+.keydown
+keydown(fn) #Bind a function to the keydown event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the keydown event on each of the matched elements.\nReturns: jQuery
+.dblclick
+dblclick(fn) #Bind a function to the dblclick event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the dblclick event on each of the matched elements.\nReturns: jQuery
+.keypress
+keypress(fn) #Bind a function to the keypress event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the keypress event on each of the matched elements.\nReturns: jQuery
+.error
+error(fn) #Bind a function to the error event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the error event on each of the matched elements.\nReturns: jQuery
+.blur
+blur(fn) #Bind a function to the blur event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the blur event on each of the matched elements.\nReturns: jQuery
+blur() #Trigger the blur event of each matched element. This causes all of the functions that have been bound to thet blur event to be executed. Note: This does not execute the blur method of the underlying elements! If you need to blur an element via code, you have to use the DOM method, eg. $("#myinput")[0].blur();\nReturns: jQuery
+.load
+load(fn) #Bind a function to the load event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the load event on each of the matched elements.\nReturns: jQuery
+.select
+select(fn) #Bind a function to the select event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the select event on each of the matched elements.\nReturns: jQuery
+select() #Trigger the select event of each matched element. This causes all of the functions that have been bound to thet select event to be executed.\nReturns: jQuery
+.mouseup
+mouseup(fn) #Bind a function to the mouseup event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the mouseup event on each of the matched elements.\nReturns: jQuery
+.unload
+unload(fn) #Bind a function to the unload event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the unload event on each of the matched elements.\nReturns: jQuery
+.change
+change(fn) #Bind a function to the change event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the change event on each of the matched elements.\nReturns: jQuery
+.mouseout
+mouseout(fn) #Bind a function to the mouseout event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the mouseout event on each of the matched elements.\nReturns: jQuery
+.keyup
+keyup(fn) #Bind a function to the keyup event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the keyup event on each of the matched elements.\nReturns: jQuery
+.click
+click(fn) #Bind a function to the click event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the click event on each of the matched elements.\nReturns: jQuery
+click() #Trigger the click event of each matched element. This causes all of the functions that have been bound to thet click event to be executed.\nReturns: jQuery
+.resize
+resize(fn) #Bind a function to the resize event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the resize event on each of the matched elements.\nReturns: jQuery
+.mousemove
+mousemove(fn) #Bind a function to the mousemove event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the mousemove event on each of the matched elements.\nReturns: jQuery
+.mousedown
+mousedown(fn) #Bind a function to the mousedown event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the mousedown event on each of the matched elements.\nReturns: jQuery
+.mouseover
+mouseover(fn) #Bind a function to the mouseover event of each matched element.\nParameters\n fn: ( Function ): A function to bind to the mousedown event on each of the matched elements.\nReturns: jQuery
+
+#jQuery AJAX
+.loadIfModified
+loadIfModified(url, params, callback) #Load HTML from a remote file and inject it into the DOM, only if it's been modified by the server.\nParameters\n url: ( String ): The URL of the HTML file to load.\n params: ( Map ): (optional) Key/value pairs that will be sent to the server.\n callback: ( Function ): (optional) A function to be executed whenever the data is loaded (parameters: responseText, status and response itself).\nReturns: jQuery
+.load
+load(url, params, callback) #Load HTML from a remote file and inject it into the DOM. Note: Avoid to use this to load scripts, instead use $.getScript. IE strips script tags when there aren't any other characters in front of it.\nParameters\n url: ( String ): The URL of the HTML file to load.\n params: ( Object ): (optional) A set of key/value pairs that will be sent as data to the server.\n callback: ( Function ): (optional) A function to be executed whenever the data is loaded (parameters: responseText, status and response itself).\nReturns: jQuery
+.serialize
+serialize() #Serializes a set of input elements into a string of data. This will serialize all given elements. A serialization similar to the form submit of a browser is provided by the form plugin. It also takes multiple-selects into account, while this method recognizes only a single option.\nReturns: String
+.evalScripts
+evalScripts() #Evaluate all script tags inside this jQuery. If they have a src attribute, the script is loaded, otherwise it's content is evaluated.\nReturns: jQuery
+.ajaxStart
+ajaxStart(callback) #Attach a function to be executed whenever an AJAX request begins and there is none already active.\nParameters\n callback: ( Function ): The function to execute.\nReturns: jQuery
+.ajaxStop
+ajaxStop(callback) #Attach a function to be executed whenever all AJAX requests have ended.\nParameters\n callback: ( Function ): The function to execute.\nReturns: jQuery
+.ajaxComplete
+ajaxComplete(callback) #Attach a function to be executed whenever an AJAX request completes. The XMLHttpRequest and settings used for that request are passed as arguments to the callback.\nParameters\n callback: ( Function ): The function to execute.\nReturns: jQuery
+.ajaxSuccess
+ajaxSuccess(callback) #Attach a function to be executed whenever an AJAX request completes successfully. The XMLHttpRequest and settings used for that request are passed as arguments to the callback.\nParameterscallback: ( Function ): The function to execute.\nReturns: jQuery
+.ajaxError
+ajaxError(callback) #Attach a function to be executed whenever an AJAX request fails. The XMLHttpRequest and settings used for that request are passed as arguments to the callback. A third argument, an exception object, is passed if an exception occured while processing the request.\nParameters\n callback: ( Function ): The function to execute.\nReturns: jQuery
+.ajaxSend
+ajaxSend(callback) #Attach a function to be executed before an AJAX request is send. The XMLHttpRequest and settings used for that request are passed as arguments to the callback.\nParameters\n callback: ( Function ): The function to execute.\nReturns: jQuery
+
+#jQuery Dimensions
+.height
+height(#) #Returns the css height value for the first matched element. If used on document, returns the document's height (innerHeight) If used on window, returns the viewport's (window) height\nReturns: Object
+.width
+width() #Returns the css width value for the first matched element. If used on document, returns the document's width (innerWidth) If used on window, returns the viewport's (window) width\nReturns: Object
+.innerHeight
+innerHeight() #Returns the inner height value (without border) for the first matched element. If used on document, returns the document's height (innerHeight) If used on window, returns the viewport's (window) height\nReturns: Number
+.innerWidth
+innerWidth() #Returns the inner width value (without border) for the first matched element. If used on document, returns the document's Width (innerWidth) If used on window, returns the viewport's (window) width\nReturns: Number
+.outerHeight
+outerHeight() #Returns the outer height value (including border) for the first matched element. Cannot be used on document or window.\nReturns: Number
+.outerWidth
+outerWidth() #Returns the outer width value (including border) for the first matched element. Cannot be used on document or window.\nReturns: Number
+.scrollLeft
+scrollLeft() #Returns how many pixels the user has scrolled to the right (scrollLeft). Works on containers with overflow: auto and window/document.\nReturns: Number
+.scrollTop
+scrollTop() #Returns how many pixels the user has scrolled to the bottom (scrollTop). Works on containers with overflow: auto and window/document.\nReturns: Number
+.offset
+offset() #This returns an object with top, left, width, height, borderLeft, borderTop, marginLeft, marginTop, scrollLeft, scrollTop, pageXOffset, pageYOffset. The top and left values include the scroll offsets but the scrollLeft and scrollTop properties of the returned object are the combined scroll offets of the parent elements (not including the window scroll offsets). This is not the same as the element's scrollTop and scrollLeft. For accurate readings make sure to use pixel values.\nReturns: Object
+offset(refElement) #This returns an object with top, left, width, height, borderLeft, borderTop, marginLeft, marginTop, scrollLeft, scrollTop, pageXOffset, pageYOffset. The top and left values include the scroll offsets but the scrollLeft and scrollTop properties of the returned object are the combined scroll offets of the parent elements (not including the window scroll offsets). This is not the same as the element's scrollTop and scrollLeft. For accurate readings make sure to use pixel values.\nParameters\n refElement: ( String or jQuery or HTMLElement): This is an expression. The offset returned will be relative to the first matched element.\nReturns: Object
+
+JSON.parse(text[, reviver]) #parses a string as JSON.
+JSON.stringify(value[, replacer [, space]]) #converts a value to JSON
